@@ -1,0 +1,355 @@
+@font-face {
+  font-family: segoe-ui-sumbol;
+  src: url("../fonts/segoe-ui-symbol.ttf");
+}
+@font-face {
+  font-family: segoe-wp-light;
+  src: url("../fonts/segoe-wp-light.ttf");
+}
+@font-face {
+  font-family: segoe-print-bold;
+  src: url("../fonts/segoe-print-bold.ttf");
+}
+@font-face {
+  font-family: segoe-ui-bold-italic;
+  src: url("../fonts/segoe-ui-bold-italic.ttf");
+}
+/* line 22, main.scss */
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: segoe-wp-light;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 34, main.scss */
+body {
+  width: 100%;
+  position: relative;
+}
+
+/* line 40, main.scss */
+.main {
+  width: 100%;
+  background-color: #3C4C5A;
+}
+
+/* line 46, main.scss */
+.centered {
+  max-width: 1024px;
+  min-width: 680px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*        header        */
+/* line 55, main.scss */
+header {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #fff;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(255, 255, 255, 0.4)));
+  background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4));
+}
+/* line 63, main.scss */
+header .centered {
+  overflow: hidden;
+}
+/* line 66, main.scss */
+header .centered .nav {
+  float: right;
+  text-align: right;
+}
+/* line 70, main.scss */
+header .centered .nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 74, main.scss */
+header .centered .nav li a {
+  display: inline-block;
+  font-family: segoe-print-bold;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 12px 5px 10px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+/* line 84, main.scss */
+header .centered .nav li a:last-child {
+  padding-right: 0;
+}
+/* line 87, main.scss */
+header .centered .nav li a:hover {
+  border-bottom: 2px solid #fff;
+}
+/* line 94, main.scss */
+header .centered .logoHome {
+  text-align: left;
+}
+/* line 97, main.scss */
+header .centered .logoHome a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background: url("../img/reallife---.png") no-repeat center;
+  background-size: 150px 45px;
+}
+
+/*           intro           */
+/* line 113, main.scss */
+.intro {
+  width: 100%;
+  text-align: center;
+}
+/* line 119, main.scss */
+.intro .centered .introLogo {
+  width: 100%;
+  height: 220px;
+  margin: 20px 0;
+  background: url("../img/reallife---.png") no-repeat center;
+  background-size: 50% 50%;
+}
+/* line 129, main.scss */
+.intro .centered h1 {
+  font-family: segoe-wp-light;
+  font-size: 50px;
+  color: inherit;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+/* line 138, main.scss */
+.intro .centered p {
+  width: 75%;
+  font-family: segoe-ui-sumbol;
+  font-size: 15px;
+  color: inherit;
+  margin: 25px auto 40px;
+}
+
+/*           content               */
+/* line 151, main.scss */
+.content {
+  width: 100%;
+}
+/* line 154, main.scss */
+.content .centered {
+  overflow: hidden;
+  padding: 60px;
+}
+/* line 158, main.scss */
+.content .centered .container-left {
+  float: left;
+  width: 40%;
+}
+/* line 162, main.scss */
+.content .centered .container-tight {
+  float: right;
+  width: 40%;
+}
+/* line 166, main.scss */
+.content .centered .container-center {
+  width: 10%;
+  margin: 0 45%;
+}
+/* line 170, main.scss */
+.content .centered .container-center .vertical-line-top {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+}
+/* line 180, main.scss */
+.content .centered .container-center .vertical-line {
+  margin: 0 auto;
+  display: block;
+  width: 6px;
+  background-color: #ffffff;
+}
+
+/*          content-box-big             */
+/* line 191, main.scss */
+.box-big {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 30px 0;
+  padding: 18px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*          content-box-small             */
+/* line 204, main.scss */
+.box-small {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 30px 0;
+  padding: 18px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* line 216, main.scss */
+.box-small p {
+  display: inline-block;
+  width: 70%;
+  font-family: segoe-wp-light;
+  font-size: 20px;
+  color: #4e4e4e;
+  margin-bottom: 5px;
+}
+/* line 227, main.scss */
+.box-small button {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  text-align: right;
+  margin-left: 10px;
+  width: 33px;
+  height: 33px;
+  border: 0;
+  background: url("../img/buttonAddSprite.png") no-repeat;
+  background-position: -33px 0;
+}
+/* line 240, main.scss */
+.box-small button:focus {
+  outline: none;
+}
+/* line 243, main.scss */
+.box-small button:active {
+  outline: none;
+  background: url("../img/buttonAddSprite.png") no-repeat;
+  background-position: 0 0;
+}
+
+/*              layerPost                */
+/* line 253, main.scss */
+div.layerPost {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 900px;
+  padding: 18px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*            GLOBAL ELEMENTS          */
+/*              imgForPostGlobal             */
+/* line 276, main.scss */
+img.imgForPostGlobal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0;
+}
+
+/*          textAndLinkForPostGlobal             */
+/* line 284, main.scss */
+a.textAndLinkForPostGlobal {
+  display: block;
+  font-family: segoe-wp-light;
+  font-size: 20px;
+  color: #4e4e4e;
+  margin-bottom: 5px;
+}
+
+/*           shareGlobal               */
+/* line 294, main.scss */
+div.shareGlobal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0;
+}
+/* line 300, main.scss */
+div.shareGlobal > ul > li {
+  display: inline-block;
+}
+/* line 303, main.scss */
+div.shareGlobal > ul > li > a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  background: url("../img/socSprite.png") no-repeat;
+}
+/* line 313, main.scss */
+div.shareGlobal > ul > li > a.link {
+  background-position: -63px -11px;
+}
+/* line 317, main.scss */
+div.shareGlobal > ul > li > a.vk {
+  background-position: -7px -40px;
+}
+/* line 321, main.scss */
+div.shareGlobal > ul > li > a.ok {
+  background-position: -119px -40px;
+}
+/* line 325, main.scss */
+div.shareGlobal > ul > li > a.tw {
+  background-position: -35px -11px;
+}
+
+/*           postFormTypeTextGlobal               */
+/* line 332, main.scss */
+form.postFormTypeTextGlobal {
+  margin: 5px 0;
+}
+/* line 335, main.scss */
+form.postFormTypeTextGlobal > input[type="text"] {
+  vertical-align: top;
+  width: 70%;
+  height: 50px;
+  font-family: segoe-wp-light;
+  font-size: 20px;
+  color: #4e4e4e;
+  padding: 0 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+/* line 351, main.scss */
+form.postFormTypeTextGlobal > input[type="submit"] {
+  vertical-align: top;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: url("../img/inputSprite.png") no-repeat;
+  background-position: 0 0;
+}
+/* line 361, main.scss */
+form.postFormTypeTextGlobal > input[type="submit"]:focus {
+  outline: none;
+}
+/* line 365, main.scss */
+form.postFormTypeTextGlobal > input[type="submit"]:active {
+  outline: none;
+  background: url("../img/inputSprite.png") no-repeat;
+  background-position: -53px 0;
+}
+
+/*           END GLOBAL ELEMENTS          */
+
+/*# sourceMappingURL=main.css.map */

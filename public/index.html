@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forScripts.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="centered">
+                <ul class="nav">
+                    <li><a href="#">главная</a></li>
+                    <li><a href="#">больше</a></li>
+                    <li><a href="#">папулярное</a></li>
+                    <li><a id="openFormAuth" href="#">вход</a> | <a id="openFormRegistration" href="#">регистрация</a></li>
+                </ul>
+                <div class="logoHome"><a href=""></a></div>
+            </div>
+        </header>
+
+        <div class="intro">
+            <div class="centered">
+                <div class="introLogo" hidden></div>
+                <h1>My Photography Portfolio</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="contentCentered" class="centered">
+                <div class="container-left">
+
+                    <div class="box-big">
+                        <a class="textAndLinkForPostGlobal" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, inventore.</a>
+                        <img class="imgForPostGlobal" src="img/imgContent/Layer-5.png" alt="">
+
+
+                        <div class="shareGlobal">
+                            <ul>
+                                <li><a class="link" href="#"></a></li>
+                                <li><a class="vk" href="#"></a></li>
+                                <li><a class="ok" href="#"></a></li>
+                                <li><a class="tw" href="#"></a></li>
+                            </ul>
+                        </div>
+
+                        <form class="postFormTypeTextGlobal" action="">
+                            <input type="text">
+                            <input type="submit" value="">
+                        </form>
+                    </div>
+
+
+                    <div class="box-small">
+                        <p>Lorem ilor sit amet.</p>
+                        <button class="addContent"></button>
+                    </div>
+                </div>
+
+                <div class="container-tight">
+                    <div class="box-small" style="visibility: hidden;">
+                        <p>Lorem ilor sit amet.</p>
+                        <button class="addContent"></button>
+                    </div>
+
+                    <div class="box-big">
+                        <a class="textAndLinkForPostGlobal" href="#">, consectetur adipisicing elit. Incidunt, inventore.</a>
+                        <img class="imgForPostGlobal" src="img/imgContent/Layer-61.png" alt="">
+
+                        <div class="shareGlobal">
+                            <ul>
+                                <li><a class="link" href="#"></a></li>
+                                <li><a class="vk" href="#"></a></li>
+                                <li><a class="ok" href="#"></a></li>
+                                <li><a class="tw" href="#"></a></li>
+                            </ul>
+                        </div>
+
+                        <form class="postFormTypeTextGlobal" action="">
+                            <input type="text">
+                            <input type="submit" value="">
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="container-center">
+                    <div class="vertical-line-top"></div>
+                    <div id="vertical-line" class="vertical-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="formAuth" class="formAuth" hidden>
+        <form class="form auth" action="#">
+            <p>Sign In</p>
+            <input class="userName" type="text" minlength="6" maxlength="46" placeholder="User name" required>
+            <input type="password" minlength="6" maxlength="46" placeholder="******" required>
+            <input type="submit" value="Login to your account" >
+        </form>
+    </div>
+    <div id="formRegistration" class="formRegistration" hidden>
+        <form class="form registration" name="formRegistration" action="#">
+            <p>Registration</p>
+            <input type="text" name="userName" pattern="^[a-zA-Z\s]+$" minlength="6" maxlength="46" placeholder="User name"  class="userName" required>
+            <input type="email" name="email" placeholder="your@email.com" required>
+            <input type="password" name="password" pattern="(?=^.{8,46}$)(^[a-z])((?=.*\d)|(?=.*\W+))(?![.\n]).*$"  minlength="8" maxlength="46" placeholder="Password" required>
+            <input type="password" name="rePassword" placeholder="Request password" required>
+            <input type="text" name="textFromImage" minlength="5" placeholder="text from image" class="textOfImage" required>
+            <img src="img/textFromImg/test.jpg" alt="">
+            <input type="submit" id="submit" value="Registration" >
+        </form>
+    </div>
+    <div id="fullScreenDiv" class="fullScreenDiv" hidden><button id="closeFullScreenDiv" class="closeFullScreenDiv"></button></div>
+    <div id="layerPost" class="layerPost" hidden>
+        <img id="imgForPostGlobal" class="imgForPostGlobal" src="" alt="">
+        <a id="textAndLinkForPostGlobal" class="textAndLinkForPostGlobal"></a>
+
+        <div class="shareGlobal">
+            <ul>
+                <li><a class="link" href="#"></a></li>
+                <li><a class="vk" href="#"></a></li>
+                <li><a class="ok" href="#"></a></li>
+                <li><a class="tw" href="#"></a></li>
+            </ul>
+        </div>
+
+        <form class="postFormTypeTextGlobal" action="">
+            <input type="text">
+            <input type="submit" value="">
+        </form>
+
+    </div>
+</body>
+</html>
