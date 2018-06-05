@@ -18,6 +18,7 @@ window.onload = function () {
     document.getElementById('closeFullScreenDiv').addEventListener('click', closeViewPostFullScreen);
     document.getElementById('fullScreenDiv').addEventListener('click', closeViewPostFullScreen);
 
+    
 
 
 };
@@ -329,61 +330,94 @@ function getOpacity(elem, type, duration) {
 }
 
 
+
+
+
+//---------------===
+//---------------===
+//---------------===
+//---------------===
+//---------------===
+//------------=========
+//--------------=====
+// ---------------=
+// -------------------------------------------------------------------------
+
+
 // function
 getId = (attr) => document.getElementById(attr);
 
 //  view====================================
-
-//  model=============================================
-var shadowLayer = {
-    element: '',
-    opacity: 0,
-    background: '',
-    state: 'close',
-    duration: '0.5s',
-
-    open: function(){
-
+var switcher = {
+    // --------------------------------
+    runShadowLayer: function(el){
+        getId(el).hidden = false;       
     },
-    
-    close: function (){
-
+    exitShadowLayer: function (el){
+        getId(el).hidden = true;                      
     },
-
-
-    openOpacity: function(){
-        let int;
-        if (this.state === 'close'){
-            var th = this;
-            clearInterval(int);
-            let n = 0;
-            int = setInterval(function(){
-                if (n >= 0.9){
-                    n = 0.9;
-                    clearInterval(int);
-                    th.state = 'open';
-                }
-            n = n + 0.1;
-            th.opacity = n;
-
-                
-
-
-            // if (n >= 0.9) {
-            //     n = 0.9;
-            //     clearInterval(int);
-            //     return elem.hidden = false;// при достижении opacity к 1 применяется hidden
-            // }
-            // n = n + 0.1;
-            // elem.style.opacity = n;
-
-
-            }, this.duration)
-        }
+    // --------------------------------
+    // --------------------------------
+    runPopupWindow: function(el){
+        let winX = document.documentElement.clientWidth;
+        let winY = document.documentElement.clientHeight;
+        let elem = getId(el);
+        elem.hidden = false;
     },
-
-    closeOpacity: function(){
-        
+    closePopupWindow: function (el){
+        let elem = getId(el);
+        elem.hidden = true;
     }
 }
 
+
+//  model=============================================
+
+
+
+var popupWindow = {
+    element: '',
+    state: 'close',
+
+    open: function () {
+        if(this.state === 'close'){
+            this.state = 'open';
+            
+            switcher.runPopupWindow(this.element);
+            shadowLayer.open();
+
+            return this.state;
+        }
+    },
+    close: function () {
+        if(this.state === 'open'){
+            this.state = 'close';
+            
+            switcher.closePopupWindow(this.element);
+            shadowLayer.close();
+            
+            return this.state;                        
+        }
+    }
+} 
+// ---------------------------
+var shadowLayer = {
+    element: 'shadow-layer',   //нужно сделать преверочная функция что-бы для каждого элемента проверил 
+    state: 'close',  //         что он есть в DOMе и по резултатам изменить значения state!!!!!!!!
+
+    open: function(){
+        if(this.state === 'close'){
+            switcher.runShadowLayer(this.element)
+            this.state = 'open';
+            return this.state;
+        }
+    },
+    
+    close: function (){
+        if(this.state === 'open'){
+            switcher.exitShadowLayer(this.element)
+            this.state = 'close';
+            return this.state;
+        }
+    }
+}
