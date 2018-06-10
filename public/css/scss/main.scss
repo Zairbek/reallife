@@ -79,6 +79,7 @@ header {
 
           padding: 12px 5px 10px;
           border-bottom: 2px solid transparent;
+          cursor: pointer;
 
           transition: all 200ms linear;
           &:last-child {
@@ -108,43 +109,6 @@ header {
 }
 
 
-/*           intro           */
-
-.intro{
-  width: 100%;
-  text-align: center;
-
-  .centered{
-
-    .introLogo{
-      width: 100%;
-      height: 220px;
-
-      margin: 20px 0;
-
-      background: url("../img/reallife---.png") no-repeat center;
-      background-size: 50% 50%;
-    }
-
-    h1 {
-      font-family: segoe-wp-light;
-      font-size: 50px;
-      color: inherit;
-
-      margin-top: 30px;
-      margin-bottom: 25px;
-    }
-
-    p {
-      width: 75%;
-      font-family: segoe-ui-sumbol;
-      font-size: 15px;
-      color: inherit;
-
-      margin: 25px auto 40px;
-    }
-  }
-}
 
 /*           content               */
 
@@ -159,7 +123,7 @@ header {
       float: left;
       width: 40%;
     }
-    .container-tight{
+    .container-right{
       float: right;
       width: 40%;
     }

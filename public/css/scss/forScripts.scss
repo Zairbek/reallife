@@ -142,7 +142,7 @@ $shadow-layer: rgba(51, 50, 51, 0.685);
     }
 
     > input[type="submit"]:focus, > .userName:focus, > input[type="email"]:focus, > input[type="password"]:focus, >.textOfImage:focus {
-      outline: none;
+      // outline: none;
     }
   }
 }

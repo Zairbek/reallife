@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/forScripts.css">
     <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
 </head>
 <body>
     <div class="main">
@@ -18,24 +19,12 @@
                     <li><a href="#">главная</a></li>
                     <li><a href="#">больше</a></li>
                     <li><a href="#">папулярное</a></li>
-                    <li><a id="openFormAuth" href="#">вход</a> | <a id="openFormRegistration" href="#">регистрация</a></li>
+                    <li><a id="openFormAuth">вход</a> | <a id="openFormRegistration">регистрация</a></li>
                 </ul>
                 <div class="logoHome"><a href=""></a></div>
             </div>
         </header>
 
-        <div class="intro">
-            <div class="centered">
-                <div class="introLogo" hidden></div>
-                <h1>My Photography Portfolio</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
 
         <div class="content">
             <div id="contentCentered" class="centered">
@@ -68,7 +57,7 @@
                     </div>
                 </div>
 
-                <div class="container-tight">
+                <div class="container-right">
                     <div class="box-small" style="visibility: hidden;">
                         <p>Lorem ilor sit amet.</p>
                         <button class="addContent"></button>
@@ -115,9 +104,9 @@
     
     
     <div id="formAuth" class="formAuth" hidden>
-        <form class="form auth" action="#">
+        <form class="form auth" action="#" name="formAuth">
             <p>Sign In</p>
-            <input class="userName" type="text" minlength="6" maxlength="46" placeholder="User name" required>
+            <input type="text" name="userName" class="userName" minlength="6" maxlength="46" placeholder="User name" required>
             <input type="password" minlength="6" maxlength="46" placeholder="******" required>
             <input type="submit" value="Login to your account" >
         </form>
