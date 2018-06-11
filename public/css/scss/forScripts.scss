@@ -20,7 +20,17 @@ $shadow-layer: rgba(51, 50, 51, 0.685);
   z-index: 9;
   
   background-color: $shadow-layer;
+
+  .btn-close{
+    position: sticky;
+    top: 30px;
+    left: 93%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
+
 
 
 

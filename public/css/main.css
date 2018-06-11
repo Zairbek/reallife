@@ -52,59 +52,60 @@ header {
     /* line 66, main.scss */
     header .centered .nav {
       float: right;
-      text-align: right; }
-      /* line 70, main.scss */
+      text-align: right;
+      margin-right: 10px; }
+      /* line 71, main.scss */
       header .centered .nav li {
         display: inline-block;
         margin-left: 10px; }
-        /* line 74, main.scss */
+        /* line 75, main.scss */
         header .centered .nav li a {
           display: inline-block;
           font-family: segoe-print-bold;
-          font-size: 16px;
+          font-size: 14px;
           text-transform: capitalize;
-          padding: 12px 5px 10px;
+          padding: 8px 0 6px;
           border-bottom: 2px solid transparent;
           cursor: pointer;
           transition: all 200ms linear; }
-          /* line 85, main.scss */
+          /* line 86, main.scss */
           header .centered .nav li a:last-child {
             padding-right: 0; }
-          /* line 88, main.scss */
+          /* line 89, main.scss */
           header .centered .nav li a:hover {
             border-bottom: 2px solid #fff; }
-    /* line 95, main.scss */
+    /* line 96, main.scss */
     header .centered .logoHome {
       text-align: left; }
-      /* line 98, main.scss */
+      /* line 99, main.scss */
       header .centered .logoHome a {
         display: block;
         width: 200px;
-        height: 50px;
+        height: 35px;
         background: url("../img/reallife---.png") no-repeat center;
-        background-size: 150px 45px; }
+        background-size: 150px 30px; }
 
 /*           content               */
-/* line 115, main.scss */
+/* line 116, main.scss */
 .content {
   width: 100%; }
-  /* line 118, main.scss */
+  /* line 119, main.scss */
   .content .centered {
     overflow: hidden;
     padding: 60px; }
-    /* line 122, main.scss */
+    /* line 123, main.scss */
     .content .centered .container-left {
       float: left;
       width: 40%; }
-    /* line 126, main.scss */
+    /* line 127, main.scss */
     .content .centered .container-right {
       float: right;
       width: 40%; }
-    /* line 130, main.scss */
+    /* line 131, main.scss */
     .content .centered .container-center {
       width: 10%;
       margin: 0 45%; }
-      /* line 134, main.scss */
+      /* line 135, main.scss */
       .content .centered .container-center .vertical-line-top {
         width: 25px;
         height: 25px;
@@ -113,7 +114,7 @@ header {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
-      /* line 144, main.scss */
+      /* line 145, main.scss */
       .content .centered .container-center .vertical-line {
         margin: 0 auto;
         display: block;
@@ -121,7 +122,7 @@ header {
         background-color: #ffffff; }
 
 /*          content-box-big             */
-/* line 155, main.scss */
+/* line 156, main.scss */
 .box-big {
   box-sizing: border-box;
   width: 100%;
@@ -132,7 +133,7 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 /*          content-box-small             */
-/* line 168, main.scss */
+/* line 169, main.scss */
 .box-small {
   box-sizing: border-box;
   width: 100%;
@@ -142,7 +143,7 @@ header {
   background-color: #fff;
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 180, main.scss */
+  /* line 181, main.scss */
   .box-small p {
     display: inline-block;
     width: 70%;
@@ -150,7 +151,7 @@ header {
     font-size: 20px;
     color: #4e4e4e;
     margin-bottom: 5px; }
-  /* line 191, main.scss */
+  /* line 192, main.scss */
   .box-small button {
     position: absolute;
     top: 18px;
@@ -162,10 +163,10 @@ header {
     border: 0;
     background: url("../img/buttonAddSprite.png") no-repeat;
     background-position: -33px 0; }
-    /* line 204, main.scss */
+    /* line 205, main.scss */
     .box-small button:focus {
       outline: none; }
-    /* line 207, main.scss */
+    /* line 208, main.scss */
     .box-small button:active {
       outline: none;
       background: url("../img/buttonAddSprite.png") no-repeat;
@@ -173,14 +174,14 @@ header {
 
 /*            GLOBAL ELEMENTS          */
 /*              imgForPostGlobal             */
-/* line 226, main.scss */
+/* line 227, main.scss */
 img.imgForPostGlobal {
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0; }
 
 /*          textAndLinkForPostGlobal             */
-/* line 234, main.scss */
+/* line 235, main.scss */
 a.textAndLinkForPostGlobal {
   display: block;
   font-family: segoe-wp-light;
@@ -189,39 +190,39 @@ a.textAndLinkForPostGlobal {
   margin-bottom: 5px; }
 
 /*           shareGlobal               */
-/* line 244, main.scss */
+/* line 245, main.scss */
 div.shareGlobal {
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0; }
-  /* line 250, main.scss */
+  /* line 251, main.scss */
   div.shareGlobal > ul > li {
     display: inline-block; }
-    /* line 253, main.scss */
+    /* line 254, main.scss */
     div.shareGlobal > ul > li > a {
       display: block;
       width: 25px;
       height: 25px;
       margin: 0 5px;
       background: url("../img/socSprite.png") no-repeat; }
-    /* line 263, main.scss */
+    /* line 264, main.scss */
     div.shareGlobal > ul > li > a.link {
       background-position: -63px -11px; }
-    /* line 267, main.scss */
+    /* line 268, main.scss */
     div.shareGlobal > ul > li > a.vk {
       background-position: -7px -40px; }
-    /* line 271, main.scss */
+    /* line 272, main.scss */
     div.shareGlobal > ul > li > a.ok {
       background-position: -119px -40px; }
-    /* line 275, main.scss */
+    /* line 276, main.scss */
     div.shareGlobal > ul > li > a.tw {
       background-position: -35px -11px; }
 
 /*           postFormTypeTextGlobal               */
-/* line 282, main.scss */
+/* line 283, main.scss */
 form.postFormTypeTextGlobal {
   margin: 5px 0; }
-  /* line 285, main.scss */
+  /* line 286, main.scss */
   form.postFormTypeTextGlobal > input[type="text"] {
     vertical-align: top;
     width: 70%;
@@ -233,7 +234,7 @@ form.postFormTypeTextGlobal {
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background-color: #f2f2f2; }
-  /* line 301, main.scss */
+  /* line 302, main.scss */
   form.postFormTypeTextGlobal > input[type="submit"] {
     vertical-align: top;
     float: right;
@@ -242,10 +243,10 @@ form.postFormTypeTextGlobal {
     border: 0;
     background: url("../img/inputSprite.png") no-repeat;
     background-position: 0 0; }
-    /* line 311, main.scss */
+    /* line 312, main.scss */
     form.postFormTypeTextGlobal > input[type="submit"]:focus {
       outline: none; }
-    /* line 315, main.scss */
+    /* line 316, main.scss */
     form.postFormTypeTextGlobal > input[type="submit"]:active {
       outline: none;
       background: url("../img/inputSprite.png") no-repeat;

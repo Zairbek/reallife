@@ -21,14 +21,20 @@ window.onload = function(){
         popupWindow.close();
     });
 
+    window.addEventListener('keydown', function(e){ e.keyCode === 27 ?  popupWindow.close() : false });
 
-    
+
+
+    document.formRegistration.userName.addEventListener('input', validate.userName);
+    document.formRegistration.password.addEventListener('input', validate.password);
+    document.formRegistration.rePassword.addEventListener('input', validate.rePassword);
+
+
 
     verticalLine();
 
 
 
-    window.addEventListener('keydown', function(e){ e.keyCode === 27 ?  popupWindow.close() : false });
 
 
 }

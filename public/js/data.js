@@ -1,34 +1,7 @@
 
-//  форма Регистрация
-function funcOpenFormRegistration() {
-    document.body.style.overflow = 'hidden';
-    fullScreenDiv('radial-gradient(circle, rgba(60, 76, 90, 0.9), rgba(113, 143, 169, 0.9))');
-    formRegistration();
+var validate = {
 
-
-}
-
-
-function formRegistration() {
-    var winX = document.documentElement.clientWidth;
-    var winY = document.documentElement.clientHeight;
-    var form = document.getElementById('formRegistration');
-
-    form.style.opacity = 0;
-    getOpacity(form, true, 10);
-
-
-    form.style.top = (winY / 2) - ((form.clientHeight / 2) + (form.clientHeight / 3)) + 'px';
-    form.style.left = (winX / 2) - (form.clientWidth / 2) + 'px';
-
-    document.formRegistration.userName.addEventListener('input', formValidateUserName);
-    document.formRegistration.password.addEventListener('input', formValidatePassword);
-    document.formRegistration.rePassword.addEventListener('input', formValidateRePassword);
-}
-
-
-// проверка валидностьи Формы регистрации
-function formValidateUserName() {
+  userName: function(){
     var invalideMessage = [];
     var input = this;
 
@@ -51,10 +24,9 @@ function formValidateUserName() {
         var message = invalideMessage.join(', \n');
         input.setCustomValidity(message);
     });
+  },
 
-}
-
-function formValidatePassword() {
+  password: function(){
     var invalideMessage = [];
     var input = this;
 
@@ -78,9 +50,9 @@ function formValidatePassword() {
         input.setCustomValidity(message);
     });
 
-}
+  },
 
-function formValidateRePassword() {
+  rePassword: function(){
     var form = document.formRegistration;
     var inputPassword = form.password;
     var inputRePassword = form.rePassword;
@@ -98,9 +70,6 @@ function formValidateRePassword() {
         var message = invalideMessage.join(', \n');
         inputRePassword.setCustomValidity(message);
     })
+  }
+  
 }
-
-
-
-
-

@@ -11,27 +11,35 @@
   bottom: 0;
   z-index: 9;
   background-color: rgba(51, 50, 51, 0.685); }
+  /* line 24, forScripts.scss */
+  .shadow-layer .btn-close {
+    position: sticky;
+    top: 30px;
+    left: 93%;
+    background: transparent;
+    border: none;
+    cursor: pointer; }
 
 /*         formAuth          */
-/* line 60, forScripts.scss */
+/* line 70, forScripts.scss */
 .formAuth, .formRegistration {
   position: absolute;
   z-index: 10;
   left: 0;
   top: 0;
   box-sizing: border-box; }
-  /* line 65, forScripts.scss */
+  /* line 75, forScripts.scss */
   .formAuth .form, .formRegistration .form {
     width: 500px;
     background: rgba(60, 76, 90, 0.9);
     padding: 30px;
     border-radius: 10px; }
-    /* line 71, forScripts.scss */
+    /* line 81, forScripts.scss */
     .formAuth .form > p, .formRegistration .form > p {
       font-family: segoe-wp-light;
       font-size: 30px;
       margin-bottom: 10px; }
-    /* line 77, forScripts.scss */
+    /* line 87, forScripts.scss */
     .formAuth .form > .userName, .formAuth .form > input[type="email"], .formAuth .form > input[type="password"], .formRegistration .form > .userName, .formRegistration .form > input[type="email"], .formRegistration .form > input[type="password"] {
       width: 100%;
       height: 40px;
@@ -44,7 +52,7 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 95, forScripts.scss */
+    /* line 105, forScripts.scss */
     .formAuth .form > .textOfImage, .formRegistration .form > .textOfImage {
       width: 40%;
       height: 40px;
@@ -57,7 +65,7 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 112, forScripts.scss */
+    /* line 122, forScripts.scss */
     .formAuth .form > img, .formRegistration .form > img {
       display: inline-block;
       float: right;
@@ -67,7 +75,7 @@
       margin: 5px 0;
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 127, forScripts.scss */
+    /* line 137, forScripts.scss */
     .formAuth .form > input[type="submit"], .formRegistration .form > input[type="submit"] {
       display: block;
       width: 95%;
@@ -82,7 +90,7 @@
       box-sizing: border-box; }
 
 /*              layerPost                */
-/* line 156, forScripts.scss */
+/* line 166, forScripts.scss */
 div.layerPost {
   position: absolute;
   box-sizing: border-box;
