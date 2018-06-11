@@ -72,7 +72,7 @@ header {
         display: inline-block;
         margin-left: 10px;
 
-        a {
+        >a {
           display: inline-block;
           font-family: segoe-print-bold;
           font-size: 14px;
@@ -96,7 +96,7 @@ header {
     .logoHome {
       text-align: left;
 
-      a {
+      >a {
         display: block;
 
         width: 200px;
@@ -152,6 +152,9 @@ header {
   }
 }
 
+
+
+
 /*          content-box-big             */
 .box-big {
   box-sizing: border-box;
@@ -177,17 +180,6 @@ header {
   position: relative;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-  p {
-    display: inline-block;
-    width: 70%;
-
-    font-family: segoe-wp-light;
-    font-size: 20px;
-    color: #4e4e4e;
-
-    margin-bottom: 5px;
-  }
 
   button {
     position: absolute;
@@ -223,6 +215,22 @@ header {
 
 
 /*            GLOBAL ELEMENTS          */
+/*-------------------------------------*/
+/*               post-text             */
+/*    все тексты связанные с постом    */
+
+p.post-text {
+  display: inline-block;
+
+  font-family: segoe-wp-light;
+  font-size: 16px;
+  color: #4e4e4e;
+
+  margin-bottom: 5px;
+}
+
+
+
 /*              imgForPostGlobal             */
 img.imgForPostGlobal{
   box-sizing: border-box;
@@ -231,15 +239,6 @@ img.imgForPostGlobal{
   margin: 5px 0;
 }
 
-/*          textAndLinkForPostGlobal             */
-a.textAndLinkForPostGlobal {
-  display: block;
-  font-family: segoe-wp-light;
-  font-size: 20px;
-  color: #4e4e4e;
-
-  margin-bottom: 5px;
-}
 
 /*           shareGlobal               */
 div.shareGlobal {

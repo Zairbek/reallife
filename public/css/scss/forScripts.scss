@@ -25,9 +25,21 @@ $shadow-layer: rgba(51, 50, 51, 0.685);
     position: sticky;
     top: 30px;
     left: 93%;
+    width: 35px;
+    height: 35px;
     background: transparent;
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
+    
+    &:hover{
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+
+    &:focus{
+      outline: none;
+    }
   }
 }
 
