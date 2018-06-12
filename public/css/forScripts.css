@@ -2,7 +2,7 @@
 /*==========Цветовая палитра==========*/
 /*==========Цветовая палитра==========*/
 /*            shadow-layer           */
-/* line 14, scss/forScripts.scss */
+/* line 12, scss/forScripts.scss */
 .shadow-layer {
   position: absolute;
   top: 0;
@@ -11,7 +11,7 @@
   bottom: 0;
   z-index: 9;
   background-color: rgba(51, 50, 51, 0.685); }
-  /* line 24, scss/forScripts.scss */
+  /* line 22, scss/forScripts.scss */
   .shadow-layer .btn-close {
     position: sticky;
     top: 30px;
@@ -22,34 +22,37 @@
     border: none;
     cursor: pointer;
     box-sizing: border-box; }
-    /* line 35, scss/forScripts.scss */
+    /* line 33, scss/forScripts.scss */
     .shadow-layer .btn-close:hover {
       border: 1px solid white;
       border-radius: 5px; }
-    /* line 40, scss/forScripts.scss */
+    /* line 38, scss/forScripts.scss */
     .shadow-layer .btn-close:focus {
       outline: none; }
+    /* line 42, scss/forScripts.scss */
+    .shadow-layer .btn-close > i {
+      color: #fff; }
 
 /*         formAuth          */
-/* line 82, scss/forScripts.scss */
+/* line 84, scss/forScripts.scss */
 .formAuth, .formRegistration {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   left: 0;
   top: 0;
   box-sizing: border-box; }
-  /* line 87, scss/forScripts.scss */
+  /* line 89, scss/forScripts.scss */
   .formAuth .form, .formRegistration .form {
     width: 500px;
     background: rgba(60, 76, 90, 0.9);
     padding: 30px;
     border-radius: 10px; }
-    /* line 93, scss/forScripts.scss */
+    /* line 95, scss/forScripts.scss */
     .formAuth .form > p, .formRegistration .form > p {
       font-family: segoe-wp-light;
       font-size: 30px;
       margin-bottom: 10px; }
-    /* line 99, scss/forScripts.scss */
+    /* line 101, scss/forScripts.scss */
     .formAuth .form > .userName, .formAuth .form > input[type="email"], .formAuth .form > input[type="password"], .formRegistration .form > .userName, .formRegistration .form > input[type="email"], .formRegistration .form > input[type="password"] {
       width: 100%;
       height: 40px;
@@ -62,7 +65,7 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 117, scss/forScripts.scss */
+    /* line 119, scss/forScripts.scss */
     .formAuth .form > .textOfImage, .formRegistration .form > .textOfImage {
       width: 40%;
       height: 40px;
@@ -75,7 +78,7 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 134, scss/forScripts.scss */
+    /* line 136, scss/forScripts.scss */
     .formAuth .form > img, .formRegistration .form > img {
       display: inline-block;
       float: right;
@@ -85,7 +88,7 @@
       margin: 5px 0;
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 149, scss/forScripts.scss */
+    /* line 151, scss/forScripts.scss */
     .formAuth .form > input[type="submit"], .formRegistration .form > input[type="submit"] {
       display: block;
       width: 95%;
@@ -100,14 +103,14 @@
       box-sizing: border-box; }
 
 /*              layerPost                */
-/* line 178, scss/forScripts.scss */
+/* line 180, scss/forScripts.scss */
 div.layerPost {
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   z-index: 10;
   top: 0;
   left: 0;
-  width: 900px;
+  width: 1024px;
   padding: 18px;
   border-radius: 10px;
   background-color: #fff;

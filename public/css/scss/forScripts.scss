@@ -3,14 +3,12 @@ $text: #000;
 $background: #71777d;
 $head-background: rgb(238, 238, 238);
 $shadow-layer: rgba(51, 50, 51, 0.685);
+$post-background: grey;
 /*==========Цветовая палитра==========*/ 
 
+
+
 /*            shadow-layer           */
-
-
-
-  
-
 .shadow-layer{
   position: absolute;
   top: 0;
@@ -39,6 +37,10 @@ $shadow-layer: rgba(51, 50, 51, 0.685);
 
     &:focus{
       outline: none;
+    }
+
+    >i {
+      color: #fff;
     }
   }
 }
@@ -80,7 +82,7 @@ $shadow-layer: rgba(51, 50, 51, 0.685);
 
 /*         formAuth          */
 .formAuth, .formRegistration {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   left: 0;top: 0;
   box-sizing: border-box;
@@ -176,12 +178,12 @@ $shadow-layer: rgba(51, 50, 51, 0.685);
 
 /*              layerPost                */
 div.layerPost{
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   z-index: 10;
   top:0;
   left: 0;
-  width: 900px;
+  width: 1024px;
   padding: 18px;
 
   border-radius: 10px;

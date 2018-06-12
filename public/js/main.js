@@ -13,6 +13,11 @@ window.onload = function(){
         document.formRegistration.userName.focus();
     });
 
+    getId('open').addEventListener('click' , function(){
+        popupWindow.element = 'layerPost';
+        popupWindow.open();
+    });
+
     getId('shadow-layer').addEventListener('click' , function(){
         popupWindow.close();
     });
@@ -88,8 +93,17 @@ var switcher = {
         let eX = e.offsetWidth;
         let eY = e.offsetHeight;
 
-        e.style.top =  ( (winY / 2) -  ( eY / 2  ) + sTop)  + 'px';
-        e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
+        if(winY < eY){
+            
+            e.style.top =   sTop  + 'px';
+            e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
+            e.style.height = winY + "px";
+            
+        }else{
+            e.style.top =  (winY / 2) - ( eY / 2 ) + 'px';
+            e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
+        }
+
 
     },
     closePopupWindow: function (el){
@@ -130,6 +144,7 @@ var popupWindow = {
         }
     }
 } 
+
 // ---------------------------
 var shadowLayer = {
     element: 'shadow-layer',   //нужно сделать проверочная функция что-бы для каждого элемента проверил 

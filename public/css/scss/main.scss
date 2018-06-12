@@ -1,4 +1,16 @@
 //@import url("forScript.css") ;
+/*==========Цветовая палитра==========*/ 
+$background: #003545;
+$head-background: #c4ffdd;
+$shadow-layer: rgba(51, 50, 51, 0.685);
+$post-background: #f9f9f9;
+$head-text: #040615;
+$post-text: #040615;
+$input-text: #040615;
+$input-background: white;
+/*==========Цветовая палитра==========*/ 
+
+/*==========FONTS==========*/ 
 @font-face {
   font-family: segoe-ui-sumbol;
   src: url("../fonts/segoe-ui-symbol.ttf");
@@ -18,6 +30,9 @@
   font-family: segoe-ui-bold-italic;
   src: url("../fonts/segoe-ui-bold-italic.ttf");
 }
+/*==========FONTS==========*/ 
+
+
 
 * {
   text-decoration: none;
@@ -25,7 +40,7 @@
   margin: 0;
   padding: 0;
 
-  color: #fff;
+  color: $head-text;
   font-family: segoe-wp-light;
   font-size: 16px;
   font-weight: normal;
@@ -34,13 +49,12 @@
 body {
   width: 100%;
   position: relative;
-
 }
 
 .main {
   width: 100%;
 
-  background-color: #3C4C5A;
+  background-color: $background;
 }
 
 .centered {
@@ -58,7 +72,8 @@ header {
   top: 0;
   border-bottom: 1px solid #fff;
 
-  background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4));
+  background: $head-background;
+  // background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4));
 
   .centered {
     overflow: hidden;
@@ -102,8 +117,16 @@ header {
         width: 200px;
         height: 35px;
 
-        background: url("../img/reallife---.png") no-repeat center;
-        background-size: 150px 30px;
+        font-family: segoe-print-bold;
+        font-size: 20px;
+        padding: 2px 0;
+
+        color: $head-text;
+
+
+
+        // background: url("../img/reallife---.png") no-repeat center;
+        // background-size: 150px 30px;
       }
     }
   }
@@ -118,35 +141,35 @@ header {
 
   .centered{
     overflow: hidden;
-    padding: 60px;
+    padding: 30px;
 
     .container-left{
       float: left;
-      width: 40%;
+      width: 45%;
     }
+    
     .container-right{
       float: right;
-      width: 40%;
+      width: 45%;
     }
+
     .container-center{
       width: 10%;
-      margin: 0 45%;
-      
+      margin: 0 45%;  
       .vertical-line-top{
         width: 25px;
         height: 25px;
         margin: 0 auto;
-        border: 5px solid #ffffff;
+        border: 5px solid #c4ffdd;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
       }
-
       .vertical-line{
         margin: 0 auto;
         display: block;
         width: 6px;
-        background-color: #ffffff;
+        background-color: #c4ffdd;
       }
     }
   }
@@ -163,10 +186,12 @@ header {
   padding: 18px;
 
   border-radius: 10px;
-  background-color: #fff;
+  background-color: $post-background;
 
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+
 
 /*          content-box-small             */
 .box-small {
@@ -176,9 +201,8 @@ header {
   padding: 18px;
 
   border-radius: 10px;
-  background-color: #fff;
-  position: relative;
-
+  background-color: $post-background;
+  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
   button {
@@ -216,15 +240,16 @@ header {
 
 /*            GLOBAL ELEMENTS          */
 /*-------------------------------------*/
+
+
 /*               post-text             */
 /*    все тексты связанные с постом    */
-
 p.post-text {
   display: inline-block;
 
   font-family: segoe-wp-light;
   font-size: 16px;
-  color: #4e4e4e;
+  color: $post-text;
 
   margin-bottom: 5px;
 }
@@ -232,12 +257,15 @@ p.post-text {
 
 
 /*              imgForPostGlobal             */
-img.imgForPostGlobal{
+img.imgPostGlobal{
   box-sizing: border-box;
   width: 100%;
 
   margin: 5px 0;
 }
+
+
+
 
 
 /*           shareGlobal               */
@@ -277,6 +305,9 @@ div.shareGlobal {
     }
   }
 }
+
+
+
 
 /*           postFormTypeTextGlobal               */
 form.postFormTypeTextGlobal {

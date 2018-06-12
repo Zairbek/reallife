@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*==========Цветовая палитра==========*/
+/*==========Цветовая палитра==========*/
+/*==========FONTS==========*/
 @font-face {
   font-family: segoe-ui-sumbol;
   src: url("../fonts/segoe-ui-symbol.ttf"); }
@@ -11,28 +14,29 @@
 @font-face {
   font-family: segoe-ui-bold-italic;
   src: url("../fonts/segoe-ui-bold-italic.ttf"); }
-/* line 22, scss/main.scss */
+/*==========FONTS==========*/
+/* line 37, scss/main.scss */
 * {
   text-decoration: none;
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #040615;
   font-family: segoe-wp-light;
   font-size: 16px;
   font-weight: normal; }
 
-/* line 34, scss/main.scss */
+/* line 49, scss/main.scss */
 body {
   width: 100%;
   position: relative; }
 
-/* line 40, scss/main.scss */
+/* line 54, scss/main.scss */
 .main {
   width: 100%;
-  background-color: #3C4C5A; }
+  background-color: #003545; }
 
-/* line 46, scss/main.scss */
+/* line 60, scss/main.scss */
 .centered {
   max-width: 1024px;
   min-width: 680px;
@@ -40,26 +44,26 @@ body {
   box-sizing: border-box; }
 
 /*        header        */
-/* line 55, scss/main.scss */
+/* line 69, scss/main.scss */
 header {
   width: 100%;
   position: sticky;
   top: 0;
   border-bottom: 1px solid #fff;
-  background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4)); }
-  /* line 63, scss/main.scss */
+  background: #c4ffdd; }
+  /* line 78, scss/main.scss */
   header .centered {
     overflow: hidden; }
-    /* line 66, scss/main.scss */
+    /* line 81, scss/main.scss */
     header .centered .nav {
       float: right;
       text-align: right;
       margin-right: 10px; }
-      /* line 71, scss/main.scss */
+      /* line 86, scss/main.scss */
       header .centered .nav li {
         display: inline-block;
         margin-left: 10px; }
-        /* line 75, scss/main.scss */
+        /* line 90, scss/main.scss */
         header .centered .nav li > a {
           display: inline-block;
           font-family: segoe-print-bold;
@@ -69,82 +73,83 @@ header {
           border-bottom: 2px solid transparent;
           cursor: pointer;
           transition: all 200ms linear; }
-          /* line 86, scss/main.scss */
+          /* line 101, scss/main.scss */
           header .centered .nav li > a:last-child {
             padding-right: 0; }
-          /* line 89, scss/main.scss */
+          /* line 104, scss/main.scss */
           header .centered .nav li > a:hover {
             border-bottom: 2px solid #fff; }
-    /* line 96, scss/main.scss */
+    /* line 111, scss/main.scss */
     header .centered .logoHome {
       text-align: left; }
-      /* line 99, scss/main.scss */
+      /* line 114, scss/main.scss */
       header .centered .logoHome > a {
         display: block;
         width: 200px;
         height: 35px;
-        background: url("../img/reallife---.png") no-repeat center;
-        background-size: 150px 30px; }
+        font-family: segoe-print-bold;
+        font-size: 20px;
+        padding: 2px 0;
+        color: #040615; }
 
 /*           content               */
-/* line 116, scss/main.scss */
+/* line 139, scss/main.scss */
 .content {
   width: 100%; }
-  /* line 119, scss/main.scss */
+  /* line 142, scss/main.scss */
   .content .centered {
     overflow: hidden;
-    padding: 60px; }
-    /* line 123, scss/main.scss */
+    padding: 30px; }
+    /* line 146, scss/main.scss */
     .content .centered .container-left {
       float: left;
-      width: 40%; }
-    /* line 127, scss/main.scss */
+      width: 45%; }
+    /* line 151, scss/main.scss */
     .content .centered .container-right {
       float: right;
-      width: 40%; }
-    /* line 131, scss/main.scss */
+      width: 45%; }
+    /* line 156, scss/main.scss */
     .content .centered .container-center {
       width: 10%;
       margin: 0 45%; }
-      /* line 135, scss/main.scss */
+      /* line 159, scss/main.scss */
       .content .centered .container-center .vertical-line-top {
         width: 25px;
         height: 25px;
         margin: 0 auto;
-        border: 5px solid #ffffff;
+        border: 5px solid #c4ffdd;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
-      /* line 145, scss/main.scss */
+      /* line 168, scss/main.scss */
       .content .centered .container-center .vertical-line {
         margin: 0 auto;
         display: block;
         width: 6px;
-        background-color: #ffffff; }
+        background-color: #c4ffdd; }
 
 /*          content-box-big             */
-/* line 159, scss/main.scss */
+/* line 182, scss/main.scss */
 .box-big {
   box-sizing: border-box;
   width: 100%;
   margin: 30px 0;
   padding: 18px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 /*          content-box-small             */
-/* line 172, scss/main.scss */
+/* line 197, scss/main.scss */
 .box-small {
   box-sizing: border-box;
   width: 100%;
   margin: 30px 0;
   padding: 18px;
   border-radius: 10px;
-  background-color: #fff;
-  position: relative;
+  background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 184, scss/main.scss */
+  /* line 208, scss/main.scss */
   .box-small button {
     position: absolute;
     top: 18px;
@@ -156,10 +161,10 @@ header {
     border: 0;
     background: url("../img/buttonAddSprite.png") no-repeat;
     background-position: -33px 0; }
-    /* line 197, scss/main.scss */
+    /* line 221, scss/main.scss */
     .box-small button:focus {
       outline: none; }
-    /* line 200, scss/main.scss */
+    /* line 224, scss/main.scss */
     .box-small button:active {
       outline: none;
       background: url("../img/buttonAddSprite.png") no-repeat;
@@ -169,55 +174,55 @@ header {
 /*-------------------------------------*/
 /*               post-text             */
 /*    все тексты связанные с постом    */
-/* line 222, scss/main.scss */
+/* line 247, scss/main.scss */
 p.post-text {
   display: inline-block;
   font-family: segoe-wp-light;
   font-size: 16px;
-  color: #4e4e4e;
+  color: #040615;
   margin-bottom: 5px; }
 
 /*              imgForPostGlobal             */
-/* line 235, scss/main.scss */
-img.imgForPostGlobal {
+/* line 260, scss/main.scss */
+img.imgPostGlobal {
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0; }
 
 /*           shareGlobal               */
-/* line 244, scss/main.scss */
+/* line 272, scss/main.scss */
 div.shareGlobal {
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0; }
-  /* line 250, scss/main.scss */
+  /* line 278, scss/main.scss */
   div.shareGlobal > ul > li {
     display: inline-block; }
-    /* line 253, scss/main.scss */
+    /* line 281, scss/main.scss */
     div.shareGlobal > ul > li > a {
       display: block;
       width: 25px;
       height: 25px;
       margin: 0 5px;
       background: url("../img/socSprite.png") no-repeat; }
-    /* line 263, scss/main.scss */
+    /* line 291, scss/main.scss */
     div.shareGlobal > ul > li > a.link {
       background-position: -63px -11px; }
-    /* line 267, scss/main.scss */
+    /* line 295, scss/main.scss */
     div.shareGlobal > ul > li > a.vk {
       background-position: -7px -40px; }
-    /* line 271, scss/main.scss */
+    /* line 299, scss/main.scss */
     div.shareGlobal > ul > li > a.ok {
       background-position: -119px -40px; }
-    /* line 275, scss/main.scss */
+    /* line 303, scss/main.scss */
     div.shareGlobal > ul > li > a.tw {
       background-position: -35px -11px; }
 
 /*           postFormTypeTextGlobal               */
-/* line 282, scss/main.scss */
+/* line 313, scss/main.scss */
 form.postFormTypeTextGlobal {
   margin: 5px 0; }
-  /* line 285, scss/main.scss */
+  /* line 316, scss/main.scss */
   form.postFormTypeTextGlobal > input[type="text"] {
     vertical-align: top;
     width: 70%;
@@ -229,7 +234,7 @@ form.postFormTypeTextGlobal {
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background-color: #f2f2f2; }
-  /* line 301, scss/main.scss */
+  /* line 332, scss/main.scss */
   form.postFormTypeTextGlobal > input[type="submit"] {
     vertical-align: top;
     float: right;
@@ -238,10 +243,10 @@ form.postFormTypeTextGlobal {
     border: 0;
     background: url("../img/inputSprite.png") no-repeat;
     background-position: 0 0; }
-    /* line 311, scss/main.scss */
+    /* line 342, scss/main.scss */
     form.postFormTypeTextGlobal > input[type="submit"]:focus {
       outline: none; }
-    /* line 315, scss/main.scss */
+    /* line 346, scss/main.scss */
     form.postFormTypeTextGlobal > input[type="submit"]:active {
       outline: none;
       background: url("../img/inputSprite.png") no-repeat;
