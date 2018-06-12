@@ -14,7 +14,7 @@ window.onload = function(){
     });
 
     getId('open').addEventListener('click' , function(){
-        popupWindow.element = 'layerPost';
+        popupWindow.element = 'layer-post';
         popupWindow.open();
     });
 
@@ -29,13 +29,9 @@ window.onload = function(){
     window.addEventListener('keydown', function(e){ e.keyCode === 27 ?  popupWindow.close() : false });
 
 
-
     document.formRegistration.userName.addEventListener('input', validate.userName);
     document.formRegistration.password.addEventListener('input', validate.password);
     document.formRegistration.rePassword.addEventListener('input', validate.rePassword);
-
-
-
     verticalLine();
 
 
@@ -65,7 +61,13 @@ function verticalLine(){
     var verticalLine = getId('vertical-line');
     verticalLine.style.height = contentHeight + 'px';
 }
+function imgLayerPost(){
+    let e = getId('img-layer-post');
+    let eWidth = e.clientHeight
 
+    let el = document.querySelector('.layer-left');
+    e.style.marginTop = (el.clientHeight / 2) - (eWidth / 2) + 'px';
+}
 
 
 //  view====================================
@@ -93,12 +95,12 @@ var switcher = {
         let eX = e.offsetWidth;
         let eY = e.offsetHeight;
 
-        if(winY < eY){
-            
-            e.style.top =   sTop  + 'px';
+        if(popupWindow.element === 'layer-post'){
+            e.style.top = 10 + 'px';
             e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
-            e.style.height = winY + "px";
-            
+            e.style.height = winY - 20 + "px";
+            imgLayerPost();
+
         }else{
             e.style.top =  (winY / 2) - ( eY / 2 ) + 'px';
             e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
@@ -113,6 +115,8 @@ var switcher = {
     // -------------------------------
 
 }
+
+
 
 
 //  model=============================================
