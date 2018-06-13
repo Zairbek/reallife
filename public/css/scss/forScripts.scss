@@ -7,9 +7,30 @@ $head-text: #040615;
 $post-text: #040615;
 $input-text: #040615;
 $input-background: white;
-$img-layer-post-background: transparent;
+$img-layer-post-background: rgba(0,0,0,.3);
 $text-layer-post-background: white;
 /*==========Цветовая палитра==========*/ 
+/*==========FONTS==========*/ 
+@font-face {
+  font-family: segoe-ui-sumbol;
+  src: url("../fonts/segoe-ui-symbol.ttf");
+}
+
+@font-face {
+  font-family: segoe-wp-light;
+  src: url("../fonts/segoe-wp-light.ttf");
+}
+
+@font-face {
+  font-family: segoe-print-bold;
+  src: url("../fonts/segoe-print-bold.ttf");
+}
+
+@font-face {
+  font-family: segoe-ui-bold-italic;
+  src: url("../fonts/segoe-ui-bold-italic.ttf");
+}
+/*==========FONTS==========*/ 
 
 
 
@@ -205,6 +226,8 @@ div.layer-post{
     height: 100%;
 
     background-color: $img-layer-post-background;
+    border-radius: 4px;
+    box-sizing: border-box;
 
     .img-layer-post{
       width: 100%;
@@ -215,7 +238,9 @@ div.layer-post{
 
 
   .layer-right{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     float: right;
     width: 29%;
     height: 100%;
@@ -225,8 +250,17 @@ div.layer-post{
     border-radius: 4px;
     box-sizing: border-box;
 
-    .text-layer-post{
+    >p.text-layer-post{
       width: 100%;
+      color: $post-text;
+      font-size: 15px;
+      font-family: segoe-wp-light;
+      overflow: auto;
+      
+    }
+
+    >div.bottom{
+      
     }
   }
 
