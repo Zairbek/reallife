@@ -1,0 +1,13 @@
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  /* Target landscape smartphones, portrait tablets, narrow desktops*/
+  /* line 3, scss/media.scss */
+  .centered {
+    max-width: 800px;
+    min-width: 480px; } }
+@media screen and (max-width: 479px) {
+  /* Target portrait smartphones */
+  /* line 11, scss/media.scss */
+  .centered {
+    max-width: 479px; } }
+
+/*# sourceMappingURL=media.css.map */
