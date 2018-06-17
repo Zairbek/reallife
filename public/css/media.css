@@ -1,12 +1,252 @@
+@charset "UTF-8";
 @media screen and (min-width: 480px) and (max-width: 800px) {
   /* Target landscape smartphones, portrait tablets, narrow desktops*/
   /* line 3, scss/media.scss */
   .centered {
     max-width: 800px;
-    min-width: 480px; } }
+    min-width: 480px; }
+
+  /* line 15, scss/media.scss */
+  header .centered .nav li > a {
+    font-size: 11px;
+    padding: 6px 0 5px; }
+  /* line 24, scss/media.scss */
+  header .centered .logoHome > a {
+    width: 200px;
+    height: 28px;
+    font-size: 18px; }
+
+  /*           content               */
+  /* line 39, scss/media.scss */
+  .content {
+    width: 100%; }
+    /* line 42, scss/media.scss */
+    .content .centered {
+      overflow: hidden;
+      padding: 10px; }
+      /* line 46, scss/media.scss */
+      .content .centered .container-left {
+        width: 45%; }
+      /* line 50, scss/media.scss */
+      .content .centered .container-right {
+        width: 45%; }
+      /* line 54, scss/media.scss */
+      .content .centered .container-center {
+        width: 10%;
+        margin: 0 45%; }
+        /* line 58, scss/media.scss */
+        .content .centered .container-center .vertical-line-top {
+          width: 20px;
+          height: 20px;
+          margin: 0 auto;
+          border: 3px solid #c4ffdd; }
+        /* line 65, scss/media.scss */
+        .content .centered .container-center .vertical-line {
+          margin: 0 auto;
+          width: 4px; }
+
+  /*          content-box-big             */
+  /* line 77, scss/media.scss */
+  .box-big {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px; }
+
+  /*          content-box-small             */
+  /* line 88, scss/media.scss */
+  .box-small {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px; }
+
+  /*            GLOBAL ELEMENTS          */
+  /*-------------------------------------*/
+  /*               post-text             */
+  /*    все тексты связанные с постом    */
+  /* line 106, scss/media.scss */
+  p.post-text {
+    font-size: 13px;
+    margin-bottom: 3px; }
+
+  /*              imgForPostGlobal             */
+  /* line 115, scss/media.scss */
+  img.imgPostGlobal {
+    width: 100%;
+    margin: 3px 0; }
+
+  /*           shareGlobal               */
+  /* line 126, scss/media.scss */
+  div.shareGlobal {
+    width: 100%;
+    margin: 3px 0; }
+    /* line 131, scss/media.scss */
+    div.shareGlobal > ul > li {
+      display: inline-block; }
+      /* line 134, scss/media.scss */
+      div.shareGlobal > ul > li > a {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px; }
+
+  /*           postFormTypeTextGlobal               */
+  /* line 148, scss/media.scss */
+  form.postFormTypeTextGlobal {
+    width: 100%;
+    margin: 5px 0; }
+    /* line 152, scss/media.scss */
+    form.postFormTypeTextGlobal > input[type="text"] {
+      width: 85%;
+      height: 30px;
+      font-size: 14px;
+      padding: 0 10px; }
+    /* line 162, scss/media.scss */
+    form.postFormTypeTextGlobal > button[type="submit"] {
+      width: 12%;
+      height: 30px; }
+      /* line 175, scss/media.scss */
+      form.postFormTypeTextGlobal > button[type="submit"] > i {
+        font-size: 14px; }
+
+  /*           END GLOBAL ELEMENTS          */
+  /*============forScript.scss============*/
+  /*            shadow-layer           */
+  /* line 191, scss/media.scss */
+  .shadow-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9; }
+    /* line 200, scss/media.scss */
+    .shadow-layer .btn-close {
+      position: sticky;
+      top: 30px;
+      left: 93%;
+      z-index: 20;
+      width: 35px;
+      height: 35px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      box-sizing: border-box; }
+      /* line 212, scss/media.scss */
+      .shadow-layer .btn-close:hover {
+        border: 1px solid white;
+        border-radius: 5px; }
+      /* line 217, scss/media.scss */
+      .shadow-layer .btn-close:focus {
+        outline: none; }
+      /* line 221, scss/media.scss */
+      .shadow-layer .btn-close > i {
+        color: #fff; }
+
+  /*         formAuth          */
+  /* line 233, scss/media.scss */
+  .formAuth, .formRegistration {
+    width: 100%;
+    height: 100%; }
+    /* line 236, scss/media.scss */
+    .formAuth .form, .formRegistration .form {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      border-radius: 0; }
+      /* line 242, scss/media.scss */
+      .formAuth .form > p, .formRegistration .form > p {
+        font-size: 20px;
+        margin-bottom: 10px; }
+      /* line 247, scss/media.scss */
+      .formAuth .form > .userName, .formAuth .form > input[type="email"], .formAuth .form > input[type="password"], .formRegistration .form > .userName, .formRegistration .form > input[type="email"], .formRegistration .form > input[type="password"] {
+        width: 100%;
+        height: 30px;
+        border: 1px solid #1D2D3B;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 0 14px;
+        margin: 5px 0;
+        box-shadow: 0 0 6px #000;
+        box-sizing: border-box; }
+      /* line 263, scss/media.scss */
+      .formAuth .form > .textOfImage, .formRegistration .form > .textOfImage {
+        width: 40%;
+        height: 30px;
+        border: 1px solid #1D2D3B;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 0 14px;
+        margin: 5px 0;
+        box-shadow: 0 0 6px #000;
+        box-sizing: border-box; }
+      /* line 278, scss/media.scss */
+      .formAuth .form > img, .formRegistration .form > img {
+        display: inline-block;
+        float: right;
+        width: 40%;
+        height: 30px;
+        border-radius: 5px;
+        margin: 5px 0;
+        box-shadow: 0 0 6px #000;
+        box-sizing: border-box; }
+      /* line 293, scss/media.scss */
+      .formAuth .form > input[type="submit"], .formRegistration .form > input[type="submit"] {
+        display: block;
+        width: 95%;
+        height: 30px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        font-size: 14px;
+        margin: 5px auto;
+        box-shadow: 0 0 6px #000;
+        box-sizing: border-box; }
+
+  /*              layerPost                */
+  /* line 320, scss/media.scss */
+  div.layer-post {
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    /* line 335, scss/media.scss */
+    div.layer-post .layer-left {
+      display: block;
+      float: left;
+      width: 70%;
+      height: 100%;
+      border-radius: 4px;
+      box-sizing: border-box; }
+      /* line 344, scss/media.scss */
+      div.layer-post .layer-left .img-layer-post {
+        width: 100%; }
+    /* line 352, scss/media.scss */
+    div.layer-post .layer-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      float: right;
+      width: 29%;
+      height: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      box-sizing: border-box; }
+      /* line 364, scss/media.scss */
+      div.layer-post .layer-right > p.text-layer-post {
+        width: 100%;
+        font-size: 15px;
+        overflow: auto; }
+
+  /*============END forScript.scss============*/ }
 @media screen and (max-width: 479px) {
   /* Target portrait smartphones */
-  /* line 11, scss/media.scss */
+  /* line 388, scss/media.scss */
   .centered {
     max-width: 479px; } }
 

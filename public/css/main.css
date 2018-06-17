@@ -136,7 +136,7 @@ header {
   width: 100%;
   margin: 30px 0;
   padding: 18px;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
@@ -147,35 +147,15 @@ header {
   width: 100%;
   margin: 30px 0;
   padding: 18px;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 211, scss/main.scss */
-  .box-small button {
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    text-align: right;
-    margin-left: 10px;
-    width: 33px;
-    height: 33px;
-    border: 0;
-    background: url("../img/buttonAddSprite.png") no-repeat;
-    background-position: -33px 0; }
-    /* line 224, scss/main.scss */
-    .box-small button:focus {
-      outline: none; }
-    /* line 227, scss/main.scss */
-    .box-small button:active {
-      outline: none;
-      background: url("../img/buttonAddSprite.png") no-repeat;
-      background-position: 0 0; }
 
 /*            GLOBAL ELEMENTS          */
 /*-------------------------------------*/
 /*               post-text             */
 /*    все тексты связанные с постом    */
-/* line 250, scss/main.scss */
+/* line 227, scss/main.scss */
 p.post-text {
   display: inline-block;
   font-family: segoe-wp-light;
@@ -184,49 +164,52 @@ p.post-text {
   margin-bottom: 5px; }
 
 /*              imgForPostGlobal             */
-/* line 263, scss/main.scss */
+/* line 240, scss/main.scss */
 img.imgPostGlobal {
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0; }
 
 /*           shareGlobal               */
-/* line 275, scss/main.scss */
+/* line 252, scss/main.scss */
 div.shareGlobal {
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0; }
-  /* line 281, scss/main.scss */
+  /* line 258, scss/main.scss */
   div.shareGlobal > ul > li {
     display: inline-block; }
-    /* line 284, scss/main.scss */
+    /* line 261, scss/main.scss */
     div.shareGlobal > ul > li > a {
       display: block;
       width: 25px;
       height: 25px;
       margin: 0 5px;
       background: url("../img/socSprite.png") no-repeat; }
-    /* line 294, scss/main.scss */
+    /* line 271, scss/main.scss */
     div.shareGlobal > ul > li > a.link {
       background-position: -63px -11px; }
-    /* line 298, scss/main.scss */
+    /* line 275, scss/main.scss */
     div.shareGlobal > ul > li > a.vk {
       background-position: -7px -40px; }
-    /* line 302, scss/main.scss */
+    /* line 279, scss/main.scss */
     div.shareGlobal > ul > li > a.ok {
       background-position: -119px -40px; }
-    /* line 306, scss/main.scss */
+    /* line 283, scss/main.scss */
     div.shareGlobal > ul > li > a.tw {
       background-position: -35px -11px; }
 
 /*           postFormTypeTextGlobal               */
-/* line 316, scss/main.scss */
+/* line 293, scss/main.scss */
 form.postFormTypeTextGlobal {
-  margin: 5px 0; }
-  /* line 319, scss/main.scss */
+  width: 100%;
+  margin: 5px 0;
+  box-sizing: border-box; }
+  /* line 298, scss/main.scss */
   form.postFormTypeTextGlobal > input[type="text"] {
+    box-sizing: border-box;
     vertical-align: top;
-    width: 70%;
+    width: 85%;
     height: 50px;
     font-family: segoe-wp-light;
     font-size: 20px;
@@ -235,23 +218,25 @@ form.postFormTypeTextGlobal {
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background-color: #f2f2f2; }
-  /* line 335, scss/main.scss */
-  form.postFormTypeTextGlobal > input[type="submit"] {
+  /* line 315, scss/main.scss */
+  form.postFormTypeTextGlobal > button[type="submit"] {
+    box-sizing: border-box;
     vertical-align: top;
     float: right;
-    width: 50px;
+    width: 12%;
     height: 50px;
-    border: 0;
-    background: url("../img/inputSprite.png") no-repeat;
-    background-position: 0 0; }
-    /* line 345, scss/main.scss */
-    form.postFormTypeTextGlobal > input[type="submit"]:focus {
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    background: transparent; }
+    /* line 326, scss/main.scss */
+    form.postFormTypeTextGlobal > button[type="submit"]:focus {
       outline: none; }
-    /* line 349, scss/main.scss */
-    form.postFormTypeTextGlobal > input[type="submit"]:active {
-      outline: none;
-      background: url("../img/inputSprite.png") no-repeat;
-      background-position: -53px 0; }
+    /* line 330, scss/main.scss */
+    form.postFormTypeTextGlobal > button[type="submit"]:active {
+      outline: none; }
+    /* line 335, scss/main.scss */
+    form.postFormTypeTextGlobal > button[type="submit"] > i {
+      font-size: 20px; }
 
 /*           END GLOBAL ELEMENTS          */
 

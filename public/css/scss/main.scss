@@ -78,7 +78,7 @@ header {
 
   .centered {
     overflow: hidden;
-  padding: 0 5px;
+    padding: 0 5px;
 
 
     .nav {
@@ -188,7 +188,7 @@ header {
   margin: 30px 0;
   padding: 18px;
 
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: $post-background;
 
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -203,33 +203,10 @@ header {
   margin: 30px 0;
   padding: 18px;
 
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: $post-background;
   
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-  button {
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    text-align: right;
-    margin-left: 10px;
-    width: 33px;
-    height: 33px;
-
-    border: 0;
-    background: url("../img/buttonAddSprite.png") no-repeat;
-    background-position: -33px 0;
-
-    &:focus {
-      outline: none;
-    }
-    &:active {
-      outline: none;
-      background: url("../img/buttonAddSprite.png") no-repeat;
-      background-position: 0 0;
-    }
-  }
 }
 
 
@@ -314,11 +291,14 @@ div.shareGlobal {
 
 /*           postFormTypeTextGlobal               */
 form.postFormTypeTextGlobal {
+  width: 100%;
   margin: 5px 0;
+  box-sizing: border-box;
 
   >input[type="text"] {
-    vertical-align: top;
-    width: 70%;
+  box-sizing: border-box;
+  vertical-align: top;
+    width: 85%;
     height: 50px;
 
     font-family: segoe-wp-light;
@@ -332,15 +312,16 @@ form.postFormTypeTextGlobal {
     background-color: #f2f2f2;
   }
 
-  >input[type="submit"] {
+  >button[type="submit"] {
+    box-sizing: border-box;
     vertical-align: top;
     float: right;
-    width: 50px;
+    width: 12%;
     height: 50px;
 
-    border: 0;
-    background: url("../img/inputSprite.png") no-repeat;
-    background-position: 0 0;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    background: transparent;
 
     &:focus {
       outline: none;
@@ -348,8 +329,11 @@ form.postFormTypeTextGlobal {
 
     &:active {
       outline: none;
-      background: url("../img/inputSprite.png") no-repeat;
-      background-position: -53px 0;
+      
+    }
+
+    >i{
+      font-size: 20px;
     }
   }
 }

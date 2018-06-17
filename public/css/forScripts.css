@@ -49,25 +49,26 @@
       color: #fff; }
 
 /*         formAuth          */
-/* line 111, scss/forScripts.scss */
+/* line 87, scss/forScripts.scss */
 .formAuth, .formRegistration {
   position: fixed;
   z-index: 10;
   left: 0;
   top: 0;
   box-sizing: border-box; }
-  /* line 116, scss/forScripts.scss */
+  /* line 92, scss/forScripts.scss */
   .formAuth .form, .formRegistration .form {
+    box-sizing: border-box;
     width: 500px;
     background: rgba(60, 76, 90, 0.9);
     padding: 30px;
     border-radius: 10px; }
-    /* line 122, scss/forScripts.scss */
+    /* line 99, scss/forScripts.scss */
     .formAuth .form > p, .formRegistration .form > p {
       font-family: segoe-wp-light;
       font-size: 30px;
       margin-bottom: 10px; }
-    /* line 128, scss/forScripts.scss */
+    /* line 105, scss/forScripts.scss */
     .formAuth .form > .userName, .formAuth .form > input[type="email"], .formAuth .form > input[type="password"], .formRegistration .form > .userName, .formRegistration .form > input[type="email"], .formRegistration .form > input[type="password"] {
       width: 100%;
       height: 40px;
@@ -80,7 +81,7 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 146, scss/forScripts.scss */
+    /* line 123, scss/forScripts.scss */
     .formAuth .form > .textOfImage, .formRegistration .form > .textOfImage {
       width: 40%;
       height: 40px;
@@ -93,7 +94,7 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 163, scss/forScripts.scss */
+    /* line 140, scss/forScripts.scss */
     .formAuth .form > img, .formRegistration .form > img {
       display: inline-block;
       float: right;
@@ -103,7 +104,7 @@
       margin: 5px 0;
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 178, scss/forScripts.scss */
+    /* line 155, scss/forScripts.scss */
     .formAuth .form > input[type="submit"], .formRegistration .form > input[type="submit"] {
       display: block;
       width: 95%;
@@ -118,7 +119,7 @@
       box-sizing: border-box; }
 
 /*              layerPost                */
-/* line 207, scss/forScripts.scss */
+/* line 184, scss/forScripts.scss */
 div.layer-post {
   position: fixed;
   box-sizing: border-box;
@@ -129,7 +130,7 @@ div.layer-post {
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 222, scss/forScripts.scss */
+  /* line 199, scss/forScripts.scss */
   div.layer-post .layer-left {
     display: block;
     float: left;
@@ -138,10 +139,10 @@ div.layer-post {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     box-sizing: border-box; }
-    /* line 232, scss/forScripts.scss */
+    /* line 209, scss/forScripts.scss */
     div.layer-post .layer-left .img-layer-post {
       width: 100%; }
-  /* line 240, scss/forScripts.scss */
+  /* line 217, scss/forScripts.scss */
   div.layer-post .layer-right {
     display: flex;
     flex-direction: column;
@@ -153,7 +154,7 @@ div.layer-post {
     background-color: white;
     border-radius: 4px;
     box-sizing: border-box; }
-    /* line 253, scss/forScripts.scss */
+    /* line 230, scss/forScripts.scss */
     div.layer-post .layer-right > p.text-layer-post {
       width: 100%;
       color: #040615;
