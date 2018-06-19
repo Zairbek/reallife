@@ -291,15 +291,20 @@ div.shareGlobal {
 
 /*           postFormTypeTextGlobal               */
 form.postFormTypeTextGlobal {
-  width: 100%;
-  margin: 5px 0;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;/* 
+  justify-content: space-between; */
+/* 
+  flex-basis: 100%; */
+  margin: 5px 0;/* 
+  box-sizing: border-box; */
 
-  >input[type="text"] {
-  box-sizing: border-box;
-  vertical-align: top;
-    width: 85%;
+  >input[type="text"] {/* 
+    flex-grow: 9; */
+  /* 
+    box-sizing: border-box; */
     height: 50px;
+    flex-basis: 100%;
 
     font-family: segoe-wp-light;
     font-size: 20px;
@@ -312,12 +317,12 @@ form.postFormTypeTextGlobal {
     background-color: #f2f2f2;
   }
 
-  >button[type="submit"] {
+  >.button{/* 
+    flex-grow: 3; */
+   /*  
     box-sizing: border-box;
-    vertical-align: top;
-    float: right;
-    width: 12%;
-    height: 50px;
+ */
+  flex-basis: 100%;
 
     border: 1px solid #d6d6d6;
     border-radius: 3px;

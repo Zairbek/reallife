@@ -13,6 +13,7 @@ window.onload = function(){
         document.formRegistration.userName.focus();
     });
 
+
     getId('open').addEventListener('click' , function(){
         popupWindow.element = 'layer-post';
         popupWindow.open();

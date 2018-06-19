@@ -24,7 +24,7 @@
   right: 0;
   bottom: 0;
   z-index: 9;
-  background-color: rgba(51, 50, 51, 0.685); }
+  background-color: rgba(0, 0, 0, 0.8); }
   /* line 48, scss/forScripts.scss */
   .shadow-layer .btn-close {
     position: sticky;
@@ -56,58 +56,64 @@
   left: 0;
   top: 0;
   box-sizing: border-box; }
-  /* line 92, scss/forScripts.scss */
+  /* line 93, scss/forScripts.scss */
   .formAuth .form, .formRegistration .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     box-sizing: border-box;
-    width: 500px;
+    width: 600px;
     background: rgba(60, 76, 90, 0.9);
     padding: 30px;
     border-radius: 10px; }
-    /* line 99, scss/forScripts.scss */
+    /* line 104, scss/forScripts.scss */
     .formAuth .form > p, .formRegistration .form > p {
+      flex-grow: 1;
       font-family: segoe-wp-light;
       font-size: 30px;
       margin-bottom: 10px; }
-    /* line 105, scss/forScripts.scss */
+    /* line 111, scss/forScripts.scss */
     .formAuth .form > .userName, .formAuth .form > input[type="email"], .formAuth .form > input[type="password"], .formRegistration .form > .userName, .formRegistration .form > input[type="email"], .formRegistration .form > input[type="password"] {
-      width: 100%;
+      flex-grow: 1;
+      flex-basis: 100%;
       height: 40px;
       border: 1px solid #1D2D3B;
       border-radius: 5px;
       font-family: segoe-wp-light;
       font-size: 20px;
+      color: white;
       padding: 0 20px;
       margin: 5px 0;
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 123, scss/forScripts.scss */
+    /* line 132, scss/forScripts.scss */
     .formAuth .form > .textOfImage, .formRegistration .form > .textOfImage {
-      width: 40%;
+      flex-basis: 40%;
+      flex-grow: 2;
       height: 40px;
       border: 1px solid #1D2D3B;
       border-radius: 5px;
       font-family: segoe-wp-light;
       font-size: 20px;
+      color: white;
       padding: 0 20px;
-      margin: 5px 0;
+      margin: 5px 10px 5px 0;
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 140, scss/forScripts.scss */
+    /* line 153, scss/forScripts.scss */
     .formAuth .form > img, .formRegistration .form > img {
-      display: inline-block;
-      float: right;
-      width: 40%;
+      flex-basis: 40%;
+      flex-grow: 2;
       height: 40px;
       border-radius: 5px;
-      margin: 5px 0;
+      margin: 5px 0 5px 10px;
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 155, scss/forScripts.scss */
+    /* line 166, scss/forScripts.scss */
     .formAuth .form > input[type="submit"], .formRegistration .form > input[type="submit"] {
-      display: block;
-      width: 95%;
+      flex-basis: 90%;
       height: 40px;
       border: 1px solid #000;
       border-radius: 5px;
@@ -119,7 +125,7 @@
       box-sizing: border-box; }
 
 /*              layerPost                */
-/* line 184, scss/forScripts.scss */
+/* line 191, scss/forScripts.scss */
 div.layer-post {
   position: fixed;
   box-sizing: border-box;
@@ -130,7 +136,7 @@ div.layer-post {
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 199, scss/forScripts.scss */
+  /* line 206, scss/forScripts.scss */
   div.layer-post .layer-left {
     display: block;
     float: left;
@@ -139,10 +145,10 @@ div.layer-post {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     box-sizing: border-box; }
-    /* line 209, scss/forScripts.scss */
+    /* line 216, scss/forScripts.scss */
     div.layer-post .layer-left .img-layer-post {
       width: 100%; }
-  /* line 217, scss/forScripts.scss */
+  /* line 224, scss/forScripts.scss */
   div.layer-post .layer-right {
     display: flex;
     flex-direction: column;
@@ -154,7 +160,7 @@ div.layer-post {
     background-color: white;
     border-radius: 4px;
     box-sizing: border-box; }
-    /* line 230, scss/forScripts.scss */
+    /* line 237, scss/forScripts.scss */
     div.layer-post .layer-right > p.text-layer-post {
       width: 100%;
       color: #040615;

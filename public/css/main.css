@@ -202,15 +202,23 @@ div.shareGlobal {
 /*           postFormTypeTextGlobal               */
 /* line 293, scss/main.scss */
 form.postFormTypeTextGlobal {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+                    /* 
+justify-content: space-between; */
+  /* 
+    flex-basis: 100%; */
   margin: 5px 0;
-  box-sizing: border-box; }
-  /* line 298, scss/main.scss */
+              /* 
+box-sizing: border-box; */ }
+  /* line 302, scss/main.scss */
   form.postFormTypeTextGlobal > input[type="text"] {
-    box-sizing: border-box;
-    vertical-align: top;
-    width: 85%;
+                   /* 
+flex-grow: 9; */
+    /* 
+      box-sizing: border-box; */
     height: 50px;
+    flex-basis: 100%;
     font-family: segoe-wp-light;
     font-size: 20px;
     color: #4e4e4e;
@@ -218,24 +226,25 @@ form.postFormTypeTextGlobal {
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background-color: #f2f2f2; }
-  /* line 315, scss/main.scss */
-  form.postFormTypeTextGlobal > button[type="submit"] {
-    box-sizing: border-box;
-    vertical-align: top;
-    float: right;
-    width: 12%;
-    height: 50px;
+  /* line 320, scss/main.scss */
+  form.postFormTypeTextGlobal > .button {
+       /* 
+flex-grow: 3; */
+  /*  
+   box-sizing: border-box;
+*/
+    flex-basis: 100%;
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background: transparent; }
-    /* line 326, scss/main.scss */
-    form.postFormTypeTextGlobal > button[type="submit"]:focus {
-      outline: none; }
-    /* line 330, scss/main.scss */
-    form.postFormTypeTextGlobal > button[type="submit"]:active {
+    /* line 331, scss/main.scss */
+    form.postFormTypeTextGlobal > .button:focus {
       outline: none; }
     /* line 335, scss/main.scss */
-    form.postFormTypeTextGlobal > button[type="submit"] > i {
+    form.postFormTypeTextGlobal > .button:active {
+      outline: none; }
+    /* line 340, scss/main.scss */
+    form.postFormTypeTextGlobal > .button > i {
       font-size: 20px; }
 
 /*           END GLOBAL ELEMENTS          */
