@@ -15,48 +15,16 @@
   font-family: segoe-ui-bold-italic;
   src: url("../fonts/segoe-ui-bold-italic.ttf"); }
 /*==========FONTS==========*/
-/*            shadow-layer           */
-/* line 38, scss/forScripts.scss */
-.shadow-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.8); }
-  /* line 48, scss/forScripts.scss */
-  .shadow-layer .btn-close {
-    position: sticky;
-    top: 30px;
-    left: 93%;
-    z-index: 20;
-    width: 35px;
-    height: 35px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    box-sizing: border-box; }
-    /* line 60, scss/forScripts.scss */
-    .shadow-layer .btn-close:hover {
-      border: 1px solid white;
-      border-radius: 5px; }
-    /* line 65, scss/forScripts.scss */
-    .shadow-layer .btn-close:focus {
-      outline: none; }
-    /* line 69, scss/forScripts.scss */
-    .shadow-layer .btn-close > i {
-      color: #fff; }
-
+/*====================FORMS====================*/
 /*         formAuth          */
-/* line 87, scss/forScripts.scss */
+/* line 39, scss/forms.scss */
 .formAuth, .formRegistration {
   position: fixed;
   z-index: 10;
   left: 0;
   top: 0;
   box-sizing: border-box; }
-  /* line 93, scss/forScripts.scss */
+  /* line 45, scss/forms.scss */
   .formAuth .form, .formRegistration .form {
     display: flex;
     flex-direction: row;
@@ -66,16 +34,16 @@
     background: rgba(60, 76, 90, 0.9);
     padding: 30px;
     border-radius: 10px; }
-    /* line 104, scss/forScripts.scss */
+    /* line 56, scss/forms.scss */
     .formAuth .form > p, .formRegistration .form > p {
       flex-grow: 1;
       font-family: segoe-wp-light;
       font-size: 30px;
       margin-bottom: 10px; }
-    /* line 111, scss/forScripts.scss */
+    /* line 63, scss/forms.scss */
     .formAuth .form > .userName, .formAuth .form > input[type="email"], .formAuth .form > input[type="password"], .formRegistration .form > .userName, .formRegistration .form > input[type="email"], .formRegistration .form > input[type="password"] {
       flex-grow: 1;
-      flex-basis: 100%;
+      width: 100%;
       height: 40px;
       border: 1px solid #1D2D3B;
       border-radius: 5px;
@@ -87,9 +55,9 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 132, scss/forScripts.scss */
+    /* line 84, scss/forms.scss */
     .formAuth .form > .textOfImage, .formRegistration .form > .textOfImage {
-      flex-basis: 40%;
+      width: 40%;
       flex-grow: 2;
       height: 40px;
       border: 1px solid #1D2D3B;
@@ -102,7 +70,7 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 153, scss/forScripts.scss */
+    /* line 105, scss/forms.scss */
     .formAuth .form > img, .formRegistration .form > img {
       flex-basis: 40%;
       flex-grow: 2;
@@ -111,9 +79,9 @@
       margin: 5px 0 5px 10px;
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 166, scss/forScripts.scss */
+    /* line 118, scss/forms.scss */
     .formAuth .form > input[type="submit"], .formRegistration .form > input[type="submit"] {
-      flex-basis: 90%;
+      width: 90%;
       height: 40px;
       border: 1px solid #000;
       border-radius: 5px;
@@ -124,48 +92,6 @@
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
 
-/*              layerPost                */
-/* line 191, scss/forScripts.scss */
-div.layer-post {
-  position: fixed;
-  box-sizing: border-box;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 1024px;
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  /* line 206, scss/forScripts.scss */
-  div.layer-post .layer-left {
-    display: block;
-    float: left;
-    width: 70%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    box-sizing: border-box; }
-    /* line 216, scss/forScripts.scss */
-    div.layer-post .layer-left .img-layer-post {
-      width: 100%; }
-  /* line 224, scss/forScripts.scss */
-  div.layer-post .layer-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float: right;
-    width: 29%;
-    height: 100%;
-    padding: 10px;
-    background-color: white;
-    border-radius: 4px;
-    box-sizing: border-box; }
-    /* line 237, scss/forScripts.scss */
-    div.layer-post .layer-right > p.text-layer-post {
-      width: 100%;
-      color: #040615;
-      font-size: 15px;
-      font-family: segoe-wp-light;
-      overflow: auto; }
+/*====================FORMS====================*/
 
-/*# sourceMappingURL=forScripts.css.map */
+/*# sourceMappingURL=forms.css.map */

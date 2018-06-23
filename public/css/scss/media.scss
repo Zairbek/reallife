@@ -147,42 +147,27 @@
   /*           postFormTypeTextGlobal               */
   form.postFormTypeTextGlobal {
 
-    >input[type="text"] {
-    
-      box-sizing: border-box;
+    >input[type="text"] {   
       height: 30px;
 
-      font-family: segoe-wp-light;
-      font-size: 20px;
-      color: #4e4e4e;
+      font-size: 14px;
 
       padding: 0 10px;
-      border: 1px solid #d6d6d6;
-      border-radius: 3px;
 
-      background-color: #f2f2f2;
     }
 
-    >button[type="submit"] {
-      flex-grow: 3;
-      
-      box-sizing: border-box;
-
-      border: 1px solid #d6d6d6;
-      border-radius: 3px;
-      background: transparent;
+    >button[type="submit"] {      
 
       &:focus {
-        outline: none;
+
       }
 
       &:active {
-        outline: none;
         
       }
 
       >i{
-        font-size: 20px;
+        font-size: 14px;
       }
     }
   }
@@ -197,37 +182,21 @@
 
 /*            shadow-layer           */
 .shadow-layer{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9;
-  
 
   .btn-close{
-    position: sticky;
-    top: 30px;
-    left: 93%;
+    position: fixed;
     z-index: 20;
-    width: 35px;
-    height: 35px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    box-sizing: border-box;
     
     &:hover{
-      border: 1px solid white;
-      border-radius: 5px;
+
     }
 
     &:focus{
-      outline: none;
+
     }
 
     >i {
-      color: #fff;
+
     }
   }
 }
@@ -239,82 +208,27 @@
 
 /*         formAuth          */
 .formAuth, .formRegistration {
-  width: 100%;
-  height: 100%;
+
   .form {
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    border-radius: 0;
+    width: 350px;
+    height: 250px;
+
 
     > p {
       font-size: 20px;
-      margin-bottom: 10px;
     }
 
-    > .userName, > input[type="email"], > input[type="password"] {
-      width: 100%;
+    > .userName, > input[type="password"] {
       height: 30px;
-
-      border: 1px solid #1D2D3B;
-      border-radius: 5px;
 
       font-size: 14px;
       padding: 0 14px;
-
-      margin: 5px 0;
-
-      box-shadow: 0 0 6px #000;
-      box-sizing: border-box;
     }
-
-    >.textOfImage{
-      width: 40%;
-      height: 30px;
-
-      border: 1px solid #1D2D3B;
-      border-radius: 5px;
-
-      font-size: 14px;
-      padding: 0 14px;
-
-      margin: 5px 0;
-
-      box-shadow: 0 0 6px #000;
-      box-sizing: border-box;
-    }
-    >img{
-      display: inline-block;
-      float: right;
-      width: 40%;
-      height: 30px;
-
-      border-radius: 5px;
-
-      margin: 5px 0;
-
-      box-shadow: 0 0 6px #000;
-      box-sizing: border-box;
-    }
-
 
     > input[type="submit"] {
-      display: block;
-      width: 95%;
       height: 30px;
 
-      border: 1px solid #000;
-      border-radius: 5px;
-
       font-size: 14px;
-
-      margin: 5px auto;
-      box-shadow: 0 0 6px #000;
-      box-sizing: border-box;
-    }
-
-    > input[type="submit"]:focus, > .userName:focus, > input[type="email"]:focus, > input[type="password"]:focus, >.textOfImage:focus {
-      // outline: none;
     }
   }
 }
@@ -326,31 +240,13 @@
 
 /*              layerPost                */
 div.layer-post{
-  position: fixed;
-  box-sizing: border-box;
-  z-index: 10;
-  top:0;
-  left: 0;
-  width: 1024px;
   padding: 5px;
 
-  border-radius: 5px;
- 
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
-
-
   .layer-left{
-    display: block;
-    float: left;
-    width: 70%;
-    height: 100%;
-
-    border-radius: 4px;
-    box-sizing: border-box;
+    float: none;
+    margin: 0 auto;
 
     .img-layer-post{
-      width: 100%;
 
     }
   }
@@ -358,23 +254,7 @@ div.layer-post{
 
 
   .layer-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float: right;
-    width: 29%;
-    height: 100%;
-    padding: 10px;
-
-    border-radius: 4px;
-    box-sizing: border-box;
-
-    >p.text-layer-post{
-      width: 100%;
-      font-size: 15px;
-      overflow: auto;
-      
-    }
+    display: none;
 
     >div.bottom{
       
@@ -393,8 +273,6 @@ div.layer-post{
 
 @media screen and (max-width:479px) {
   /* Target portrait smartphones */
-  .centered{
-    max-width: 479px;
-    
-  }
+  
+  
 }

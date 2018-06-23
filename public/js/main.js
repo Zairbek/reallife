@@ -7,17 +7,12 @@ window.onload = function(){
         document.formAuth.userName.focus();
     });
 
-    getId('openFormRegistration').addEventListener('click' , function(){
-        popupWindow.element = 'formRegistration';
-        popupWindow.open();
-        document.formRegistration.userName.focus();
-    });
-
-
     getId('open').addEventListener('click' , function(){
         popupWindow.element = 'layer-post';
         popupWindow.open();
     });
+    popupWindow.element = 'layer-post';
+    popupWindow.open();
 
     getId('shadow-layer').addEventListener('click' , function(){
         popupWindow.close();
