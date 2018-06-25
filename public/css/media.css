@@ -1,52 +1,70 @@
 @charset "UTF-8";
 @media screen and (min-width: 480px) and (max-width: 800px) {
   /* Target landscape smartphones, portrait tablets, narrow desktops*/
-  /* line 3, scss/media.scss */
+  /* line 11, scss/media.scss */
   .centered {
     max-width: 800px;
     min-width: 480px; }
 
-  /* line 15, scss/media.scss */
-  header .centered .nav li > a {
-    font-size: 11px;
-    padding: 6px 0 5px; }
-  /* line 24, scss/media.scss */
-  header .centered .logoHome > a {
-    width: 200px;
-    height: 28px;
-    font-size: 18px; }
+  /* line 17, scss/media.scss */
+  header .centered {
+    position: relative; }
+    /* line 20, scss/media.scss */
+    header .centered .button-nav {
+      display: block;
+      position: absolute;
+      top: 1px;
+      right: 6px;
+      padding: 4px 8px;
+      border: 1px solid black;
+      border-radius: 3px; }
+    /* line 31, scss/media.scss */
+    header .centered .nav {
+      position: absolute;
+      top: 0;
+      right: -70%;
+      width: 70%; }
+      /* line 38, scss/media.scss */
+      header .centered .nav li > a {
+        font-size: 11px;
+        padding: 6px 0 5px; }
+    /* line 47, scss/media.scss */
+    header .centered .logoHome > a {
+      width: 200px;
+      height: 28px;
+      font-size: 18px; }
 
   /*           content               */
-  /* line 39, scss/media.scss */
+  /* line 62, scss/media.scss */
   .content {
     width: 100%; }
-    /* line 42, scss/media.scss */
+    /* line 65, scss/media.scss */
     .content .centered {
       overflow: hidden;
       padding: 10px; }
-      /* line 46, scss/media.scss */
+      /* line 69, scss/media.scss */
       .content .centered .container-left {
         width: 45%; }
-      /* line 50, scss/media.scss */
+      /* line 73, scss/media.scss */
       .content .centered .container-right {
         width: 45%; }
-      /* line 54, scss/media.scss */
+      /* line 77, scss/media.scss */
       .content .centered .container-center {
         width: 10%;
         margin: 0 45%; }
-        /* line 58, scss/media.scss */
+        /* line 81, scss/media.scss */
         .content .centered .container-center .vertical-line-top {
           width: 20px;
           height: 20px;
           margin: 0 auto;
           border: 3px solid #c4ffdd; }
-        /* line 65, scss/media.scss */
+        /* line 88, scss/media.scss */
         .content .centered .container-center .vertical-line {
           margin: 0 auto;
           width: 4px; }
 
   /*          content-box-big             */
-  /* line 77, scss/media.scss */
+  /* line 100, scss/media.scss */
   .box-big {
     box-sizing: border-box;
     width: 100%;
@@ -55,7 +73,7 @@
     border-radius: 4px; }
 
   /*          content-box-small             */
-  /* line 88, scss/media.scss */
+  /* line 111, scss/media.scss */
   .box-small {
     width: 100%;
     margin: 20px 0;
@@ -66,76 +84,76 @@
   /*-------------------------------------*/
   /*               post-text             */
   /*    все тексты связанные с постом    */
-  /* line 106, scss/media.scss */
+  /* line 129, scss/media.scss */
   p.post-text {
     font-size: 13px;
     margin-bottom: 3px; }
 
   /*              imgForPostGlobal             */
-  /* line 115, scss/media.scss */
+  /* line 138, scss/media.scss */
   img.imgPostGlobal {
     width: 100%;
     margin: 3px 0; }
 
   /*           shareGlobal               */
-  /* line 126, scss/media.scss */
+  /* line 149, scss/media.scss */
   div.shareGlobal {
     width: 100%;
     margin: 3px 0; }
-    /* line 131, scss/media.scss */
+    /* line 154, scss/media.scss */
     div.shareGlobal > ul > li {
       display: inline-block; }
-      /* line 134, scss/media.scss */
+      /* line 157, scss/media.scss */
       div.shareGlobal > ul > li > a {
         width: 25px;
         height: 25px;
         margin: 0 5px; }
 
   /*           postFormTypeTextGlobal               */
-  /* line 150, scss/media.scss */
+  /* line 173, scss/media.scss */
   form.postFormTypeTextGlobal > input[type="text"] {
     height: 30px;
     font-size: 14px;
     padding: 0 10px; }
-  /* line 169, scss/media.scss */
+  /* line 192, scss/media.scss */
   form.postFormTypeTextGlobal > button[type="submit"] > i {
     font-size: 14px; }
 
   /*           END GLOBAL ELEMENTS          */
   /*============forScript.scss============*/
   /*            shadow-layer           */
-  /* line 186, scss/media.scss */
+  /* line 209, scss/media.scss */
   .shadow-layer .btn-close {
     position: fixed;
     z-index: 20; }
 
   /*         formAuth          */
-  /* line 212, scss/media.scss */
+  /* line 235, scss/media.scss */
   .formAuth .form, .formRegistration .form {
     width: 350px;
     height: 250px; }
-    /* line 217, scss/media.scss */
+    /* line 240, scss/media.scss */
     .formAuth .form > p, .formRegistration .form > p {
       font-size: 20px; }
-    /* line 221, scss/media.scss */
+    /* line 244, scss/media.scss */
     .formAuth .form > .userName, .formAuth .form > input[type="password"], .formRegistration .form > .userName, .formRegistration .form > input[type="password"] {
       height: 30px;
       font-size: 14px;
       padding: 0 14px; }
-    /* line 228, scss/media.scss */
+    /* line 251, scss/media.scss */
     .formAuth .form > input[type="submit"], .formRegistration .form > input[type="submit"] {
       height: 30px;
       font-size: 14px; }
 
   /*              layerPost                */
-  /* line 242, scss/media.scss */
+  /* line 265, scss/media.scss */
   div.layer-post {
     padding: 5px; }
-    /* line 245, scss/media.scss */
+    /* line 268, scss/media.scss */
     div.layer-post .layer-left {
       float: none;
       margin: 0 auto; }
-    /* line 256, scss/media.scss */
+    /* line 279, scss/media.scss */
     div.layer-post .layer-right {
       display: none; }
 

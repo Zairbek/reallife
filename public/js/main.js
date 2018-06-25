@@ -11,8 +11,6 @@ window.onload = function(){
         popupWindow.element = 'layer-post';
         popupWindow.open();
     });
-    popupWindow.element = 'layer-post';
-    popupWindow.open();
 
     getId('shadow-layer').addEventListener('click' , function(){
         popupWindow.close();
@@ -31,16 +29,7 @@ window.onload = function(){
     verticalLine();
 
 
-
-
-
 }
-
-
-
-
-
-
 
 
 
@@ -83,8 +72,6 @@ var switcher = {
         let winX = document.documentElement.clientWidth;
         let winY = document.documentElement.clientHeight;
 
-        let sTop = document.documentElement.scrollTop;
-
         let e = getId(el);
         e.hidden = false;
 
@@ -92,7 +79,7 @@ var switcher = {
         let eY = e.offsetHeight;
 
         if(popupWindow.element === 'layer-post'){
-            e.style.top = 10 + 'px';
+            e.style.top = (winY / 2) - ( eY / 2 ) + 'px';
             e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
             e.style.height = winY - 20 + "px";
             imgLayerPost();

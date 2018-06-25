@@ -1,0 +1,199 @@
+/*==========Цветовая палитра==========*/ 
+$background: #003545;
+$head-background: #c4ffdd;
+$shadow-layer: rgba(0,0,0,0.8);
+$post-background: #f9f9f9;
+$head-text: #040615;
+$post-text: #040615;
+$input-text: #040615;
+$input-background: white;
+$img-layer-post-background: rgba(0,0,0,.3);
+$text-layer-post-background: white;
+/*==========Цветовая палитра==========*/ 
+
+/*==========FONTS==========*/ 
+@font-face {
+  font-family: segoe-ui-sumbol;
+  src: url("../fonts/segoe-ui-symbol.ttf");
+}
+
+@font-face {
+  font-family: segoe-wp-light;
+  src: url("../fonts/segoe-wp-light.ttf");
+}
+
+@font-face {
+  font-family: segoe-print-bold;
+  src: url("../fonts/segoe-print-bold.ttf");
+}
+
+@font-face {
+  font-family: segoe-ui-bold-italic;
+  src: url("../fonts/segoe-ui-bold-italic.ttf");
+}
+/*==========FONTS==========*/ 
+
+
+/*====================FORMS====================*/ 
+
+/*         formAuth          */
+.formAuth, .formRegistration {
+  position: fixed;
+  z-index: 10;
+  left: 0;top: 0;
+  box-sizing: border-box;
+  
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    box-sizing: border-box;
+    width: 600px;
+    background: rgba(60, 76, 90, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+
+    > p {
+      flex-grow: 1;
+      font-family: segoe-wp-light;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    > .userName, > input[type="email"], > input[type="password"] {      
+      flex-grow: 1;
+      width: 100%;
+
+      height: 40px;
+
+      border: 1px solid #1D2D3B;
+      border-radius: 5px;
+
+      font-family: segoe-wp-light;
+      font-size: 20px;
+      color: white;
+      padding: 0 20px;
+
+      margin: 5px 0;
+
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 6px #000;
+      box-sizing: border-box;
+    }
+
+    >.textOfImage{
+      width: 40%;
+      flex-grow: 2;
+
+      height: 40px;
+
+
+      border: 1px solid #1D2D3B;
+      border-radius: 5px;
+
+      font-family: segoe-wp-light;
+      font-size: 20px;
+      color: white;
+      padding: 0 20px;
+
+      margin: 5px 10px 5px 0;
+
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 6px #000;
+      box-sizing: border-box;
+    }
+    >img{
+      flex-basis: 40%;
+      flex-grow: 2;
+
+      height: 40px;
+      border-radius: 5px;
+      margin: 5px 0 5px 10px;
+
+      box-shadow: 0 0 6px #000;
+      box-sizing: border-box;
+    }
+
+
+    > input[type="submit"] {
+      width: 90%;
+      height: 40px;
+
+      border: 1px solid #000;
+      border-radius: 5px;
+
+      font-family: segoe-wp-light;
+      font-size: 20px;
+
+      margin: 5px auto;
+      background: rgba(32, 117, 189, 0.9);
+      box-shadow: 0 0 6px #000;
+      box-sizing: border-box;
+    }
+
+    > input[type="submit"]:focus, > .userName:focus, > input[type="email"]:focus, > input[type="password"]:focus, >.textOfImage:focus {
+      // outline: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*           postFormTypeTextGlobal               */
+form.postFormTypeTextGlobal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin: 5px 0;
+  box-sizing: border-box;
+
+  >input[type="text"] {
+    box-sizing: border-box;
+    width: 88%;
+    height: 50px;
+
+    font-family: segoe-wp-light;
+    font-size: 20px;
+    color: #4e4e4e;
+
+    padding: 0 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+
+    background-color: #f2f2f2;
+  }
+
+  >.button{
+    box-sizing: border-box;
+    width: 12%;
+
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      outline: none;
+      
+    }
+
+    >i{
+      font-size: 20px;
+    }
+  }
+}
+/*====================FORMS====================*/ 

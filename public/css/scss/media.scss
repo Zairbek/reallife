@@ -1,3 +1,11 @@
+// 1200px
+// 992px
+// 768px
+// 480px
+// 320px
+
+
+
 @media screen and (min-width:480px) and (max-width:800px) {
   /* Target landscape smartphones, portrait tablets, narrow desktops*/
   .centered{
@@ -7,9 +15,24 @@
   header{
 
     .centered{
+      position: relative;
+      
+      .button-nav{
+        display: block;
+        position: absolute;
+        top: 1px;
+        right: 6px;
 
+        padding: 4px 8px;
+        border: 1px solid black;
+        border-radius: 3px;
+
+      }
       .nav{
-
+        position: absolute;
+        top: 0;
+        right: -70%;
+        width: 70%;//=============================ЗДЕСЬ ОСТАНОВИЛСЯ=======
         li{
 
           >a{
