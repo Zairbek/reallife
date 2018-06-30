@@ -37,7 +37,8 @@ $text-layer-post-background: white;
 /*====================FORMS====================*/ 
 
 /*         formAuth          */
-.formAuth, .formRegistration {
+.formAuth {
+  display: none;
   position: fixed;
   z-index: 10;
   left: 0;top: 0;

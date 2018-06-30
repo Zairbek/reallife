@@ -1,4 +1,4 @@
-2
+
 var validate = {
 
   userName: function(){

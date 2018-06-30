@@ -39,16 +39,6 @@
                         <a href="#"><p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, inventore.</p></a>
                         <img class="imgPostGlobal" src="img/imgContent/Layer-5.png" alt="">
 
-
-                        <div class="shareGlobal">
-                            <ul>
-                                <li><a class="link" href="#"></a></li>
-                                <li><a class="vk" href="#"></a></li>
-                                <li><a class="ok" href="#"></a></li>
-                                <li><a class="tw" href="#"></a></li>
-                            </ul>
-                        </div>
-
                         <form class="post-form-type-text-global" action="">
                             <input type="text">
                             <button type="submit" class="button"><i class="far fa-comment"></i></button>
@@ -69,15 +59,6 @@
                     <div class="box-big">
                         <a href="#"><p class="post-text">, consectetur adipisicing elit. Incidunt, inventore.</p></a>
                         <img class="imgPostGlobal" src="img/imgContent/Layer-61.png" alt="">
-
-                        <div class="shareGlobal">
-                            <ul>
-                                <li><a class="link" href="#"></a></li>
-                                <li><a class="vk" href="#"></a></li>
-                                <li><a class="ok" href="#"></a></li>
-                                <li><a class="tw" href="#"></a></li>
-                            </ul>
-                        </div>
 
                         <form class="post-form-type-text-global" action="">
                             <input type="text">
@@ -106,56 +87,43 @@
 
     
     
-    <div id="formAuth" class="formAuth" hidden>
-        <form class="form auth" action="#" name="formAuth">
+    <div id="formAuth" class="formAuth">
+        <form class="form" action="#" name="form_auth">
             <p>Sign In</p>
-            <input type="text" name="userName" class="userName" minlength="6" maxlength="46" placeholder="User name" required>
+            <input type="text" name="user_name" class="userName" minlength="6" maxlength="46" placeholder="User name" required>
             <input type="password" minlength="6" maxlength="46" placeholder="******" required>
             <input type="submit" value="Login to your account" >
         </form>
+        <button id="form-auth-close" class="btn-close"><i class="fas fa-times fa-2x"></i></button>
     </div>
-    <div id="formRegistration" class="formRegistration" hidden>
-        <form class="form registration" name="formRegistration" action="#">
-            <p>Registration</p>
-            <input type="text" name="userName" pattern="^[a-zA-Z\s]+$" minlength="6" maxlength="46" placeholder="User name"  class="userName" required>
-            <input type="email" name="email" placeholder="your@email.com" required>
-            <input type="password" name="password" pattern="(?=^.{8,46}$)(^[a-z])((?=.*\d)|(?=.*\W+))(?![.\n]).*$"  minlength="8" maxlength="46" placeholder="Password" required>
-            <input type="password" name="rePassword" placeholder="Request password" required>
-            <input type="text" name="textFromImage" minlength="5" placeholder="text from image" class="textOfImage" required>
-            <img src="img/textFromImg/test.jpg" alt="">
-            <input type="submit" id="submit" value="Registration" >
-        </form>
-    </div>
-
 
     <div id="layer-post" class="layer-post" style="display: none;">
-        
-        <div class="layer-left">
-            <img id="img-layer-post" class="img-layer-post" src="img/imgContent/Layer-5.png" alt="">
-        </div>
+        <div class="head-layer-post">
 
-        <div class="layer-right">
-            <p class="text-layer-post">Lorem ipsum dolor l sit amet consectetur adipisicing elit. Ratione voluptas eum mollitia praesentium error sunt aspernatur accusantium sit laudantium et voluptatem ducimus, officiis at sint ea maxime omnis inventore possimus!</p>
-            <div class="bottom">
-                <div class="shareGlobal">
-                    <ul>
-                        <li><a class="link" href="#"></a></li>
-                        <li><a class="vk" href="#"></a></li>
-                        <li><a class="ok" href="#"></a></li>
-                        <li><a class="tw" href="#"></a></li>
-                    </ul>
-                </div>
-                <form class="post-form-type-text-global" action="">
-                    <input type="text">
-                    <button type="submit" class="button"><i class="far fa-comment"></i></button>
-                </form>
-            </div> 
         </div>
-        
+        <div class="cont-layer-post">
+            <div class="layer-left">
+                <img id="img-layer-post" class="img-layer-post" src="img/imgContent/Layer-5.png" alt="">
+            </div>
+    
+            <div class="layer-right">
+                <p class="text-layer-post">Lorem ipsum dolor l sit amet consectetur adipisicing elit. Ratione voluptas eum mollitia praesentium error sunt aspernatur accusantium sit laudantium et voluptatem ducimus, officiis at sint ea maxime omnis inventore possimus!</p>
+                <div class="bottom">
+                   <form class="post-form-type-text-global" action="">
+                        <input type="text">
+                        <button type="submit" class="button"><i class="far fa-comment"></i></button>
+                    </form>
+                </div> 
+            </div>
+        </div>
+        <div class="foot-layer-post">
+            
+        </div>
+        <button id="layer-post-close" class="btn-close"><i class="fas fa-times fa-2x"></i></button>        
     </div>
 
     
-    <div id="shadow-layer" class="shadow-layer" hidden><button id="btn-close" class="btn-close"><i class="fas fa-times fa-2x"></i></button></div>
+    <div id="shadow-layer" class="shadow-layer" hidden></div>
     
     
     <div class="swipe-bar">

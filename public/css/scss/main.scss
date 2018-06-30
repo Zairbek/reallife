@@ -265,48 +265,6 @@ img.imgPostGlobal{
 
 
 
-
-
-/*           shareGlobal               */
-div.shareGlobal {
-  box-sizing: border-box;
-  width: 100%;
-
-  margin: 5px 0;
-
-  > ul > li {
-    display: inline-block;
-
-    > a {
-      display: block;
-      width: 25px;
-      height: 25px;
-
-      margin: 0 5px;
-      background: url("../img/socSprite.png") no-repeat;
-
-    }
-
-    > a.link {
-      background-position: -63px -11px;
-    }
-
-    > a.vk {
-      background-position: -7px -40px;
-    }
-
-    > a.ok {
-      background-position: -119px -40px;
-    }
-
-    > a.tw {
-      background-position: -35px -11px;
-    }
-  }
-}
-
-
-
 /*           END GLOBAL ELEMENTS          */
 
 
@@ -321,34 +279,34 @@ div.shareGlobal {
   z-index: 9;
   
   background-color: $shadow-layer;
-
-  .btn-close{
-    position: fixed;
-    top: 30px;
-    left: 93%;
-    z-index: 20;
-    width: 35px;
-    height: 35px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    box-sizing: border-box;
-    
-    &:hover{
-      border: 1px solid white;
-      border-radius: 5px;
-    }
-
-    &:focus{
-      outline: none;
-    }
-
-    >i {
-      color: #fff;
-    }
-  }
 }
 
+.btn-close{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 9999;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  
+  &:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+  >i {
+    color: #fff;
+    font-size: 30px;
+  }
+}
 
 
 
@@ -362,70 +320,84 @@ div.shareGlobal {
 
 
 /*              layer-post                */
-div.layer-post{
-  display: flex;
-  flex-direction: row;
-
+.layer-post{
   position: fixed;
-  box-sizing: border-box;
-  z-index: 10;
-  top:0;
+  top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
-  max-width:1024px;
-  height: 490px; 
-  padding: 5px;
+  z-index: 10;
 
-  border-radius: 5px;
- 
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  .head-layer-post{
+    display: none;
+  }
 
-
-  .layer-left{
+  .cont-layer-post{
     display: flex;
-    width: 70%;
-    margin: auto;
+    flex-direction: row;
 
-    background-color: $img-layer-post-background;
-    border-radius: 4px;
+    max-width: 1024px;
+    height: 490px;
+    padding: 5px;
     box-sizing: border-box;
 
-    padding-right: 6px;
-    .img-layer-post{
+    border-radius: 5px;
+  
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+    .layer-left{
+      display: flex;
+      width: 70%;
       margin: auto;
-     // width: 100%;
+
+      background-color: $img-layer-post-background;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+      padding-right: 6px;
+      .img-layer-post{
+        margin: auto;
+      // width: 100%;
+      }
+    }
+
+    .layer-right{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      width: 30%;
+      padding: 10px;
+  
+      background-color: $text-layer-post-background;
+      border-radius: 4px;
+      box-sizing: border-box;
+  
+      >p.text-layer-post{
+        width: 100%;
+        color: $post-text;
+        font-size: 15px;
+        font-family: segoe-wp-light;
+        overflow: auto;
+        
+      }
+  
+      >div.bottom{
+        
+      }
     }
   }
 
-
-
-  .layer-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    width: 30%;
-    padding: 10px;
-
-    background-color: $text-layer-post-background;
-    border-radius: 4px;
-    box-sizing: border-box;
-
-    >p.text-layer-post{
-      width: 100%;
-      color: $post-text;
-      font-size: 15px;
-      font-family: segoe-wp-light;
-      overflow: auto;
-      
-    }
-
-    >div.bottom{
-      
-    }
+  .foot-layer-post{
+    display: none;
   }
-
 }
+
 // ============swipe-bar============
 
 

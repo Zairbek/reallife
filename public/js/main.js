@@ -4,7 +4,7 @@ window.onload = function(){
     getId('openFormAuth').addEventListener('click' , function(){
         popupWindow.element = 'formAuth';
         popupWindow.open();
-        document.formAuth.userName.focus();
+        document.form_auth.user_name.focus();
     });
 
     getId('open').addEventListener('click' , function(){
@@ -25,12 +25,15 @@ window.onload = function(){
         popupWindow.close();
     });
 
+    getId('form-auth-close').addEventListener('click' , function(){
+        popupWindow.close();
+    });
+    
+
     window.addEventListener('keydown', function(e){ e.keyCode === 27 ?  popupWindow.close() : false });
 
 
-    document.formRegistration.userName.addEventListener('input', validate.userName);
-    document.formRegistration.password.addEventListener('input', validate.password);
-    document.formRegistration.rePassword.addEventListener('input', validate.rePassword);
+    document.form_auth.user_name.addEventListener('input', validate.userName);
     verticalLine();
 
 
@@ -88,9 +91,9 @@ var switcher = {
 
         if(e === 'layer-post'){
 
-            e.style.top = (winY / 2) - ( eY / 2 ) + 'px';
-            e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
-            e.style.height = winY - 20 + "px";
+            // e.style.top = (winY / 2) - ( eY / 2 ) + 'px';
+            // e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
+            // e.style.height = winY - 20 + "px";
             imgLayerPost();
 
         }else{
