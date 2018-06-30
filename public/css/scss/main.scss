@@ -82,13 +82,29 @@ header {
   .centered {
     overflow: hidden;
     padding: 0 5px;
-
-    .button-nav{
+    
+    .open-bar{
       display: none;
+    }
+
+    .bar{ 
+      float: right;
+      margin-left: 10px;
+
+      .button-user-natification{
+        display: inline-block;
+        padding: 8px 8px;
+        cursor: pointer;
+
+        >i{
+          font-size: 18px;
+        }
+      }
     }
 
     .nav {
       float: right;
+      width: 50%;
       text-align: right;
       margin-right: 10px;
 
@@ -114,6 +130,8 @@ header {
             border-bottom: 2px solid #fff;
           }
         }
+
+        
       }
     }
 
@@ -343,15 +361,18 @@ div.shareGlobal {
 
 
 
-/*              layerPost                */
+/*              layer-post                */
 div.layer-post{
+  display: flex;
+  flex-direction: row;
+
   position: fixed;
   box-sizing: border-box;
   z-index: 10;
   top:0;
   left: 0;
   max-width:1024px;
-  max-height: 600px; 
+  height: 490px; 
   padding: 5px;
 
   border-radius: 5px;
@@ -361,18 +382,18 @@ div.layer-post{
 
 
   .layer-left{
-    display: block;
-    float: left;
+    display: flex;
     width: 70%;
-    height: 100%;
+    margin: auto;
 
     background-color: $img-layer-post-background;
     border-radius: 4px;
     box-sizing: border-box;
 
+    padding-right: 6px;
     .img-layer-post{
-      width: 100%;
-
+      margin: auto;
+     // width: 100%;
     }
   }
 
@@ -382,9 +403,8 @@ div.layer-post{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    float: right;
-    width: 29%;
-    height: 100%;
+
+    width: 30%;
     padding: 10px;
 
     background-color: $text-layer-post-background;
@@ -406,4 +426,12 @@ div.layer-post{
   }
 
 }
+// ============swipe-bar============
 
+
+.swipe-bar{
+  display: none;  
+}
+
+
+// ============swipe-bar============
