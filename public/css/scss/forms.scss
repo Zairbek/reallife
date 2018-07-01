@@ -39,10 +39,15 @@ $text-layer-post-background: white;
 /*         formAuth          */
 .formAuth {
   display: none;
+  align-items: center;
+  justify-content: center;
+
   position: fixed;
   z-index: 10;
   left: 0;top: 0;
+  right: 0;bottom: 0;
   box-sizing: border-box;
+  background-color: $shadow-layer;
   
   .form {
     display: flex;
@@ -62,7 +67,7 @@ $text-layer-post-background: white;
       margin-bottom: 10px;
     }
 
-    > .userName, > input[type="email"], > input[type="password"] {      
+    > .userName, > input[type="password"] {      
       flex-grow: 1;
       width: 100%;
 
@@ -79,39 +84,6 @@ $text-layer-post-background: white;
       margin: 5px 0;
 
       background: rgba(0, 0, 0, 0.3);
-      box-shadow: 0 0 6px #000;
-      box-sizing: border-box;
-    }
-
-    >.textOfImage{
-      width: 40%;
-      flex-grow: 2;
-
-      height: 40px;
-
-
-      border: 1px solid #1D2D3B;
-      border-radius: 5px;
-
-      font-family: segoe-wp-light;
-      font-size: 20px;
-      color: white;
-      padding: 0 20px;
-
-      margin: 5px 10px 5px 0;
-
-      background: rgba(0, 0, 0, 0.3);
-      box-shadow: 0 0 6px #000;
-      box-sizing: border-box;
-    }
-    >img{
-      flex-basis: 40%;
-      flex-grow: 2;
-
-      height: 40px;
-      border-radius: 5px;
-      margin: 5px 0 5px 10px;
-
       box-shadow: 0 0 6px #000;
       box-sizing: border-box;
     }
@@ -133,9 +105,6 @@ $text-layer-post-background: white;
       box-sizing: border-box;
     }
 
-    > input[type="submit"]:focus, > .userName:focus, > input[type="email"]:focus, > input[type="password"]:focus, >.textOfImage:focus {
-      // outline: none;
-    }
   }
 }
 

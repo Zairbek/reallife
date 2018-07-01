@@ -32,52 +32,52 @@
       top: 1px;
       right: 4px;
       padding: 4px 8px; }
-      /* line 57, scss/media.scss */
+      /* line 56, scss/media.scss */
       header .centered .open-bar > i {
         font-size: 18px; }
-    /* line 62, scss/media.scss */
+    /* line 61, scss/media.scss */
     header .centered .bar {
       display: none; }
-    /* line 67, scss/media.scss */
+    /* line 66, scss/media.scss */
     header .centered .nav {
       display: none; }
-    /* line 72, scss/media.scss */
+    /* line 71, scss/media.scss */
     header .centered .logoHome > a {
       width: 200px;
       height: 28px;
       font-size: 18px; }
 
   /*           content               */
-  /* line 86, scss/media.scss */
+  /* line 85, scss/media.scss */
   .content {
     width: 100%; }
-    /* line 89, scss/media.scss */
+    /* line 88, scss/media.scss */
     .content .centered {
       overflow: hidden;
       padding: 10px; }
-      /* line 93, scss/media.scss */
+      /* line 92, scss/media.scss */
       .content .centered .container-left {
         width: 45%; }
-      /* line 97, scss/media.scss */
+      /* line 96, scss/media.scss */
       .content .centered .container-right {
         width: 45%; }
-      /* line 101, scss/media.scss */
+      /* line 100, scss/media.scss */
       .content .centered .container-center {
         width: 10%;
         margin: 0 45%; }
-        /* line 105, scss/media.scss */
+        /* line 104, scss/media.scss */
         .content .centered .container-center .vertical-line-top {
           width: 20px;
           height: 20px;
           margin: 0 auto;
           border: 3px solid #c4ffdd; }
-        /* line 112, scss/media.scss */
+        /* line 111, scss/media.scss */
         .content .centered .container-center .vertical-line {
           margin: 0 auto;
           width: 4px; }
 
   /*          content-box-big             */
-  /* line 124, scss/media.scss */
+  /* line 123, scss/media.scss */
   .box-big {
     box-sizing: border-box;
     width: 100%;
@@ -86,92 +86,52 @@
     border-radius: 4px; }
 
   /*          content-box-small             */
-  /* line 135, scss/media.scss */
+  /* line 134, scss/media.scss */
   .box-small {
     width: 100%;
     margin: 20px 0;
     padding: 10px;
     border-radius: 4px; }
 
-  /*            GLOBAL ELEMENTS          */
-  /*-------------------------------------*/
   /*               post-text             */
   /*    все тексты связанные с постом    */
-  /* line 153, scss/media.scss */
+  /* line 149, scss/media.scss */
   p.post-text {
     font-size: 13px;
     margin-bottom: 3px; }
 
   /*              imgForPostGlobal             */
-  /* line 162, scss/media.scss */
+  /* line 157, scss/media.scss */
   img.imgPostGlobal {
     width: 100%;
     margin: 3px 0; }
 
-  /*           postFormTypeTextGlobal               */
-  /* line 173, scss/media.scss */
-  form.post-form-type-text-global > input[type="text"] {
-    height: 40px;
-    font-size: 14px;
-    padding: 0 5px; }
-  /* line 192, scss/media.scss */
-  form.post-form-type-text-global > button[type="submit"] > i {
-    font-size: 14px; }
-
-  /*           END GLOBAL ELEMENTS          */
-  /*============forScript.scss============*/
-  /*            shadow-layer           */
-  /* line 211, scss/media.scss */
+  /*                   btn-close                   */
+  /* line 165, scss/media.scss */
   .btn-close {
     top: 10px;
     right: 10px;
     width: 25px;
     height: 25px; }
-    /* line 217, scss/media.scss */
+    /* line 171, scss/media.scss */
     .btn-close > i {
       font-size: 20px; }
 
-  /*         formAuth          */
-  /* line 228, scss/media.scss */
-  div.formAuth {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(60, 76, 90, 0.9); }
-    /* line 235, scss/media.scss */
-    div.formAuth .form {
-      max-width: 800px;
-      margin: auto;
-      background-color: transparent; }
-      /* line 240, scss/media.scss */
-      div.formAuth .form > p {
-        font-size: 20px; }
-      /* line 244, scss/media.scss */
-      div.formAuth .form > .userName, div.formAuth .form > input[type="password"] {
-        height: 30px;
-        font-size: 14px;
-        padding: 0 14px; }
-      /* line 251, scss/media.scss */
-      div.formAuth .form > input[type="submit"] {
-        height: 30px;
-        font-size: 14px; }
-
   /*              layer-post                */
-  /* line 265, scss/media.scss */
+  /* line 180, scss/media.scss */
   .layer-post .head-layer-post {
     display: none; }
-  /* line 269, scss/media.scss */
+  /* line 184, scss/media.scss */
   .layer-post .cont-layer-post {
     flex-direction: column;
     position: relative;
     width: 100%;
     height: 400px; }
-    /* line 276, scss/media.scss */
+    /* line 191, scss/media.scss */
     .layer-post .cont-layer-post .layer-left {
       width: 100%;
       margin: auto; }
-    /* line 285, scss/media.scss */
+    /* line 200, scss/media.scss */
     .layer-post .cont-layer-post .layer-right {
       display: flex;
       position: absolute;
@@ -181,20 +141,21 @@
       background-color: rgba(0, 0, 0, 0.7);
       box-shadow: -5px -10px 10px 10px rgba(0, 0, 0, 0.7);
       box-sizing: border-box; }
-      /* line 296, scss/media.scss */
+      /* line 211, scss/media.scss */
       .layer-post .cont-layer-post .layer-right > p.text-layer-post {
         width: 100%;
         color: white;
         font-size: 12px;
         font-family: segoe-wp-light; }
-      /* line 304, scss/media.scss */
+      /* line 219, scss/media.scss */
       .layer-post .cont-layer-post .layer-right > div.bottom {
         display: none; }
-  /* line 310, scss/media.scss */
+  /* line 225, scss/media.scss */
   .layer-post .foot-layer-post {
     display: none; }
 
-  /* line 319, scss/media.scss */
+  /*              swipe-bar                */
+  /* line 232, scss/media.scss */
   .swipe-bar {
     display: flex;
     flex-direction: column;
@@ -205,38 +166,38 @@
     width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: -8px 0 10px 2px rgba(0, 0, 0, 0.8); }
-    /* line 330, scss/media.scss */
+    /* line 243, scss/media.scss */
     .swipe-bar .head-bar {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       height: 35px;
       background-color: rgba(128, 128, 128, 0.8); }
-      /* line 337, scss/media.scss */
+      /* line 250, scss/media.scss */
       .swipe-bar .head-bar .button-user-natification {
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 341, scss/media.scss */
+        /* line 254, scss/media.scss */
         .swipe-bar .head-bar .button-user-natification > i {
           color: #fff;
           font-size: 18px; }
-      /* line 347, scss/media.scss */
+      /* line 260, scss/media.scss */
       .swipe-bar .head-bar .close-bar {
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 351, scss/media.scss */
+        /* line 264, scss/media.scss */
         .swipe-bar .head-bar .close-bar > i {
           color: #fff;
           font-size: 18px; }
-    /* line 358, scss/media.scss */
+    /* line 271, scss/media.scss */
     .swipe-bar .cont-bar {
       box-sizing: border-box;
       padding: 4px 10px; }
-      /* line 363, scss/media.scss */
+      /* line 276, scss/media.scss */
       .swipe-bar .cont-bar .nav li {
         padding: 4px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
-        /* line 366, scss/media.scss */
+        /* line 279, scss/media.scss */
         .swipe-bar .cont-bar .nav li > a {
           font-family: segoe-print-bold;
           font-size: 16px;
@@ -244,61 +205,95 @@
           text-transform: capitalize;
           padding: 6px 0 5px; }
 
-  /*============END forScript.scss============*/ }
+  /*           forms.css postFormTypeTextGlobal               */
+  /* line 300, scss/media.scss */
+  form.post-form-type-text-global > input[type="text"] {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 5px; }
+  /* line 319, scss/media.scss */
+  form.post-form-type-text-global > button[type="submit"] > i {
+    font-size: 14px; }
+
+  /*        forms.css formAuth          */
+  /* line 327, scss/media.scss */
+  div.formAuth {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(60, 76, 90, 0.9); }
+    /* line 334, scss/media.scss */
+    div.formAuth .form {
+      max-width: 800px;
+      margin: auto;
+      background-color: transparent; }
+      /* line 339, scss/media.scss */
+      div.formAuth .form > p {
+        font-size: 20px; }
+      /* line 343, scss/media.scss */
+      div.formAuth .form > .userName, div.formAuth .form > input[type="password"] {
+        height: 30px;
+        font-size: 14px;
+        padding: 0 14px; }
+      /* line 350, scss/media.scss */
+      div.formAuth .form > input[type="submit"] {
+        height: 30px;
+        font-size: 14px; } }
 @media screen and (max-width: 479px) {
   /* Target portrait smartphones */
-  /* line 392, scss/media.scss */
+  /* line 367, scss/media.scss */
   .centered {
     max-width: 479px;
     min-width: 320px; }
 
-  /* line 398, scss/media.scss */
+  /* line 373, scss/media.scss */
   header .centered {
     position: relative; }
-    /* line 401, scss/media.scss */
+    /* line 376, scss/media.scss */
     header .centered .open-bar {
       display: block;
       position: absolute;
       top: 1px;
       right: 4px;
       padding: 4px 8px; }
-      /* line 410, scss/media.scss */
+      /* line 384, scss/media.scss */
       header .centered .open-bar > i {
         font-size: 18px; }
-    /* line 415, scss/media.scss */
+    /* line 389, scss/media.scss */
     header .centered .bar {
       display: none; }
-    /* line 420, scss/media.scss */
+    /* line 394, scss/media.scss */
     header .centered .nav {
       display: none; }
-    /* line 425, scss/media.scss */
+    /* line 399, scss/media.scss */
     header .centered .logoHome > a {
       width: 200px;
       height: 28px;
       font-size: 18px; }
 
   /*           content               */
-  /* line 439, scss/media.scss */
+  /* line 413, scss/media.scss */
   .content {
     width: 100%; }
-    /* line 442, scss/media.scss */
+    /* line 416, scss/media.scss */
     .content .centered {
       overflow: hidden;
       padding: 10px; }
-      /* line 446, scss/media.scss */
+      /* line 420, scss/media.scss */
       .content .centered .container-left {
         width: 100%;
         float: none; }
-      /* line 451, scss/media.scss */
+      /* line 425, scss/media.scss */
       .content .centered .container-right {
         width: 100%;
         float: none; }
-      /* line 456, scss/media.scss */
+      /* line 430, scss/media.scss */
       .content .centered .container-center {
         display: none; }
 
   /*          content-box-big             */
-  /* line 466, scss/media.scss */
+  /* line 440, scss/media.scss */
   .box-big {
     box-sizing: border-box;
     width: 100%;
@@ -307,92 +302,52 @@
     border-radius: 4px; }
 
   /*          content-box-small             */
-  /* line 477, scss/media.scss */
+  /* line 451, scss/media.scss */
   .box-small {
     width: 100%;
     margin: 20px 0;
     padding: 10px;
     border-radius: 4px; }
 
-  /*            GLOBAL ELEMENTS          */
-  /*-------------------------------------*/
   /*               post-text             */
   /*    все тексты связанные с постом    */
-  /* line 495, scss/media.scss */
+  /* line 464, scss/media.scss */
   p.post-text {
     font-size: 13px;
     margin-bottom: 3px; }
 
   /*              imgForPostGlobal             */
-  /* line 504, scss/media.scss */
+  /* line 473, scss/media.scss */
   img.imgPostGlobal {
     width: 100%;
     margin: 3px 0; }
 
-  /*           post-form-type-text-global               */
-  /* line 518, scss/media.scss */
-  form.post-form-type-text-global > input[type="text"] {
-    height: 30px;
-    font-size: 14px;
-    padding: 0 10px; }
-  /* line 537, scss/media.scss */
-  form.post-form-type-text-global > button[type="submit"] > i {
-    font-size: 14px; }
-
-  /*           END GLOBAL ELEMENTS          */
-  /*============forScript.scss============*/
-  /*            shadow-layer           */
-  /* line 556, scss/media.scss */
+  /*                  btn-close                  */
+  /* line 480, scss/media.scss */
   .btn-close {
     top: 10px;
     right: 10px;
     width: 25px;
     height: 25px; }
-    /* line 562, scss/media.scss */
+    /* line 486, scss/media.scss */
     .btn-close > i {
       font-size: 20px; }
 
-  /*         formAuth          */
-  /* line 572, scss/media.scss */
-  div.formAuth {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(60, 76, 90, 0.9); }
-    /* line 579, scss/media.scss */
-    div.formAuth .form {
-      max-width: 800px;
-      margin: auto;
-      background-color: transparent; }
-      /* line 584, scss/media.scss */
-      div.formAuth .form > p {
-        font-size: 20px; }
-      /* line 588, scss/media.scss */
-      div.formAuth .form > .userName, div.formAuth .form > input[type="password"] {
-        height: 30px;
-        font-size: 14px;
-        padding: 0 14px; }
-      /* line 595, scss/media.scss */
-      div.formAuth .form > input[type="submit"] {
-        height: 30px;
-        font-size: 14px; }
-
   /*              layer-post                */
-  /* line 609, scss/media.scss */
+  /* line 494, scss/media.scss */
   .layer-post .head-layer-post {
     display: none; }
-  /* line 613, scss/media.scss */
+  /* line 498, scss/media.scss */
   .layer-post .cont-layer-post {
     flex-direction: column;
     position: relative;
     width: 100%;
     height: 100%; }
-    /* line 620, scss/media.scss */
+    /* line 505, scss/media.scss */
     .layer-post .cont-layer-post .layer-left {
       width: 100%;
       margin: auto; }
-    /* line 629, scss/media.scss */
+    /* line 514, scss/media.scss */
     .layer-post .cont-layer-post .layer-right {
       display: flex;
       position: absolute;
@@ -402,20 +357,21 @@
       background-color: rgba(0, 0, 0, 0.7);
       box-shadow: -5px -10px 10px 10px rgba(0, 0, 0, 0.7);
       box-sizing: border-box; }
-      /* line 640, scss/media.scss */
+      /* line 525, scss/media.scss */
       .layer-post .cont-layer-post .layer-right > p.text-layer-post {
         width: 100%;
         color: white;
         font-size: 12px;
         font-family: segoe-wp-light; }
-      /* line 648, scss/media.scss */
+      /* line 533, scss/media.scss */
       .layer-post .cont-layer-post .layer-right > div.bottom {
         display: none; }
-  /* line 654, scss/media.scss */
+  /* line 539, scss/media.scss */
   .layer-post .foot-layer-post {
     display: none; }
 
-  /* line 663, scss/media.scss */
+  /*              swipe-bar                */
+  /* line 545, scss/media.scss */
   .swipe-bar {
     display: flex;
     flex-direction: column;
@@ -426,38 +382,38 @@
     width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: -8px 0 10px 2px rgba(0, 0, 0, 0.8); }
-    /* line 674, scss/media.scss */
+    /* line 556, scss/media.scss */
     .swipe-bar .head-bar {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       height: 35px;
       background-color: rgba(128, 128, 128, 0.8); }
-      /* line 681, scss/media.scss */
+      /* line 563, scss/media.scss */
       .swipe-bar .head-bar .button-user-natification {
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 685, scss/media.scss */
+        /* line 567, scss/media.scss */
         .swipe-bar .head-bar .button-user-natification > i {
           color: #fff;
           font-size: 18px; }
-      /* line 691, scss/media.scss */
+      /* line 573, scss/media.scss */
       .swipe-bar .head-bar .close-bar {
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 695, scss/media.scss */
+        /* line 577, scss/media.scss */
         .swipe-bar .head-bar .close-bar > i {
           color: #fff;
           font-size: 18px; }
-    /* line 702, scss/media.scss */
+    /* line 584, scss/media.scss */
     .swipe-bar .cont-bar {
       box-sizing: border-box;
       padding: 4px 10px; }
-      /* line 707, scss/media.scss */
+      /* line 589, scss/media.scss */
       .swipe-bar .cont-bar .nav li {
         padding: 4px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
-        /* line 710, scss/media.scss */
+        /* line 592, scss/media.scss */
         .swipe-bar .cont-bar .nav li > a {
           font-family: segoe-print-bold;
           font-size: 16px;
@@ -465,6 +421,40 @@
           text-transform: capitalize;
           padding: 6px 0 5px; }
 
-  /*============END forScript.scss============*/ }
+  /*           forms.css postFormTypeTextGlobal               */
+  /* line 612, scss/media.scss */
+  form.post-form-type-text-global > input[type="text"] {
+    height: 30px;
+    font-size: 14px;
+    padding: 0 10px; }
+  /* line 631, scss/media.scss */
+  form.post-form-type-text-global > button[type="submit"] > i {
+    font-size: 14px; }
+
+  /*         formAuth          */
+  /* line 639, scss/media.scss */
+  div.formAuth {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(60, 76, 90, 0.9); }
+    /* line 646, scss/media.scss */
+    div.formAuth .form {
+      max-width: 800px;
+      margin: auto;
+      background-color: transparent; }
+      /* line 651, scss/media.scss */
+      div.formAuth .form > p {
+        font-size: 20px; }
+      /* line 655, scss/media.scss */
+      div.formAuth .form > .userName, div.formAuth .form > input[type="password"] {
+        height: 30px;
+        font-size: 14px;
+        padding: 0 14px; }
+      /* line 662, scss/media.scss */
+      div.formAuth .form > input[type="submit"] {
+        height: 30px;
+        font-size: 14px; } }
 
 /*# sourceMappingURL=media.css.map */

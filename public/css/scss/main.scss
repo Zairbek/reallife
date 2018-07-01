@@ -1,4 +1,3 @@
-//@import url("forScript.css") ;
 /*==========Цветовая палитра==========*/ 
 $background: #003545;
 $head-background: #c4ffdd;
@@ -76,7 +75,6 @@ header {
   border-bottom: 1px solid #fff;
 
   background: $head-background;
-  // background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.4));
 
 
   .centered {
@@ -230,16 +228,7 @@ header {
 
 
 
-
-
-
-
-
-
-
-/*            GLOBAL ELEMENTS          */
-/*-------------------------------------*/
-
+// =========================================================
 
 /*               post-text             */
 /*    все тексты связанные с постом    */
@@ -264,23 +253,7 @@ img.imgPostGlobal{
 }
 
 
-
-/*           END GLOBAL ELEMENTS          */
-
-
-
-/*            shadow-layer           */
-.shadow-layer{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9;
-  
-  background-color: $shadow-layer;
-}
-
+/*                       btn-close                       */
 .btn-close{
   position: fixed;
   top: 30px;
@@ -309,16 +282,6 @@ img.imgPostGlobal{
 }
 
 
-
-
-
-
-
-//=================================================
-
-
-
-
 /*              layer-post                */
 .layer-post{
   position: fixed;
@@ -328,10 +291,11 @@ img.imgPostGlobal{
   left: 0;
   z-index: 10;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: $shadow-layer;
 
   .head-layer-post{
     display: none;
@@ -398,12 +362,8 @@ img.imgPostGlobal{
   }
 }
 
-// ============swipe-bar============
 
-
+/*              swipe-bar                */
 .swipe-bar{
   display: none;  
 }
-
-
-// ============swipe-bar============

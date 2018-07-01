@@ -15,7 +15,7 @@
   font-family: segoe-ui-bold-italic;
   src: url("../fonts/segoe-ui-bold-italic.ttf"); }
 /*==========FONTS==========*/
-/* line 39, scss/main.scss */
+/* line 38, scss/main.scss */
 * {
   text-decoration: none;
   list-style: none;
@@ -26,19 +26,19 @@
   font-size: 16px;
   font-weight: normal; }
 
-/* line 51, scss/main.scss */
+/* line 50, scss/main.scss */
 body {
   width: 100%;
   min-height: 100%;
   position: relative; }
 
-/* line 57, scss/main.scss */
+/* line 56, scss/main.scss */
 .main {
   width: 100%;
   min-height: 100%;
   background-color: #003545; }
 
-/* line 63, scss/main.scss */
+/* line 62, scss/main.scss */
 .centered {
   max-width: 1024px;
   min-width: 680px;
@@ -46,43 +46,43 @@ body {
   box-sizing: border-box; }
 
 /*        header        */
-/* line 72, scss/main.scss */
+/* line 71, scss/main.scss */
 header {
   width: 100%;
   position: sticky;
   top: 0;
   border-bottom: 1px solid #fff;
   background: #c4ffdd; }
-  /* line 82, scss/main.scss */
+  /* line 80, scss/main.scss */
   header .centered {
     overflow: hidden;
     padding: 0 5px; }
-    /* line 86, scss/main.scss */
+    /* line 84, scss/main.scss */
     header .centered .open-bar {
       display: none; }
-    /* line 90, scss/main.scss */
+    /* line 88, scss/main.scss */
     header .centered .bar {
       float: right;
       margin-left: 10px; }
-      /* line 94, scss/main.scss */
+      /* line 92, scss/main.scss */
       header .centered .bar .button-user-natification {
         display: inline-block;
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 99, scss/main.scss */
+        /* line 97, scss/main.scss */
         header .centered .bar .button-user-natification > i {
           font-size: 18px; }
-    /* line 105, scss/main.scss */
+    /* line 103, scss/main.scss */
     header .centered .nav {
       float: right;
       width: 50%;
       text-align: right;
       margin-right: 10px; }
-      /* line 111, scss/main.scss */
+      /* line 109, scss/main.scss */
       header .centered .nav li {
         display: inline-block;
         margin-left: 10px; }
-        /* line 115, scss/main.scss */
+        /* line 113, scss/main.scss */
         header .centered .nav li > a {
           display: inline-block;
           font-family: segoe-print-bold;
@@ -92,16 +92,16 @@ header {
           border-bottom: 2px solid transparent;
           cursor: pointer;
           transition: all 200ms linear; }
-          /* line 126, scss/main.scss */
+          /* line 124, scss/main.scss */
           header .centered .nav li > a:last-child {
             padding-right: 0; }
-          /* line 129, scss/main.scss */
+          /* line 127, scss/main.scss */
           header .centered .nav li > a:hover {
             border-bottom: 2px solid #fff; }
-    /* line 138, scss/main.scss */
+    /* line 136, scss/main.scss */
     header .centered .logoHome {
       text-align: left; }
-      /* line 141, scss/main.scss */
+      /* line 139, scss/main.scss */
       header .centered .logoHome > a {
         display: block;
         width: 200px;
@@ -112,26 +112,26 @@ header {
         color: #040615; }
 
 /*           content               */
-/* line 161, scss/main.scss */
+/* line 159, scss/main.scss */
 .content {
   width: 100%; }
-  /* line 164, scss/main.scss */
+  /* line 162, scss/main.scss */
   .content .centered {
     overflow: hidden;
     padding: 30px; }
-    /* line 168, scss/main.scss */
+    /* line 166, scss/main.scss */
     .content .centered .container-left {
       float: left;
       width: 45%; }
-    /* line 173, scss/main.scss */
+    /* line 171, scss/main.scss */
     .content .centered .container-right {
       float: right;
       width: 45%; }
-    /* line 178, scss/main.scss */
+    /* line 176, scss/main.scss */
     .content .centered .container-center {
       width: 10%;
       margin: 0 45%; }
-      /* line 181, scss/main.scss */
+      /* line 179, scss/main.scss */
       .content .centered .container-center .vertical-line-top {
         width: 25px;
         height: 25px;
@@ -140,7 +140,7 @@ header {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
-      /* line 190, scss/main.scss */
+      /* line 188, scss/main.scss */
       .content .centered .container-center .vertical-line {
         margin: 0 auto;
         display: block;
@@ -148,7 +148,7 @@ header {
         background-color: #c4ffdd; }
 
 /*          content-box-big             */
-/* line 204, scss/main.scss */
+/* line 202, scss/main.scss */
 .box-big {
   box-sizing: border-box;
   width: 100%;
@@ -159,7 +159,7 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 /*          content-box-small             */
-/* line 219, scss/main.scss */
+/* line 217, scss/main.scss */
 .box-small {
   box-sizing: border-box;
   width: 100%;
@@ -169,11 +169,9 @@ header {
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
-/*            GLOBAL ELEMENTS          */
-/*-------------------------------------*/
 /*               post-text             */
 /*    все тексты связанные с постом    */
-/* line 246, scss/main.scss */
+/* line 235, scss/main.scss */
 p.post-text {
   display: inline-block;
   font-family: segoe-wp-light;
@@ -182,25 +180,14 @@ p.post-text {
   margin-bottom: 5px; }
 
 /*              imgForPostGlobal             */
-/* line 259, scss/main.scss */
+/* line 248, scss/main.scss */
 img.imgPostGlobal {
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0; }
 
-/*           END GLOBAL ELEMENTS          */
-/*            shadow-layer           */
-/* line 273, scss/main.scss */
-.shadow-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.8); }
-
-/* line 284, scss/main.scss */
+/*                       btn-close                       */
+/* line 257, scss/main.scss */
 .btn-close {
   position: fixed;
   top: 30px;
@@ -212,20 +199,20 @@ img.imgPostGlobal {
   border: none;
   cursor: pointer;
   box-sizing: border-box; }
-  /* line 296, scss/main.scss */
+  /* line 269, scss/main.scss */
   .btn-close:hover {
     border: 1px solid white;
     border-radius: 5px; }
-  /* line 301, scss/main.scss */
+  /* line 274, scss/main.scss */
   .btn-close:focus {
     outline: none; }
-  /* line 305, scss/main.scss */
+  /* line 278, scss/main.scss */
   .btn-close > i {
     color: #fff;
     font-size: 30px; }
 
 /*              layer-post                */
-/* line 323, scss/main.scss */
+/* line 286, scss/main.scss */
 .layer-post {
   position: fixed;
   top: 0;
@@ -233,14 +220,15 @@ img.imgPostGlobal {
   right: 0;
   left: 0;
   z-index: 10;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  /* line 336, scss/main.scss */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); }
+  /* line 300, scss/main.scss */
   .layer-post .head-layer-post {
     display: none; }
-  /* line 340, scss/main.scss */
+  /* line 304, scss/main.scss */
   .layer-post .cont-layer-post {
     display: flex;
     flex-direction: row;
@@ -250,7 +238,7 @@ img.imgPostGlobal {
     box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-    /* line 353, scss/main.scss */
+    /* line 317, scss/main.scss */
     .layer-post .cont-layer-post .layer-left {
       display: flex;
       width: 70%;
@@ -259,10 +247,10 @@ img.imgPostGlobal {
       border-radius: 4px;
       box-sizing: border-box;
       padding-right: 6px; }
-      /* line 363, scss/main.scss */
+      /* line 327, scss/main.scss */
       .layer-post .cont-layer-post .layer-left .img-layer-post {
         margin: auto; }
-    /* line 369, scss/main.scss */
+    /* line 333, scss/main.scss */
     .layer-post .cont-layer-post .layer-right {
       display: flex;
       flex-direction: column;
@@ -272,18 +260,19 @@ img.imgPostGlobal {
       background-color: white;
       border-radius: 4px;
       box-sizing: border-box; }
-      /* line 381, scss/main.scss */
+      /* line 345, scss/main.scss */
       .layer-post .cont-layer-post .layer-right > p.text-layer-post {
         width: 100%;
         color: #040615;
         font-size: 15px;
         font-family: segoe-wp-light;
         overflow: auto; }
-  /* line 396, scss/main.scss */
+  /* line 360, scss/main.scss */
   .layer-post .foot-layer-post {
     display: none; }
 
-/* line 404, scss/main.scss */
+/*              swipe-bar                */
+/* line 367, scss/main.scss */
 .swipe-bar {
   display: none; }
 

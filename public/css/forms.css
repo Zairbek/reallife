@@ -20,12 +20,17 @@
 /* line 40, scss/forms.scss */
 .formAuth {
   display: none;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 10;
   left: 0;
   top: 0;
-  box-sizing: border-box; }
-  /* line 47, scss/forms.scss */
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8); }
+  /* line 52, scss/forms.scss */
   .formAuth .form {
     display: flex;
     flex-direction: row;
@@ -35,14 +40,14 @@
     background: rgba(60, 76, 90, 0.9);
     padding: 30px;
     border-radius: 10px; }
-    /* line 58, scss/forms.scss */
+    /* line 63, scss/forms.scss */
     .formAuth .form > p {
       flex-grow: 1;
       font-family: segoe-wp-light;
       font-size: 30px;
       margin-bottom: 10px; }
-    /* line 65, scss/forms.scss */
-    .formAuth .form > .userName, .formAuth .form > input[type="email"], .formAuth .form > input[type="password"] {
+    /* line 70, scss/forms.scss */
+    .formAuth .form > .userName, .formAuth .form > input[type="password"] {
       flex-grow: 1;
       width: 100%;
       height: 40px;
@@ -56,31 +61,7 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 86, scss/forms.scss */
-    .formAuth .form > .textOfImage {
-      width: 40%;
-      flex-grow: 2;
-      height: 40px;
-      border: 1px solid #1D2D3B;
-      border-radius: 5px;
-      font-family: segoe-wp-light;
-      font-size: 20px;
-      color: white;
-      padding: 0 20px;
-      margin: 5px 10px 5px 0;
-      background: rgba(0, 0, 0, 0.3);
-      box-shadow: 0 0 6px #000;
-      box-sizing: border-box; }
-    /* line 107, scss/forms.scss */
-    .formAuth .form > img {
-      flex-basis: 40%;
-      flex-grow: 2;
-      height: 40px;
-      border-radius: 5px;
-      margin: 5px 0 5px 10px;
-      box-shadow: 0 0 6px #000;
-      box-sizing: border-box; }
-    /* line 120, scss/forms.scss */
+    /* line 92, scss/forms.scss */
     .formAuth .form > input[type="submit"] {
       width: 90%;
       height: 40px;
@@ -94,7 +75,7 @@
       box-sizing: border-box; }
 
 /*           postFormTypeTextGlobal               */
-/* line 152, scss/forms.scss */
+/* line 121, scss/forms.scss */
 .post-form-type-text-global {
   display: flex;
   flex-direction: row;
@@ -102,7 +83,7 @@
   width: 100%;
   margin: 5px 0;
   box-sizing: border-box; }
-  /* line 162, scss/forms.scss */
+  /* line 131, scss/forms.scss */
   .post-form-type-text-global > input[type="text"] {
     box-sizing: border-box;
     width: 88%;
@@ -114,20 +95,20 @@
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background-color: #f2f2f2; }
-  /* line 178, scss/forms.scss */
+  /* line 147, scss/forms.scss */
   .post-form-type-text-global > .button {
     box-sizing: border-box;
     width: 12%;
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background: transparent; }
-    /* line 186, scss/forms.scss */
+    /* line 155, scss/forms.scss */
     .post-form-type-text-global > .button:focus {
       outline: none; }
-    /* line 190, scss/forms.scss */
+    /* line 159, scss/forms.scss */
     .post-form-type-text-global > .button:active {
       outline: none; }
-    /* line 195, scss/forms.scss */
+    /* line 164, scss/forms.scss */
     .post-form-type-text-global > .button > i {
       font-size: 20px; }
 

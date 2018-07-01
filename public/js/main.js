@@ -1,40 +1,32 @@
 // -------------------------------------------------------------------------
 window.onload = function(){
 
-    getId('openFormAuth').addEventListener('click' , function(){
-        popupWindow.element = 'formAuth';
-        popupWindow.open();
-        document.form_auth.user_name.focus();
-    });
+	getId('openFormAuth').addEventListener('click' , function(){
+		popupWindow.element = 'formAuth';
+		popupWindow.open();
+		document.form_auth.user_name.focus();
+	});
 
-    getId('open').addEventListener('click' , function(){
-        popupWindow.element = 'layer-post';
-        popupWindow.open();
-    });
-    getId('open1').addEventListener('click' , function(){
-        popupWindow.element = 'layer-post';
-        popupWindow.open();
-    });
-
-
-    getId('shadow-layer').addEventListener('click' , function(){
-        popupWindow.close();
-    });
-
-    getId('shadow-layer').addEventListener('click' , function(){
-        popupWindow.close();
-    });
-
-    getId('form-auth-close').addEventListener('click' , function(){
-        popupWindow.close();
-    });
-    
-
-    window.addEventListener('keydown', function(e){ e.keyCode === 27 ?  popupWindow.close() : false });
+	getId('open').addEventListener('click' , function(){
+		popupWindow.element = 'layer-post';
+		popupWindow.open();
+	});
+	getId('open1').addEventListener('click' , function(){
+		popupWindow.element = 'layer-post';
+		popupWindow.open();
+	});
 
 
-    document.form_auth.user_name.addEventListener('input', validate.userName);
-    verticalLine();
+	getId('form-auth-close').addEventListener('click' , function(){
+		popupWindow.close();
+	});
+	
+
+	window.addEventListener('keydown', function(e){ e.keyCode === 27 ?  popupWindow.close() : false });
+
+
+	document.form_auth.user_name.addEventListener('input', validate.userName);
+	verticalLine();
 
 
 }
@@ -48,18 +40,18 @@ window.onload = function(){
 getId = (attr) => document.getElementById(attr);
 // ---------------------------------------------
 function verticalLine(){
-    var contentCentered = getId('contentCentered');
-    var contentHeight = contentCentered.clientHeight;
+	var contentCentered = getId('contentCentered');
+	var contentHeight = contentCentered.clientHeight;
 
-    var verticalLine = getId('vertical-line');
-    verticalLine.style.height = contentHeight + 'px';
+	var verticalLine = getId('vertical-line');
+	verticalLine.style.height = contentHeight + 'px';
 }
 function imgLayerPost(){
-    let e = getId('img-layer-post');
-    let eHeight = e.clientHeight
+	let e = getId('img-layer-post');
+	let eHeight = e.clientHeight
 
-    let el = document.querySelector('.layer-left');
-    e.style.marginTop = (el.clientHeight / 2) - (eHeight / 2) + 'px';
+	let el = document.querySelector('.layer-left');
+	e.style.marginTop = (el.clientHeight / 2) - (eHeight / 2) + 'px';
 }
 
 
@@ -67,48 +59,33 @@ function imgLayerPost(){
 
 
 var switcher = {
-    // --------------------------------
-    runShadowLayer: function(el){
-        getId(el).hidden = false;       
-    },
-    exitShadowLayer: function (el){
-        getId(el).hidden = true;                      
-    },
-    // -------------------------`------
-    // --------------------------------
-    runPopupWindow: function(el){
-        let winX = document.documentElement.clientWidth;
-        let winY = document.documentElement.clientHeight;
+	// --------------------------------
+	runShadowLayer: function(el){
+		getId(el).style.display = 'flex';       
+	},
+	exitShadowLayer: function (el){
+		getId(el).style.display = 'none';       
+	},
+	// -------------------------`------
+	// --------------------------------
+	runPopupWindow: function(el){
+		let e = getId(el);
 
-        let e = getId(el);
+			e.style.display = 'flex';
 
-        // if (e === 'layer-post') 
-            e.style.display = 'flex';
-        // e.hidden = false;
-
-        let eX = e.offsetWidth;
-        let eY = e.offsetHeight;
-
-        if(e === 'layer-post'){
-
-            // e.style.top = (winY / 2) - ( eY / 2 ) + 'px';
-            // e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
-            // e.style.height = winY - 20 + "px";
-            imgLayerPost();
-
-        }else{
-            e.style.top =  (winY / 2) - ( eY / 2 ) + 'px';
-            e.style.left = (winX / 2) - ( eX / 2 ) + 'px';
-        }
+		if(e === 'layer-post'){
+			// imgLayerPost();
+		}else{
+		}
 
 
-    },
-    closePopupWindow: function (el){
-        let elem = getId(el);
-        elem.style.display = 'none';
+	},
+	closePopupWindow: function (el){
+		let elem = getId(el);
+		elem.style.display = 'none';
 
-    }
-    // -------------------------------
+	}
+	// -------------------------------
 
 }
 
@@ -120,50 +97,50 @@ var switcher = {
 
 
 var popupWindow = {
-    element: '',
-    state: 'close',
+	element: '',
+	state: 'close',
 
-    open: function () {
-        if(this.state === 'close'){
-            this.state = 'open';
-            
-            switcher.runPopupWindow(this.element);
-            shadowLayer.open();
+	open: function () {
+		if(this.state === 'close'){
+			this.state = 'open';
+			
+			switcher.runPopupWindow(this.element);
+			shadowLayer.open();
 
-            return this.state;
-        }
-    },
-    close: function () {
-        if(this.state === 'open'){
-            this.state = 'close';
-            
-            switcher.closePopupWindow(this.element);
-            shadowLayer.close();
-            
-            return this.state;                        
-        }
-    }
+			return this.state;
+		}
+	},
+	close: function () {
+		if(this.state === 'open'){
+			this.state = 'close';
+			
+			switcher.closePopupWindow(this.element);
+			shadowLayer.close();
+			
+			return this.state;                        
+		}
+	}
 } 
 
 // ---------------------------
 var shadowLayer = {
-    element: 'shadow-layer',   //нужно сделать проверочная функция что-бы для каждого элемента проверил 
-    state: 'close',  //         что он есть в DOMе и по резултатам изменить значения state!!!!!!!!
+	element: '',   //нужно сделать проверочная функция что-бы для каждого элемента проверил 
+	state: 'close',  //         что он есть в DOMе и по резултатам изменить значения state!!!!!!!!
 
-    open: function(){
-        if(this.state === 'close'){
-            switcher.runShadowLayer(this.element)
-            this.state = 'open';
-            return this.state;
-        }
-    },
-    
-    close: function (){
-        if(this.state === 'open'){
-            switcher.exitShadowLayer(this.element)
-            this.state = 'close';
-            return this.state;
-        }
-    }
+	open: function(){
+		if(this.state === 'close'){
+			switcher.runShadowLayer(this.element)
+			this.state = 'open';
+			return this.state;
+		}
+	},
+	
+	close: function (){
+		if(this.state === 'open'){
+			switcher.exitShadowLayer(this.element)
+			this.state = 'close';
+			return this.state;
+		}
+	}
 }
 
