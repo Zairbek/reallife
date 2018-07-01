@@ -17,7 +17,6 @@
 /*==========FONTS==========*/
 /*====================FORMS====================*/
 /*         formAuth          */
-/* line 33, scss/forms.scss */
 .formAuth {
   display: none;
   align-items: center;
@@ -30,7 +29,6 @@
   bottom: 0;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.8); }
-  /* line 45, scss/forms.scss */
   .formAuth .form {
     display: flex;
     flex-direction: row;
@@ -40,13 +38,11 @@
     background: rgba(60, 76, 90, 0.9);
     padding: 30px;
     border-radius: 10px; }
-    /* line 56, scss/forms.scss */
     .formAuth .form > p {
       flex-grow: 1;
       font-family: segoe-wp-light;
       font-size: 30px;
       margin-bottom: 10px; }
-    /* line 63, scss/forms.scss */
     .formAuth .form > .userName, .formAuth .form > input[type="password"] {
       flex-grow: 1;
       width: 100%;
@@ -61,7 +57,6 @@
       background: rgba(0, 0, 0, 0.3);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
-    /* line 85, scss/forms.scss */
     .formAuth .form > input[type="submit"] {
       width: 90%;
       height: 40px;
@@ -69,13 +64,13 @@
       border-radius: 5px;
       font-family: segoe-wp-light;
       font-size: 20px;
+      color: #040615;
       margin: 5px auto;
       background: rgba(32, 117, 189, 0.9);
       box-shadow: 0 0 6px #000;
       box-sizing: border-box; }
 
 /*           postFormTypeTextGlobal               */
-/* line 114, scss/forms.scss */
 .post-form-type-text-global {
   display: flex;
   flex-direction: row;
@@ -83,7 +78,6 @@
   width: 100%;
   margin: 5px 0;
   box-sizing: border-box; }
-  /* line 124, scss/forms.scss */
   .post-form-type-text-global > input[type="text"] {
     box-sizing: border-box;
     width: 88%;
@@ -95,20 +89,16 @@
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background-color: #f2f2f2; }
-  /* line 140, scss/forms.scss */
   .post-form-type-text-global > .button {
     box-sizing: border-box;
     width: 12%;
     border: 1px solid #d6d6d6;
     border-radius: 3px;
     background: transparent; }
-    /* line 148, scss/forms.scss */
     .post-form-type-text-global > .button:focus {
       outline: none; }
-    /* line 152, scss/forms.scss */
     .post-form-type-text-global > .button:active {
       outline: none; }
-    /* line 157, scss/forms.scss */
     .post-form-type-text-global > .button > i {
       font-size: 20px; }
 

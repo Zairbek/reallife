@@ -1,4 +1,33 @@
+window.onload = init; 
+
+function init (){
+  getId('openFormAuth').addEventListener('click', function(){
+    getId('formAuth').style.display = 'flex';
+  })  
+
+
+}
+
+
+// functions =============================
+getId = (attr) => document.getElementById(attr);
+
+
+
+// ОБЪЕКТ
+// func()()
+
+//data-* 
+
+
+
+
+
+
+
+
 // -------------------------------------------------------------------------
+/**********************************
 window.onload = function(){
 
 	getId('openFormAuth').addEventListener('click' , function(){
@@ -144,3 +173,4 @@ var shadowLayer = {
 	}
 }
 
+*/

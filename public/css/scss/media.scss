@@ -1,4 +1,15 @@
 /*==========Цветовая палитра==========*/ 
+$text-layer-post-background-AND-box-shadow-for-small-screens: rgba(0,0,0,.7);
+$swipe-bar-background-AND-box-shadow: rgba(0,0,0,.8);
+$swipe-bar-head-bar-background: rgba(128,128,128,.8);
+
+$button-user-natification-color: #fff;
+$close-bar-color: #fff;
+
+$nav-border-bottom-color: rgba(255,255,255,.4);
+
+$form-auth-shadow-background: rgba(60, 76, 90, 0.966);
+
 
 /*==========Цветовая палитра==========*/ 
 
@@ -31,6 +42,7 @@
     max-width: 800px;
     min-width: 480px;
   }
+
   header{
 
     .centered{
@@ -71,7 +83,6 @@
 
 
 
-
   /*           content               */
   .content{
     width: 100%;
@@ -106,8 +117,6 @@
       }
     }
   }
-
-
 
 
   /*          content-box-big             */
@@ -195,8 +204,8 @@
         bottom: 0px;
     
         padding: 0;
-        background-color: rgba(0,0,0,.7);
-        box-shadow: -5px -10px 10px 10px rgba(0,0,0,.7);      
+        background-color: $text-layer-post-background-AND-box-shadow-for-small-screens;
+        box-shadow: -5px -10px 10px 10px $text-layer-post-background-AND-box-shadow-for-small-screens;      
         box-sizing: border-box;
     
         >p.text-layer-post{
@@ -228,22 +237,22 @@
     right: -310px;
     bottom: 0;
     width: 300px;
-    background-color: rgba(0,0,0,.8);
-    box-shadow: -8px 0 10px 2px rgba(0,0,0,.8);
+    background-color: $swipe-bar-background-AND-box-shadow;
+    box-shadow: -8px 0 10px 2px $swipe-bar-background-AND-box-shadow;
     
     .head-bar{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       height: 35px;
-      background-color: rgba(128,128,128,.8);
+      background-color: $swipe-bar-head-bar-background;
 
       .button-user-natification{
         padding: 8px 8px;
         cursor: pointer;
 
         >i{
-          color: #fff;
+          color: $button-user-natification-color;
           font-size: 18px;
         }
       }
@@ -253,7 +262,7 @@
         cursor: pointer;
       
         > i{
-          color: #fff;
+          color: $close-bar-color;
           font-size: 18px;
         }
       }
@@ -266,7 +275,7 @@
     
         li{
           padding: 4px 0;
-          border-bottom: 1px solid rgba(255,255,255,.4);
+          border-bottom: 1px solid $nav-border-bottom-color;
           >a{
             font-family: segoe-print-bold;
             font-size: 16px;
@@ -320,7 +329,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(60, 76, 90, 0.9);
+    background-color: $form-auth-shadow-background;
 
     .form {
       max-width: 800px;
@@ -426,7 +435,6 @@
 
 
 
-
   /*          content-box-big             */
   .box-big {
     box-sizing: border-box;
@@ -457,8 +465,6 @@
 
     margin-bottom: 3px;
   }
-
-
 
   /*              imgForPostGlobal             */
   img.imgPostGlobal{
@@ -509,8 +515,8 @@
         bottom: 0px;
     
         padding: 0;
-        background-color: rgba(0,0,0,.7);
-        box-shadow: -5px -10px 10px 10px rgba(0,0,0,.7);      
+        background-color: $text-layer-post-background-AND-box-shadow-for-small-screens;
+        box-shadow: -5px -10px 10px 10px $text-layer-post-background-AND-box-shadow-for-small-screens;
         box-sizing: border-box;
     
         >p.text-layer-post{
@@ -541,22 +547,22 @@
     right: -310px;
     bottom: 0;
     width: 300px;
-    background-color: rgba(0,0,0,.8);
-    box-shadow: -8px 0 10px 2px rgba(0,0,0,.8);
+    background-color: $swipe-bar-background-AND-box-shadow;
+    box-shadow: -8px 0 10px 2px $swipe-bar-background-AND-box-shadow;
     
     .head-bar{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       height: 35px;
-      background-color: rgba(128,128,128,.8);
+      background-color: $swipe-bar-head-bar-background;
 
       .button-user-natification{
         padding: 8px 8px;
         cursor: pointer;
 
         >i{
-          color: #fff;
+          color: $button-user-natification-color;
           font-size: 18px;
         }
       }
@@ -566,7 +572,7 @@
         cursor: pointer;
       
         > i{
-          color: #fff;
+          color: $close-bar-color;
           font-size: 18px;
         }
       }
@@ -579,7 +585,7 @@
     
         li{
           padding: 4px 0;
-          border-bottom: 1px solid rgba(255,255,255,.4);
+          border-bottom: 1px solid $nav-border-bottom-color;
           >a{
             font-family: segoe-print-bold;
             font-size: 16px;
@@ -632,7 +638,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(60, 76, 90, 0.9);
+    background-color: $form-auth-shadow-background;
 
     .form {
       max-width: 800px;

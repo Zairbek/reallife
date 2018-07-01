@@ -1,7 +1,18 @@
 /*==========Цветовая палитра==========*/ 
-$shadow-layer-background: rgba(0,0,0,0.8);
-$input-post-text: #040615;
-$input-post-background: #f2f2f2;
+$form-auth-shadow-background: rgba(0,0,0,0.8);
+$form-auth-background:rgba(60, 76, 90, 0.9);
+
+$form-auth-input-background: rgba(0, 0, 0, 0.3);
+$form-auth-input-color: white;
+
+$form-auth-submit-background: rgba(32, 117, 189, 0.9);
+$form-auth-submit-color: #040615;
+
+$post-form-input-color: #040615;
+$post-form-input-background: #f2f2f2;
+
+
+
 /*==========Цветовая палитра==========*/ 
 
 /*==========FONTS==========*/ 
@@ -40,7 +51,7 @@ $input-post-background: #f2f2f2;
   left: 0;top: 0;
   right: 0;bottom: 0;
   box-sizing: border-box;
-  background-color: $shadow-layer-background;
+  background-color: $form-auth-shadow-background;
   
   .form {
     display: flex;
@@ -49,7 +60,7 @@ $input-post-background: #f2f2f2;
     
     box-sizing: border-box;
     width: 600px;
-    background: rgba(60, 76, 90, 0.9);
+    background: $form-auth-background;
     padding: 30px;
     border-radius: 10px;
 
@@ -71,12 +82,12 @@ $input-post-background: #f2f2f2;
 
       font-family: segoe-wp-light;
       font-size: 20px;
-      color: white;
+      color: $form-auth-input-color;
       padding: 0 20px;
 
       margin: 5px 0;
 
-      background: rgba(0, 0, 0, 0.3);
+      background: $form-auth-input-background;
       box-shadow: 0 0 6px #000;
       box-sizing: border-box;
     }
@@ -91,9 +102,10 @@ $input-post-background: #f2f2f2;
 
       font-family: segoe-wp-light;
       font-size: 20px;
+      color: $form-auth-submit-color;
 
       margin: 5px auto;
-      background: rgba(32, 117, 189, 0.9);
+      background: $form-auth-submit-background;
       box-shadow: 0 0 6px #000;
       box-sizing: border-box;
     }
@@ -128,13 +140,13 @@ $input-post-background: #f2f2f2;
 
     font-family: segoe-wp-light;
     font-size: 20px;
-    color: $input-post-text;
+    color: $post-form-input-color;
 
     padding: 0 10px;
     border: 1px solid #d6d6d6;
     border-radius: 3px;
 
-    background-color: $input-post-background;
+    background-color: $post-form-input-background;
   }
 
   >.button{

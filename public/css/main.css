@@ -15,7 +15,6 @@
   font-family: segoe-ui-bold-italic;
   src: url("../fonts/segoe-ui-bold-italic.ttf"); }
 /*==========FONTS==========*/
-/* line 37, scss/main.scss */
 * {
   text-decoration: none;
   list-style: none;
@@ -26,19 +25,16 @@
   font-size: 16px;
   font-weight: normal; }
 
-/* line 49, scss/main.scss */
 body {
   width: 100%;
   min-height: 100%;
   position: relative; }
 
-/* line 55, scss/main.scss */
 .main {
   width: 100%;
   min-height: 100%;
   background-color: #003545; }
 
-/* line 61, scss/main.scss */
 .centered {
   max-width: 1024px;
   min-width: 680px;
@@ -46,43 +42,34 @@ body {
   box-sizing: border-box; }
 
 /*        header        */
-/* line 70, scss/main.scss */
 header {
   width: 100%;
   position: sticky;
   top: 0;
   border-bottom: 1px solid #fff;
   background: #c4ffdd; }
-  /* line 79, scss/main.scss */
   header .centered {
     overflow: hidden;
     padding: 0 5px; }
-    /* line 83, scss/main.scss */
     header .centered .open-bar {
       display: none; }
-    /* line 87, scss/main.scss */
     header .centered .bar {
       float: right;
       margin-left: 10px; }
-      /* line 91, scss/main.scss */
       header .centered .bar .button-user-natification {
         display: inline-block;
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 96, scss/main.scss */
         header .centered .bar .button-user-natification > i {
           font-size: 18px; }
-    /* line 102, scss/main.scss */
     header .centered .nav {
       float: right;
       width: 50%;
       text-align: right;
       margin-right: 10px; }
-      /* line 108, scss/main.scss */
       header .centered .nav li {
         display: inline-block;
         margin-left: 10px; }
-        /* line 112, scss/main.scss */
         header .centered .nav li > a {
           display: inline-block;
           font-family: segoe-print-bold;
@@ -92,16 +79,12 @@ header {
           border-bottom: 2px solid transparent;
           cursor: pointer;
           transition: all 200ms linear; }
-          /* line 123, scss/main.scss */
           header .centered .nav li > a:last-child {
             padding-right: 0; }
-          /* line 126, scss/main.scss */
           header .centered .nav li > a:hover {
             border-bottom: 2px solid #fff; }
-    /* line 135, scss/main.scss */
     header .centered .logoHome {
       text-align: left; }
-      /* line 138, scss/main.scss */
       header .centered .logoHome > a {
         display: block;
         width: 200px;
@@ -112,26 +95,20 @@ header {
         color: #040615; }
 
 /*           content               */
-/* line 158, scss/main.scss */
 .content {
   width: 100%; }
-  /* line 161, scss/main.scss */
   .content .centered {
     overflow: hidden;
     padding: 30px; }
-    /* line 165, scss/main.scss */
     .content .centered .container-left {
       float: left;
       width: 45%; }
-    /* line 170, scss/main.scss */
     .content .centered .container-right {
       float: right;
       width: 45%; }
-    /* line 175, scss/main.scss */
     .content .centered .container-center {
       width: 10%;
       margin: 0 45%; }
-      /* line 178, scss/main.scss */
       .content .centered .container-center .vertical-line-top {
         width: 25px;
         height: 25px;
@@ -140,7 +117,6 @@ header {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
-      /* line 187, scss/main.scss */
       .content .centered .container-center .vertical-line {
         margin: 0 auto;
         display: block;
@@ -148,7 +124,6 @@ header {
         background-color: #c4ffdd; }
 
 /*          content-box-big             */
-/* line 201, scss/main.scss */
 .box-big {
   box-sizing: border-box;
   width: 100%;
@@ -159,7 +134,6 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 /*          content-box-small             */
-/* line 216, scss/main.scss */
 .box-small {
   box-sizing: border-box;
   width: 100%;
@@ -171,7 +145,6 @@ header {
 
 /*               post-text             */
 /*    все тексты связанные с постом    */
-/* line 234, scss/main.scss */
 p.post-text {
   display: inline-block;
   font-family: segoe-wp-light;
@@ -180,14 +153,12 @@ p.post-text {
   margin-bottom: 5px; }
 
 /*              imgForPostGlobal             */
-/* line 247, scss/main.scss */
 img.imgPostGlobal {
   box-sizing: border-box;
   width: 100%;
   margin: 5px 0; }
 
 /*                       btn-close                       */
-/* line 256, scss/main.scss */
 .btn-close {
   position: fixed;
   top: 30px;
@@ -199,20 +170,16 @@ img.imgPostGlobal {
   border: none;
   cursor: pointer;
   box-sizing: border-box; }
-  /* line 268, scss/main.scss */
   .btn-close:hover {
     border: 1px solid white;
     border-radius: 5px; }
-  /* line 273, scss/main.scss */
   .btn-close:focus {
     outline: none; }
-  /* line 277, scss/main.scss */
   .btn-close > i {
     color: #fff;
     font-size: 30px; }
 
 /*              layer-post                */
-/* line 285, scss/main.scss */
 .layer-post {
   position: fixed;
   top: 0;
@@ -225,10 +192,8 @@ img.imgPostGlobal {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8); }
-  /* line 299, scss/main.scss */
   .layer-post .head-layer-post {
     display: none; }
-  /* line 303, scss/main.scss */
   .layer-post .cont-layer-post {
     display: flex;
     flex-direction: row;
@@ -238,7 +203,6 @@ img.imgPostGlobal {
     box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-    /* line 316, scss/main.scss */
     .layer-post .cont-layer-post .layer-left {
       display: flex;
       width: 70%;
@@ -247,10 +211,8 @@ img.imgPostGlobal {
       border-radius: 4px;
       box-sizing: border-box;
       padding-right: 6px; }
-      /* line 326, scss/main.scss */
       .layer-post .cont-layer-post .layer-left .img-layer-post {
         margin: auto; }
-    /* line 331, scss/main.scss */
     .layer-post .cont-layer-post .layer-right {
       display: flex;
       flex-direction: column;
@@ -260,19 +222,16 @@ img.imgPostGlobal {
       background-color: white;
       border-radius: 4px;
       box-sizing: border-box; }
-      /* line 343, scss/main.scss */
       .layer-post .cont-layer-post .layer-right > p.text-layer-post {
         width: 100%;
         color: #040615;
         font-size: 15px;
         font-family: segoe-wp-light;
         overflow: auto; }
-  /* line 358, scss/main.scss */
   .layer-post .foot-layer-post {
     display: none; }
 
 /*              swipe-bar                */
-/* line 365, scss/main.scss */
 .swipe-bar {
   display: none; }
 

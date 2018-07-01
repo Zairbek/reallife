@@ -17,67 +17,52 @@
 /*==========FONTS==========*/
 @media screen and (min-width: 480px) and (max-width: 800px) {
   /* Target landscape smartphones, portrait tablets, narrow desktops*/
-  /* line 30, scss/media.scss */
   .centered {
     max-width: 800px;
     min-width: 480px; }
 
-  /* line 36, scss/media.scss */
   header .centered {
     position: relative; }
-    /* line 39, scss/media.scss */
     header .centered .open-bar {
       display: block;
       position: absolute;
       top: 1px;
       right: 4px;
       padding: 4px 8px; }
-      /* line 47, scss/media.scss */
       header .centered .open-bar > i {
         font-size: 18px; }
-    /* line 52, scss/media.scss */
     header .centered .bar {
       display: none; }
-    /* line 57, scss/media.scss */
     header .centered .nav {
       display: none; }
-    /* line 62, scss/media.scss */
     header .centered .logoHome > a {
       width: 200px;
       height: 28px;
       font-size: 18px; }
 
   /*           content               */
-  /* line 76, scss/media.scss */
   .content {
     width: 100%; }
-    /* line 79, scss/media.scss */
     .content .centered {
       overflow: hidden;
       padding: 10px; }
-      /* line 83, scss/media.scss */
       .content .centered .container-left {
         width: 45%; }
-      /* line 87, scss/media.scss */
       .content .centered .container-right {
         width: 45%; }
-      /* line 91, scss/media.scss */
       .content .centered .container-center {
         width: 10%;
         margin: 0 45%; }
-        /* line 95, scss/media.scss */
         .content .centered .container-center .vertical-line-top {
           width: 20px;
           height: 20px;
           margin: 0 auto;
           border: 3px solid #c4ffdd; }
-        /* line 102, scss/media.scss */
         .content .centered .container-center .vertical-line {
           margin: 0 auto;
           width: 4px; }
 
   /*          content-box-big             */
-  /* line 114, scss/media.scss */
   .box-big {
     box-sizing: border-box;
     width: 100%;
@@ -86,7 +71,6 @@
     border-radius: 4px; }
 
   /*          content-box-small             */
-  /* line 125, scss/media.scss */
   .box-small {
     width: 100%;
     margin: 20px 0;
@@ -95,43 +79,35 @@
 
   /*               post-text             */
   /*    все тексты связанные с постом    */
-  /* line 140, scss/media.scss */
   p.post-text {
     font-size: 13px;
     margin-bottom: 3px; }
 
   /*              imgForPostGlobal             */
-  /* line 148, scss/media.scss */
   img.imgPostGlobal {
     width: 100%;
     margin: 3px 0; }
 
   /*                   btn-close                   */
-  /* line 156, scss/media.scss */
   .btn-close {
     top: 10px;
     right: 10px;
     width: 25px;
     height: 25px; }
-    /* line 162, scss/media.scss */
     .btn-close > i {
       font-size: 20px; }
 
   /*              layer-post                */
-  /* line 171, scss/media.scss */
   .layer-post .head-layer-post {
     display: none; }
-  /* line 175, scss/media.scss */
   .layer-post .cont-layer-post {
     flex-direction: column;
     position: relative;
     width: 100%;
     height: 400px; }
-    /* line 182, scss/media.scss */
     .layer-post .cont-layer-post .layer-left {
       width: 100%;
       margin: auto; }
-    /* line 191, scss/media.scss */
     .layer-post .cont-layer-post .layer-right {
       display: flex;
       position: absolute;
@@ -141,21 +117,17 @@
       background-color: rgba(0, 0, 0, 0.7);
       box-shadow: -5px -10px 10px 10px rgba(0, 0, 0, 0.7);
       box-sizing: border-box; }
-      /* line 202, scss/media.scss */
       .layer-post .cont-layer-post .layer-right > p.text-layer-post {
         width: 100%;
         color: white;
         font-size: 12px;
         font-family: segoe-wp-light; }
-      /* line 210, scss/media.scss */
       .layer-post .cont-layer-post .layer-right > div.bottom {
         display: none; }
-  /* line 216, scss/media.scss */
   .layer-post .foot-layer-post {
     display: none; }
 
   /*              swipe-bar                */
-  /* line 223, scss/media.scss */
   .swipe-bar {
     display: flex;
     flex-direction: column;
@@ -166,38 +138,30 @@
     width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: -8px 0 10px 2px rgba(0, 0, 0, 0.8); }
-    /* line 234, scss/media.scss */
     .swipe-bar .head-bar {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       height: 35px;
       background-color: rgba(128, 128, 128, 0.8); }
-      /* line 241, scss/media.scss */
       .swipe-bar .head-bar .button-user-natification {
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 245, scss/media.scss */
         .swipe-bar .head-bar .button-user-natification > i {
           color: #fff;
           font-size: 18px; }
-      /* line 251, scss/media.scss */
       .swipe-bar .head-bar .close-bar {
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 255, scss/media.scss */
         .swipe-bar .head-bar .close-bar > i {
           color: #fff;
           font-size: 18px; }
-    /* line 262, scss/media.scss */
     .swipe-bar .cont-bar {
       box-sizing: border-box;
       padding: 4px 10px; }
-      /* line 267, scss/media.scss */
       .swipe-bar .cont-bar .nav li {
         padding: 4px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
-        /* line 270, scss/media.scss */
         .swipe-bar .cont-bar .nav li > a {
           font-family: segoe-print-bold;
           font-size: 16px;
@@ -206,94 +170,74 @@
           padding: 6px 0 5px; }
 
   /*           forms.css postFormTypeTextGlobal               */
-  /* line 291, scss/media.scss */
   form.post-form-type-text-global > input[type="text"] {
     height: 40px;
     font-size: 14px;
     padding: 0 5px; }
-  /* line 310, scss/media.scss */
   form.post-form-type-text-global > button[type="submit"] > i {
     font-size: 14px; }
 
   /*        forms.css formAuth          */
-  /* line 318, scss/media.scss */
   div.formAuth {
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(60, 76, 90, 0.9); }
-    /* line 325, scss/media.scss */
+    background-color: rgba(60, 76, 90, 0.966); }
     div.formAuth .form {
       max-width: 800px;
       margin: auto;
       background-color: transparent; }
-      /* line 330, scss/media.scss */
       div.formAuth .form > p {
         font-size: 20px; }
-      /* line 334, scss/media.scss */
       div.formAuth .form > .userName, div.formAuth .form > input[type="password"] {
         height: 30px;
         font-size: 14px;
         padding: 0 14px; }
-      /* line 341, scss/media.scss */
       div.formAuth .form > input[type="submit"] {
         height: 30px;
         font-size: 14px; } }
 @media screen and (max-width: 479px) {
   /* Target portrait smartphones */
-  /* line 358, scss/media.scss */
   .centered {
     max-width: 479px;
     min-width: 320px; }
 
-  /* line 364, scss/media.scss */
   header .centered {
     position: relative; }
-    /* line 367, scss/media.scss */
     header .centered .open-bar {
       display: block;
       position: absolute;
       top: 1px;
       right: 4px;
       padding: 4px 8px; }
-      /* line 375, scss/media.scss */
       header .centered .open-bar > i {
         font-size: 18px; }
-    /* line 380, scss/media.scss */
     header .centered .bar {
       display: none; }
-    /* line 385, scss/media.scss */
     header .centered .nav {
       display: none; }
-    /* line 390, scss/media.scss */
     header .centered .logoHome > a {
       width: 200px;
       height: 28px;
       font-size: 18px; }
 
   /*           content               */
-  /* line 404, scss/media.scss */
   .content {
     width: 100%; }
-    /* line 407, scss/media.scss */
     .content .centered {
       overflow: hidden;
       padding: 10px; }
-      /* line 411, scss/media.scss */
       .content .centered .container-left {
         width: 100%;
         float: none; }
-      /* line 416, scss/media.scss */
       .content .centered .container-right {
         width: 100%;
         float: none; }
-      /* line 421, scss/media.scss */
       .content .centered .container-center {
         display: none; }
 
   /*          content-box-big             */
-  /* line 431, scss/media.scss */
   .box-big {
     box-sizing: border-box;
     width: 100%;
@@ -302,7 +246,6 @@
     border-radius: 4px; }
 
   /*          content-box-small             */
-  /* line 442, scss/media.scss */
   .box-small {
     width: 100%;
     margin: 20px 0;
@@ -311,43 +254,35 @@
 
   /*               post-text             */
   /*    все тексты связанные с постом    */
-  /* line 455, scss/media.scss */
   p.post-text {
     font-size: 13px;
     margin-bottom: 3px; }
 
   /*              imgForPostGlobal             */
-  /* line 464, scss/media.scss */
   img.imgPostGlobal {
     width: 100%;
     margin: 3px 0; }
 
   /*                  btn-close                  */
-  /* line 471, scss/media.scss */
   .btn-close {
     top: 10px;
     right: 10px;
     width: 25px;
     height: 25px; }
-    /* line 477, scss/media.scss */
     .btn-close > i {
       font-size: 20px; }
 
   /*              layer-post                */
-  /* line 485, scss/media.scss */
   .layer-post .head-layer-post {
     display: none; }
-  /* line 489, scss/media.scss */
   .layer-post .cont-layer-post {
     flex-direction: column;
     position: relative;
     width: 100%;
     height: 100%; }
-    /* line 496, scss/media.scss */
     .layer-post .cont-layer-post .layer-left {
       width: 100%;
       margin: auto; }
-    /* line 505, scss/media.scss */
     .layer-post .cont-layer-post .layer-right {
       display: flex;
       position: absolute;
@@ -357,21 +292,17 @@
       background-color: rgba(0, 0, 0, 0.7);
       box-shadow: -5px -10px 10px 10px rgba(0, 0, 0, 0.7);
       box-sizing: border-box; }
-      /* line 516, scss/media.scss */
       .layer-post .cont-layer-post .layer-right > p.text-layer-post {
         width: 100%;
         color: white;
         font-size: 12px;
         font-family: segoe-wp-light; }
-      /* line 524, scss/media.scss */
       .layer-post .cont-layer-post .layer-right > div.bottom {
         display: none; }
-  /* line 530, scss/media.scss */
   .layer-post .foot-layer-post {
     display: none; }
 
   /*              swipe-bar                */
-  /* line 536, scss/media.scss */
   .swipe-bar {
     display: flex;
     flex-direction: column;
@@ -382,38 +313,30 @@
     width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: -8px 0 10px 2px rgba(0, 0, 0, 0.8); }
-    /* line 547, scss/media.scss */
     .swipe-bar .head-bar {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       height: 35px;
       background-color: rgba(128, 128, 128, 0.8); }
-      /* line 554, scss/media.scss */
       .swipe-bar .head-bar .button-user-natification {
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 558, scss/media.scss */
         .swipe-bar .head-bar .button-user-natification > i {
           color: #fff;
           font-size: 18px; }
-      /* line 564, scss/media.scss */
       .swipe-bar .head-bar .close-bar {
         padding: 8px 8px;
         cursor: pointer; }
-        /* line 568, scss/media.scss */
         .swipe-bar .head-bar .close-bar > i {
           color: #fff;
           font-size: 18px; }
-    /* line 575, scss/media.scss */
     .swipe-bar .cont-bar {
       box-sizing: border-box;
       padding: 4px 10px; }
-      /* line 580, scss/media.scss */
       .swipe-bar .cont-bar .nav li {
         padding: 4px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
-        /* line 583, scss/media.scss */
         .swipe-bar .cont-bar .nav li > a {
           font-family: segoe-print-bold;
           font-size: 16px;
@@ -422,37 +345,30 @@
           padding: 6px 0 5px; }
 
   /*           forms.css postFormTypeTextGlobal               */
-  /* line 603, scss/media.scss */
   form.post-form-type-text-global > input[type="text"] {
     height: 30px;
     font-size: 14px;
     padding: 0 10px; }
-  /* line 622, scss/media.scss */
   form.post-form-type-text-global > button[type="submit"] > i {
     font-size: 14px; }
 
   /*         formAuth          */
-  /* line 630, scss/media.scss */
   div.formAuth {
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(60, 76, 90, 0.9); }
-    /* line 637, scss/media.scss */
+    background-color: rgba(60, 76, 90, 0.966); }
     div.formAuth .form {
       max-width: 800px;
       margin: auto;
       background-color: transparent; }
-      /* line 642, scss/media.scss */
       div.formAuth .form > p {
         font-size: 20px; }
-      /* line 646, scss/media.scss */
       div.formAuth .form > .userName, div.formAuth .form > input[type="password"] {
         height: 30px;
         font-size: 14px;
         padding: 0 14px; }
-      /* line 653, scss/media.scss */
       div.formAuth .form > input[type="submit"] {
         height: 30px;
         font-size: 14px; } }
