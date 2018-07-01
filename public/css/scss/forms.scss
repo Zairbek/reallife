@@ -1,14 +1,7 @@
 /*==========Цветовая палитра==========*/ 
-$background: #003545;
-$head-background: #c4ffdd;
-$shadow-layer: rgba(0,0,0,0.8);
-$post-background: #f9f9f9;
-$head-text: #040615;
-$post-text: #040615;
-$input-text: #040615;
-$input-background: white;
-$img-layer-post-background: rgba(0,0,0,.3);
-$text-layer-post-background: white;
+$shadow-layer-background: rgba(0,0,0,0.8);
+$input-post-text: #040615;
+$input-post-background: #f2f2f2;
 /*==========Цветовая палитра==========*/ 
 
 /*==========FONTS==========*/ 
@@ -47,7 +40,7 @@ $text-layer-post-background: white;
   left: 0;top: 0;
   right: 0;bottom: 0;
   box-sizing: border-box;
-  background-color: $shadow-layer;
+  background-color: $shadow-layer-background;
   
   .form {
     display: flex;
@@ -135,13 +128,13 @@ $text-layer-post-background: white;
 
     font-family: segoe-wp-light;
     font-size: 20px;
-    color: #4e4e4e;
+    color: $input-post-text;
 
     padding: 0 10px;
     border: 1px solid #d6d6d6;
     border-radius: 3px;
 
-    background-color: #f2f2f2;
+    background-color: $input-post-background;
   }
 
   >.button{
