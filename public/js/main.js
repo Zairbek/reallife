@@ -1,9 +1,19 @@
-window.onload = init; 
+window.addEventListener('load', init); 
+
+
 
 function init (){
-  getId('openFormAuth').addEventListener('click', function(){
-    getId('formAuth').style.display = 'flex';
-  })  
+	verticalLine()
+
+	getId('openFormAuth').addEventListener('click', showLayer)
+	getId('swipeBarOpenFormAuth').addEventListener('click', showLayer)
+
+	getId('open').addEventListener('click', showLayer)
+	getId('open1').addEventListener('click', showLayer)
+
+
+	getId('open-swipe-bar').addEventListener('click', swipeBar)
+
 
 
 }
@@ -11,6 +21,45 @@ function init (){
 
 // functions =============================
 getId = (attr) => document.getElementById(attr);
+
+function verticalLine(){
+	var contentCentered = getId('contentCentered');
+	var contentHeight = contentCentered.clientHeight;
+
+	var verticalLine = getId('vertical-line');
+	verticalLine.style.height = contentHeight + 'px';
+}
+// functions =============================
+
+
+
+function showLayer() {
+	var dataShowEl = this.dataset.showLayer;
+	var dataCloseEl = this.dataset.closeLayer;
+	
+	if(dataShowEl === undefined && dataCloseEl === undefined) return alert('ссылка не связана с элеиентом!');
+	
+	dataShowEl = getId(dataShowEl);
+	dataCloseEl = getId(dataCloseEl);
+	dataShowEl.style.display = 'flex';
+
+	dataCloseEl.addEventListener('click', function(){dataShowEl.style.display = 'none'})
+	window.addEventListener('keydown', function(e){ e.keyCode === 27 ?   dataShowEl.style.display = 'none' : false });
+}
+
+function swipeBar(){
+	var dataShowEl = this.dataset.showLayer;
+	var dataCloseEl = this.dataset.closeLayer;
+	
+	if(dataShowEl === undefined && dataCloseEl === undefined) return alert('ссылка не связана с элеиентом!');
+	
+	dataShowEl = getId(dataShowEl);
+	dataCloseEl = getId(dataCloseEl);
+	dataShowEl.style.right = 0;
+
+	dataCloseEl.addEventListener('click', function(){dataShowEl.style.right = -310 + 'px'})
+}
+
 
 
 

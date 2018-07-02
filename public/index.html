@@ -8,20 +8,35 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/forms.css">
-    <script src="js/main.js"></script>
-    <script src="js/data.js"></script>
 </head>
 <body>
+    <script>
+        var div = document.createElement('div');
+        div.setAttribute('id', 'loading');
+        div.style.display = 'flex';
+        
+        var img = document.createElement('img');
+        img.setAttribute('src', 'img/91.gif');
+
+        div.appendChild(img);
+        document.body.appendChild(div);
+
+
+        window.addEventListener('load', function(e){
+            document.getElementById('loading').style.display = 'none';
+        })
+    </script>
+
     <div class="main">
         <header>
             <div class="centered">
-                <div class="open-bar"><i class="fas fa-bars"></i></div>
+                <div data-show-layer="swipe-bar" data-close-layer="swipe-bar-close" id="open-swipe-bar" class="open-bar"><i class="fas fa-bars"></i></div>
                 <div class="bar">
                     <div id="" class="button-user-natification"><i class="fas fa-bell"></i></div>
-                    <div id="openFormAuth" class="button-user-natification"><i class="fas fa-user-circle"></i></div>
+                    <div data-show-layer="formAuth" data-close-layer="form-auth-close" id="openFormAuth" class="button-user-natification"><i class="fas fa-user-circle"></i></div>
                 </div>
                 <ul class="nav">
-                    <li><a id="open">главная</a></li>
+                    <li><a id="open" data-show-layer="layer-post" data-close-layer="layer-post-close">главная</a></li>
                     <li><a href="#">больше</a></li>
                     <li><a href="#">папулярное</a></li>
                 </ul>
@@ -109,26 +124,30 @@
         <button id="layer-post-close" class="btn-close"><i class="fas fa-times fa-2x"></i></button>        
     </div>
     
-    <div class="swipe-bar">
+    <div id="swipe-bar" class="swipe-bar">
         <div class="head-bar">
             <div id="" class="button-user-natification"><i class="fas fa-bell"></i></div>
-            <div id="openFormAuth" class="button-user-natification"><i class="fas fa-user-circle"></i></div>
-            <div class="close-bar"><i class="fas fa-times"></i></div>
+            <div  data-show-layer="formAuth" data-close-layer="form-auth-close" id="swipeBarOpenFormAuth" class="button-user-natification"><i class="fas fa-user-circle"></i></div>
+            <div id="swipe-bar-close" class="close-bar"><i class="fas fa-times"></i></div>
         </div>
         <div class="cont-bar">
             <ul class="nav">
-                <li><a  id="open1">главная</a></li>
+                <li><a id="open1" data-show-layer="layer-post" data-close-layer="layer-post-close">главная</a></li>                
                 <li><a href="#">больше</a></li>
                 <li><a href="#">папулярное</a></li>
             </ul>
         </div>
     </div>
 
+    <!-- <div id="loading">
+        <img src="img/giphy.gif" alt="">
+    </div> -->
 
 
 
 
-
+    <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </body>
 </html>
