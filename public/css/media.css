@@ -28,6 +28,7 @@
       position: absolute;
       top: 1px;
       right: 4px;
+      cursor: pointer;
       padding: 4px 8px; }
       header .centered .open-bar > i {
         font-size: 18px; }
@@ -211,6 +212,7 @@
       position: absolute;
       top: 1px;
       right: 4px;
+      cursor: pointer;
       padding: 4px 8px; }
       header .centered .open-bar > i {
         font-size: 18px; }
