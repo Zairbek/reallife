@@ -235,19 +235,4 @@ img.imgPostGlobal {
 .swipe-bar {
   display: none; }
 
-#loading {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  z-index: 9999; }
-  #loading img {
-    width: 100px;
-    height: 100px; }
-
 /*# sourceMappingURL=main.css.map */

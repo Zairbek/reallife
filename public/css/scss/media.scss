@@ -239,6 +239,8 @@ $form-auth-shadow-background: rgba(60, 76, 90, 0.966);
     width: 300px;
     background-color: $swipe-bar-background-AND-box-shadow;
     box-shadow: -8px 0 10px 2px $swipe-bar-background-AND-box-shadow;
+
+    transition: all .4s ease-in-out;
     
     .head-bar{
       display: flex;
@@ -543,13 +545,18 @@ $form-auth-shadow-background: rgba(60, 76, 90, 0.966);
     display: flex;
     flex-direction: column;
     position: fixed;
+    z-index: 1;
     top: 0;
     right: -310px;
     bottom: 0;
     width: 300px;
     background-color: $swipe-bar-background-AND-box-shadow;
     box-shadow: -8px 0 10px 2px $swipe-bar-background-AND-box-shadow;
+
+    transition: all .4s ease-in-out;
     
+
+
     .head-bar{
       display: flex;
       flex-direction: row;

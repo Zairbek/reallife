@@ -12,7 +12,7 @@ function init (){
 	getId('open1').addEventListener('click', showLayer)
 
 
-	getId('open-swipe-bar').addEventListener('click', swipeBar)
+	getId('open-swipe-bar').addEventListener('click', swipeBar.nonEffects)
 
 
 
@@ -47,19 +47,23 @@ function showLayer() {
 	window.addEventListener('keydown', function(e){ e.keyCode === 27 ?   dataShowEl.style.display = 'none' : false });
 }
 
-function swipeBar(){
-	var dataShowEl = this.dataset.showLayer;
-	var dataCloseEl = this.dataset.closeLayer;
-	
-	if(dataShowEl === undefined && dataCloseEl === undefined) return alert('ссылка не связана с элеиентом!');
-	
-	dataShowEl = getId(dataShowEl);
-	dataCloseEl = getId(dataCloseEl);
-	dataShowEl.style.right = 0;
 
-	dataCloseEl.addEventListener('click', function(){dataShowEl.style.right = -310 + 'px'})
+
+var swipeBar = {
+	
+	nonEffects: function(){
+		var dataShowEl = this.dataset.showLayer;
+		var dataCloseEl = this.dataset.closeLayer;
+		
+		if(dataShowEl === undefined && dataCloseEl === undefined) return alert('ссылка не связана с элеиентом!');
+		
+		dataShowEl = getId(dataShowEl);
+		dataCloseEl = getId(dataCloseEl);
+		dataShowEl.style.right = 0;
+	
+		dataCloseEl.addEventListener('click', function(){dataShowEl.style.right = -310 + 'px'})
+	}	
 }
-
 
 
 
