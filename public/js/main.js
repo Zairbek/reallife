@@ -73,3 +73,5 @@ var swipeBar = {
 		}
 	}	
 }
+
+

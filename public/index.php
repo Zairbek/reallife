@@ -38,7 +38,7 @@
                 <ul class="nav">
                     <li><a id="open" data-show-layer="layer-post" data-close-layer="layer-post-close">главная</a></li>
                     <li><a id="aa" href="#">больше</a></li>
-                    <li><a href="#">папулярное</a></li>
+                    <li><a id="zair" href="#">папулярное</a></li>
                 </ul>
                 <div class="logoHome"><a href="">Real Life</a></div>
             </div>
@@ -52,9 +52,8 @@
                     <div class="box-big" >
                         <a href="#"><p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, inventore.</p></a>
                         <img class="imgPostGlobal" src="img/imgContent/Layer-5.png" alt="">
-
-                        <form class="post-form-type-text-global" action="">
-                            <input type="text">
+                        <form class="post-form-type-text-global" action="/">
+                            <input type="text" name="comment">
                             <button type="submit" class="button"><i class="far fa-comment"></i></button>
                         </form>
                     </div>
@@ -138,14 +137,7 @@
             </ul>
         </div>
     </div>
-
-    <!-- <div id="loading">
-        <img src="img/giphy.gif" alt="">
-    </div> -->
-
-
-
-
+   
     <script src="js/main.js"></script>
     <script src="js/data.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
