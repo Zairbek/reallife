@@ -3,32 +3,34 @@ window.addEventListener('load', init);
 
 
 function init (){
-	verticalLine()
-
-	getId('openFormAuth').addEventListener('click', showLayer.nonEffects)
-	getId('swipeBarOpenFormAuth').addEventListener('click', showLayer.nonEffects)
-
-	getId('open').addEventListener('click', showLayer.nonEffects)
-	getId('open1').addEventListener('click', showLayer.nonEffects)
+	getId('openFormAuth').addEventListener('click', showLayer.nonEffects);
+	getId('swipeBarOpenFormAuth').addEventListener('click', showLayer.nonEffects);
+	getId('open').addEventListener('click', showLayer.nonEffects);
+	getId('open-swipe-bar').addEventListener('click', swipeBar.nonEffects);
 
 
-	getId('open-swipe-bar').addEventListener('click', swipeBar.nonEffects)
+	var setting = new XMLHttpRequest();
+	setting.onreadystatechange = jsonData
+	setting.open("GET", "../json/setting.json", true);
+	setting.send();
 
-
+	var data = new XMLHttpRequest();
+	data.onreadystatechange = function(){}
+	data.open("GET", "../json/data.json", true);
+	data.send();
 
 }
 
 
 // functions =============================
 getId = (attr) => document.getElementById(attr);
-
-function verticalLine(){
+(function(){
 	var contentCentered = getId('contentCentered');
 	var contentHeight = contentCentered.clientHeight;
 
 	var verticalLine = getId('vertical-line');
 	verticalLine.style.height = contentHeight + 'px';
-}
+})();
 // functions =============================
 
 
@@ -75,3 +77,37 @@ var swipeBar = {
 }
 
 
+
+function jsonData(){
+	if(this.readyState == 4){
+		var res = JSON.parse(this.responseText);
+		
+		(function(){
+			for(var i = 0; i < res.nav.length; i++){
+				var el = document.querySelector("div.centered>ul.nav");
+				let li = document.createElement('li');
+				let a = document.createElement('a');
+				li.appendChild(a);
+				el.appendChild(li);
+				
+				let nav = res.nav[i];
+				a.setAttribute('href', nav.href)
+				a.innerHTML = nav.text;
+			}	
+		})();
+		(function(){
+			for(var i = 0; i < res.nav.length; i++){
+				var el = document.querySelector("div.cont-bar>ul.nav");
+				let li = document.createElement('li');
+				let a = document.createElement('a');
+				li.appendChild(a);
+				el.appendChild(li);
+				
+				let nav = res.nav[i];
+				a.setAttribute('href', nav.href)
+				a.innerHTML = nav.text;
+			}	
+		})();
+		
+	}
+}

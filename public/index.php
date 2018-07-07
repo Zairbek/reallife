@@ -36,11 +36,9 @@
                     <div data-show-layer="formAuth" data-close-layer="form-auth-close" id="openFormAuth" class="button-user-natification"><i class="fas fa-user-circle"></i></div>
                 </div>
                 <ul class="nav">
-                    <li><a id="open" data-show-layer="layer-post" data-close-layer="layer-post-close">главная</a></li>
-                    <li><a id="aa" href="#">больше</a></li>
-                    <li><a id="zair" href="#">папулярное</a></li>
+                    <!-- Данные вставляется ассинхронно из json с Javascript -->                
                 </ul>
-                <div class="logoHome"><a href="">Real Life</a></div>
+                <div class="logoHome"><a id="open" data-show-layer="layer-post" data-close-layer="layer-post-close">Real Life</a></div>
             </div>
         </header>
 
@@ -48,37 +46,58 @@
         <div class="content">
             <div id="contentCentered" class="centered">
                 <div class="container-left">
+                    <?
+                    $data = file_get_contents("json/data.json");
+                    $arr = json_decode($data, true);
 
-                    <div class="box-big" >
-                        <a href="#"><p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, inventore.</p></a>
-                        <img class="imgPostGlobal" src="img/imgContent/Layer-5.png" alt="">
-                        <form class="post-form-type-text-global" action="/">
-                            <input type="text" name="comment">
-                            <button type="submit" class="button"><i class="far fa-comment"></i></button>
-                        </form>
-                    </div>
+                    for ($i = 0; $i < count($arr['posts']); $i++){
+                    if (!($i%2)) {
+                        $id_post0 = $arr['posts'][$i]['id_post'];
+                        $text_post0 = $arr['posts'][$i]['text_post'];
+                        $img_url_post0 = $arr['posts'][$i]['img_url_post'];
 
+                        ?>
+                        <div class="box-big" id="<?= $id_post0 ?>">
+                            <p class="post-text"><?= $text_post0 ?></p>
+                            <img class="imgPostGlobal" src="<?= $img_url_post0 ?>" alt="">
+                            <form class="post-form-type-text-global" action="/">
+                                <input type="text" name="comment">
+                                <button type="submit" class="button"><i class="far fa-comment"></i></button>
+                            </form>
+                        </div>
 
-                    <div class="box-small">
-                        <p class="post-text">lorem*20Lorem ilor sit amet.</p>
-                    </div>
+                        <!--                    <div class="box-small">-->
+                        <!--                        <p class="post-text">lorem*20Lorem ilor sit amet.</p>-->
+                        <!--                    </div>-->
+                        <?
+                    }} ?>
                 </div>
 
                 <div class="container-right">
-                    <div class="box-small" style="visibility: visible;">
-                        <p class="post-text">Lorem ilor sit amet.</p>
-                    </div>
+                    <?
+                    for ($i = 0; $i < count($arr['posts']); $i++){
+                    if($i % 2) {
+                        $id_post1 = $arr['posts'][$i]['id_post'];
+                        $text_post1 = $arr['posts'][$i]['text_post'];
+                        $img_url_post1 = $arr['posts'][$i]['img_url_post'];
 
-                    <div class="box-big">
-                        <a href="#"><p class="post-text">, consectetur adipisicing elit. Incidunt, inventore.</p></a>
-                        <img class="imgPostGlobal" src="img/imgContent/Layer-61.png" alt="">
+                    ?>
+                    <!--                    <div class="box-small" style="visibility: visible;">-->
+                    <!--                        <p class="post-text">Lorem ilor sit amet.</p>-->
+                    <!--                    </div>-->
+
+                    <div class="box-big" id="<?= $id_post1 ?>">
+                        <p class="post-text"><?= $text_post1 ?></p>
+                        <img class="imgPostGlobal" src="<?= $img_url_post1 ?>" alt="">
 
                         <form class="post-form-type-text-global" action="">
                             <input type="text">
                             <button type="submit" class="button"><i class="far fa-comment"></i></button>
                         </form>
                     </div>
-
+                    <?
+                    }}
+                    ?>
                 </div>
 
                 <div class="container-center">
@@ -131,13 +150,13 @@
         </div>
         <div class="cont-bar">
             <ul class="nav">
-                <li><a id="open1" data-show-layer="layer-post" data-close-layer="layer-post-close">главная</a></li>                
-                <li><a href="#">больше</a></li>
-                <li><a href="#">папулярное</a></li>
+            <!-- Данные вставляется ассинхронно из json с Javascript -->
             </ul>
         </div>
     </div>
    
+
+
     <script src="js/main.js"></script>
     <script src="js/data.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
