@@ -20,7 +20,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #040615;
+  color: #9eb9b3;
   font-family: segoe-wp-light;
   font-size: 16px;
   font-weight: normal; }
@@ -33,7 +33,7 @@ body {
 .main {
   width: 100%;
   min-height: 100%;
-  background-color: #003545; }
+  background-color: #00070a; }
 
 .centered {
   max-width: 1024px;
@@ -47,7 +47,7 @@ header {
   position: sticky;
   top: 0;
   border-bottom: 1px solid #fff;
-  background: #c4ffdd; }
+  background: #294552; }
   header .centered {
     overflow: hidden;
     padding: 0 5px; }
@@ -92,7 +92,7 @@ header {
         font-family: segoe-print-bold;
         font-size: 20px;
         padding: 2px 0;
-        color: #040615; }
+        color: #9eb9b3; }
 
 /*           content               */
 .content {
@@ -100,37 +100,17 @@ header {
   .content .centered {
     overflow: hidden;
     padding: 30px; }
-    .content .centered .container-left {
-      float: left;
-      width: 45%; }
-    .content .centered .container-right {
-      float: right;
-      width: 45%; }
-    .content .centered .container-center {
-      width: 10%;
-      margin: 0 45%; }
-      .content .centered .container-center .vertical-line-top {
-        width: 25px;
-        height: 25px;
-        margin: 0 auto;
-        border: 5px solid #c4ffdd;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%; }
-      .content .centered .container-center .vertical-line {
-        margin: 0 auto;
-        display: block;
-        width: 6px;
-        background-color: #c4ffdd; }
+    .content .centered .container {
+      width: 100%; }
 
 /*          content-box-big             */
 .box-big {
+  display: flex;
   box-sizing: border-box;
   width: 100%;
-  margin: 30px 0;
-  padding: 18px;
-  border-radius: 6px;
-  background-color: #f9f9f9;
+  margin: 30px auto;
+  border-radius: 0px;
+  background-color: #294552;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 /*          content-box-small             */
@@ -140,23 +120,27 @@ header {
   margin: 30px 0;
   padding: 18px;
   border-radius: 6px;
-  background-color: #f9f9f9;
+  background-color: #294552;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 /*               post-text             */
 /*    все тексты связанные с постом    */
-p.post-text {
-  display: inline-block;
-  font-family: segoe-wp-light;
-  font-size: 16px;
-  color: #040615;
-  margin-bottom: 5px; }
+.left {
+  display: flex;
+  width: 50%; }
+  .left p.post-text {
+    display: inline-block;
+    font-family: segoe-wp-light;
+    font-size: 16px;
+    color: #fff; }
 
 /*              imgForPostGlobal             */
 img.imgPostGlobal {
+  display: flex;
   box-sizing: border-box;
-  width: 100%;
-  margin: 5px 0; }
+  display: block;
+  width: 50%;
+  height: 100%; }
 
 /*                       btn-close                       */
 .btn-close {
@@ -191,7 +175,7 @@ img.imgPostGlobal {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.6); }
   .layer-post .head-layer-post {
     display: none; }
   .layer-post .cont-layer-post {
@@ -224,7 +208,7 @@ img.imgPostGlobal {
       box-sizing: border-box; }
       .layer-post .cont-layer-post .layer-right > p.text-layer-post {
         width: 100%;
-        color: #040615;
+        color: #fff;
         font-size: 15px;
         font-family: segoe-wp-light;
         overflow: auto; }

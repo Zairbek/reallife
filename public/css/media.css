@@ -47,21 +47,8 @@
     .content .centered {
       overflow: hidden;
       padding: 10px; }
-      .content .centered .container-left {
-        width: 45%; }
-      .content .centered .container-right {
-        width: 45%; }
-      .content .centered .container-center {
-        width: 10%;
-        margin: 0 45%; }
-        .content .centered .container-center .vertical-line-top {
-          width: 20px;
-          height: 20px;
-          margin: 0 auto;
-          border: 3px solid #c4ffdd; }
-        .content .centered .container-center .vertical-line {
-          margin: 0 auto;
-          width: 4px; }
+      .content .centered .container {
+        width: 100%; }
 
   /*          content-box-big             */
   .box-big {
@@ -231,14 +218,8 @@
     .content .centered {
       overflow: hidden;
       padding: 10px; }
-      .content .centered .container-left {
-        width: 100%;
-        float: none; }
-      .content .centered .container-right {
-        width: 100%;
-        float: none; }
-      .content .centered .container-center {
-        display: none; }
+      .content .centered .container {
+        width: 100%; }
 
   /*          content-box-big             */
   .box-big {

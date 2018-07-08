@@ -24,13 +24,6 @@ function init (){
 
 // functions =============================
 getId = (attr) => document.getElementById(attr);
-(function(){
-	var contentCentered = getId('contentCentered');
-	var contentHeight = contentCentered.clientHeight;
-
-	var verticalLine = getId('vertical-line');
-	verticalLine.style.height = contentHeight + 'px';
-})();
 // functions =============================
 
 

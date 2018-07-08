@@ -45,22 +45,23 @@
 
         <div class="content">
             <div id="contentCentered" class="centered">
-                <div class="container-left">
+                <div class="container">
                     <?
                     $data = file_get_contents("json/data.json");
                     $arr = json_decode($data, true);
 
                     for ($i = 0; $i < count($arr['posts']); $i++){
-                    if (!($i%2)) {
                         $id_post0 = $arr['posts'][$i]['id_post'];
                         $text_post0 = $arr['posts'][$i]['text_post'];
                         $img_url_post0 = $arr['posts'][$i]['img_url_post'];
 
                         ?>
                         <div class="box-big" id="<?= $id_post0 ?>">
-                            <p class="post-text"><?= $text_post0 ?></p>
+                            <div class="left">
+                                <p class="post-text"><?= $text_post0 ?></p>
+                            </div>
                             <img class="imgPostGlobal" src="<?= $img_url_post0 ?>" alt="">
-                            <form class="post-form-type-text-global" action="/">
+                            <form class="post-form-type-text-global" action="/"><!-- форма будет открыватся с помощью кнопок -->
                                 <input type="text" name="comment">
                                 <button type="submit" class="button"><i class="far fa-comment"></i></button>
                             </form>
@@ -70,39 +71,7 @@
                         <!--                        <p class="post-text">lorem*20Lorem ilor sit amet.</p>-->
                         <!--                    </div>-->
                         <?
-                    }} ?>
-                </div>
-
-                <div class="container-right">
-                    <?
-                    for ($i = 0; $i < count($arr['posts']); $i++){
-                    if($i % 2) {
-                        $id_post1 = $arr['posts'][$i]['id_post'];
-                        $text_post1 = $arr['posts'][$i]['text_post'];
-                        $img_url_post1 = $arr['posts'][$i]['img_url_post'];
-
-                    ?>
-                    <!--                    <div class="box-small" style="visibility: visible;">-->
-                    <!--                        <p class="post-text">Lorem ilor sit amet.</p>-->
-                    <!--                    </div>-->
-
-                    <div class="box-big" id="<?= $id_post1 ?>">
-                        <p class="post-text"><?= $text_post1 ?></p>
-                        <img class="imgPostGlobal" src="<?= $img_url_post1 ?>" alt="">
-
-                        <form class="post-form-type-text-global" action="">
-                            <input type="text">
-                            <button type="submit" class="button"><i class="far fa-comment"></i></button>
-                        </form>
-                    </div>
-                    <?
-                    }}
-                    ?>
-                </div>
-
-                <div class="container-center">
-                    <div class="vertical-line-top"></div>
-                    <div id="vertical-line" class="vertical-line"></div>
+                    } ?>
                 </div>
             </div>
         </div>
