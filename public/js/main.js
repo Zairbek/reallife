@@ -24,6 +24,28 @@ function init (){
 
 // functions =============================
 getId = (attr) => document.getElementById(attr);
+
+(function(){
+	let el1 = document.querySelectorAll(".one-in-one");
+	for(let i = 0; i < el1.length; i++){
+		let w = el1[i].clientWidth;
+		el1[i].style.height = w * 40 / 100 + "px";
+	}
+	
+	let el2 = document.querySelectorAll(".two-in-one");
+	for(let i = 0; i < el2.length; i++){
+		let w = el2[i].clientWidth;
+		el2[i].style.height = w * 60 / 100 + "px";
+	}
+
+	let el3 = document.querySelectorAll(".three-in-one");
+	for(let i = 0; i < el3.length; i++){
+		let w = el3[i].clientWidth;
+		el3[i].style.height = w * 80 / 100 + "px";
+	}
+
+})()
+
 // functions =============================
 
 

@@ -51,27 +51,38 @@
                     $arr = json_decode($data, true);
 
                     for ($i = 0; $i < count($arr['posts']); $i++){
-                        $id_post0 = $arr['posts'][$i]['id_post'];
-                        $text_post0 = $arr['posts'][$i]['text_post'];
-                        $img_url_post0 = $arr['posts'][$i]['img_url_post'];
+                        $mode_post = $arr['posts'][$i]['mode_post'];
 
-                        ?>
-                        <div class="box-big" id="<?= $id_post0 ?>">
-                            <div class="left">
-                                <p class="post-text"><?= $text_post0 ?></p>
+                        if($mode_post == "big"){
+                            $id_post = $arr['posts'][$i]['id_post'];
+                            $text_post = $arr['posts'][$i]['text_post'];
+                            $img_url_post = $arr['posts'][$i]['img_url_post'];
+                            $class = $arr['posts'][$i]['class'];
+                        
+                    ?>
+                            <div class="<?=$class?>" id="<?= $id_post ?>">
+                                <div class="cont">
+                                    <p class="post-text"><?= $text_post ?></p>
+                                </div>
+                                <img class="imgPostGlobal" src="<?= $img_url_post ?>" alt="">
+                                <form class="post-form-type-text-global" action="/"><!-- форма будет открыватся с помощью кнопок -->
+                                    <input type="text" name="comment">
+                                    <button type="submit" class="button"><i class="far fa-comment"></i></button>
+                                </form>
                             </div>
-                            <img class="imgPostGlobal" src="<?= $img_url_post0 ?>" alt="">
-                            <form class="post-form-type-text-global" action="/"><!-- форма будет открыватся с помощью кнопок -->
-                                <input type="text" name="comment">
-                                <button type="submit" class="button"><i class="far fa-comment"></i></button>
-                            </form>
-                        </div>
-
-                        <!--                    <div class="box-small">-->
-                        <!--                        <p class="post-text">lorem*20Lorem ilor sit amet.</p>-->
-                        <!--                    </div>-->
                         <?
-                    } ?>
+                        }elseif($mode_post == "small"){
+                            $id_post = $arr['posts'][$i]['id_post'];
+                            $text_post = $arr['posts'][$i]['text_post'];
+                            $class = $arr['posts'][$i]['class'];
+                        
+                         ?>
+                            <div class="<?=$class?>" id="<?=$id_post?>">
+                                <p class="post-text"><?=$text_post?></p>
+                            </div>
+                        <?
+                        }}
+                        ?>
                 </div>
             </div>
         </div>

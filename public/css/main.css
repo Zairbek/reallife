@@ -45,8 +45,8 @@ body {
 header {
   width: 100%;
   position: sticky;
+  z-index: 4;
   top: 0;
-  border-bottom: 1px solid #fff;
   background: #294552; }
   header .centered {
     overflow: hidden;
@@ -101,47 +101,116 @@ header {
     overflow: hidden;
     padding: 30px; }
     .content .centered .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       width: 100%; }
 
+/** =========================================== */
 /*          content-box-big             */
-.box-big {
+.one-in-one {
   display: flex;
   box-sizing: border-box;
   width: 100%;
-  margin: 30px auto;
-  border-radius: 0px;
-  background-color: #294552;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  margin: 10px auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+  .one-in-one > .cont {
+    position: absolute;
+    z-index: 1; }
+  .one-in-one > img {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 0; }
 
+/*=='two-in-one'==*/
+.two-in-one {
+  display: flex;
+  box-sizing: border-box;
+  width: 49%;
+  margin: 10px auto;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+  .two-in-one > .cont {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 60%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #872c3b;
+    background: -moz-linear-gradient(left, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #872c3b), color-stop(44%, rgba(112, 36, 49, 0.56)), color-stop(100%, rgba(86, 26, 36, 0)));
+    background: -webkit-linear-gradient(left, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    background: -o-linear-gradient(left, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    background: -ms-linear-gradient(left, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    background: linear-gradient(to right, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#872c3b', endColorstr='#561a24', GradientType=1 ); }
+  .two-in-one > img {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%; }
+
+/*=='three-in-one'==*/
+.three-in-one {
+  display: flex;
+  box-sizing: border-box;
+  width: 32%;
+  margin: 10px auto;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+  .three-in-one > .cont {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 60%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #872c3b;
+    background: -moz-linear-gradient(left, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #872c3b), color-stop(44%, rgba(112, 36, 49, 0.56)), color-stop(100%, rgba(86, 26, 36, 0)));
+    background: -webkit-linear-gradient(left, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    background: -o-linear-gradient(left, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    background: -ms-linear-gradient(left, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    background: linear-gradient(to right, #872c3b 0%, rgba(112, 36, 49, 0.56) 44%, rgba(86, 26, 36, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#872c3b', endColorstr='#561a24', GradientType=1 ); }
+  .three-in-one > img {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%; }
+
+/** =========================================== */
 /*          content-box-small             */
-.box-small {
+.small-one-in-one {
   box-sizing: border-box;
   width: 100%;
-  margin: 30px 0;
+  margin: 10px auto;
   padding: 18px;
-  border-radius: 6px;
-  background-color: #294552;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
 
 /*               post-text             */
 /*    все тексты связанные с постом    */
-.left {
-  display: flex;
-  width: 50%; }
-  .left p.post-text {
-    display: inline-block;
-    font-family: segoe-wp-light;
-    font-size: 16px;
-    color: #fff; }
-
 /*              imgForPostGlobal             */
-img.imgPostGlobal {
-  display: flex;
-  box-sizing: border-box;
-  display: block;
-  width: 50%;
-  height: 100%; }
-
 /*                       btn-close                       */
 .btn-close {
   position: fixed;
