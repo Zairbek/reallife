@@ -21,7 +21,6 @@
         div.appendChild(img);
         document.body.appendChild(div);
 
-
         window.addEventListener('load', function(e){
             document.getElementById('loading').style.display = 'none';
         })

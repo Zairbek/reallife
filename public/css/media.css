@@ -67,17 +67,12 @@
     overflow: hidden; }
 
   /*          content-box-small             */
-  .box-small {
-    width: 100%;
-    margin: 20px 0;
+  .small-one-in-one {
     padding: 10px;
-    border-radius: 4px; }
-
-  /*               post-text             */
-  /*    все тексты связанные с постом    */
-  p.post-text {
-    font-size: 13px;
-    margin-bottom: 3px; }
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+    .small-one-in-one p.post-text {
+      font-size: 13px;
+      margin-bottom: 3px; }
 
   /*              imgForPostGlobal             */
   img.imgPostGlobal {
@@ -274,17 +269,12 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#872c3b', endColorstr='#561a24', GradientType=1 ); }
 
   /*          content-box-small             */
-  .box-small {
-    width: 100%;
-    margin: 20px 0;
+  .small-one-in-one {
     padding: 10px;
-    border-radius: 4px; }
-
-  /*               post-text             */
-  /*    все тексты связанные с постом    */
-  p.post-text {
-    font-size: 13px;
-    margin-bottom: 3px; }
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+    .small-one-in-one p.post-text {
+      font-size: 13px;
+      margin-bottom: 3px; }
 
   /*              imgForPostGlobal             */
   img.imgPostGlobal {

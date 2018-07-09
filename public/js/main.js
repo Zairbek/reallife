@@ -25,7 +25,7 @@ function init (){
 // functions =============================
 getId = (attr) => document.getElementById(attr);
 
-(function(){
+(window.onresize = function(){
 	let el1 = document.querySelectorAll(".one-in-one");
 	for(let i = 0; i < el1.length; i++){
 		let w = el1[i].clientWidth;
