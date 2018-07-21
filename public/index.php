@@ -1,3 +1,17 @@
+<?
+    include 'scripts/db.php';
+
+    $res = $mysql->query("SELECT id_post, mode_post, style_post, img_url_post, text_post, date_time_post, like_post 
+                                FROM posts");
+
+    $row = $res->fetch_assoc();
+
+    for($i = 0; $i < 1; $i++){
+        echo $i. " -- " . $row["id_post"];
+    }
+?>
+
+
 <!doctype html>
 <html lang="ru">
 <head>
@@ -14,14 +28,14 @@
         var div = document.createElement('div');
         div.setAttribute('id', 'loading');
         div.style.display = 'flex';
-        
+
         var img = document.createElement('img');
         img.setAttribute('src', 'img/91.gif');
 
         div.appendChild(img);
         document.body.appendChild(div);
 
-        window.addEventListener('load', function(e){
+        window.addEventListener('load', function(){
             document.getElementById('loading').style.display = 'none';
         })
     </script>
